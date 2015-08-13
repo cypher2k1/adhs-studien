@@ -134,10 +134,18 @@ echo'
 			</div>
 			<div id="social-icons">
 			  <ul>
+			  
+	  
 
-				<li><a onclick="window.open('https://www.startssl.com/validation.ssl?referrer=www.startssl.com','','status=no,toolbar=no,menubar=no,titlebar=no,height=630,width=610');" title="SSL" alt="Die Daten dieser Website werden verschlüsselt &uumlbertragen" style="background:url('img/icons/ssl.png') top left no-repeat transparent; cursor: hand; cursor: pointer;" target="_blank"></a></li>
+	  
+	  
+	  
+	  
+				<li><a href="http://feed2.w3.org/check.cgi?url=http%3A//feeds.feedburner.com/<?php echo $meta_tags['rss_feed']; ?>" target="_blank" alt="Valid RSS 2 Feed" style="background:url('<?php echo $img.'icons/valid-rss.png'; ?>') top left no-repeat transparent;"></a></li>
+	  
+				<li><a onclick="window.open('https://www.startssl.com/validation.ssl?referrer=www.startssl.com','','status=no,toolbar=no,menubar=no,titlebar=no,height=630,width=610');" title="SSL" alt="Die Daten dieser Website werden verschlüsselt &uumlbertragen" style="background:url('<?php echo $img.'icons/ssl2.png'; ?>') top left no-repeat transparent; cursor: hand; cursor: pointer;" target="_blank"></a></li>
 					  
-				<li><a href="https://www.healthonnet.org/HONcode/German/?HONConduct628852" onclick="window.open(this.href); return false;" title="Diese Web Seite ist von der Health On the Net Stiftung akkreditiert: Klicken Sie, um dies zu &uuml;berpr&uuml;fen" alt="Diese Web Seite ist von der Health On the Net Stiftung akkreditiert: Klicken Sie, um dies zu &uuml;berpr&uuml;fen" style="background:url('img/icons/hon2.png') top left no-repeat transparent;" target="_blank"></a></li>
+				<li><a href="https://www.healthonnet.org/HONcode/German/?HONConduct628852" onclick="window.open(this.href); return false;" title="Diese Web Seite ist von der Health On the Net Stiftung akkreditiert: Klicken Sie, um dies zu &uuml;berpr&uuml;fen" alt="Diese Web Seite ist von der Health On the Net Stiftung akkreditiert: Klicken Sie, um dies zu &uuml;berpr&uuml;fen" style="background:url('<?php echo $img.'icons/hon2.png'; ?>') top left no-repeat transparent;" target="_blank"></a></li>
 
 				</ul>
 			</div>
@@ -229,22 +237,6 @@ echo'
 						<a href="https://www.healthonnet.org/HONcode/German/?HONConduct628852" onclick="window.open(this.href); return false;">&Uuml;berpr&uuml;fen Sie dies hier.</a></span>
 			</div>
 
-			<!-- Google Suchfeld
-        <form action="http://www.adhs-studien.info/suche.html" id="cse-search-box">
-          <div>
-          <h4>Suchfunktion:</h4>
-            <input type="hidden" name="cx" value="partner-pub-8381068986528810:7372813753" />
-            <input type="hidden" name="cof" value="FORID:10" />
-            <input type="hidden" name="ie" value="UTF-8" />
-            <input type="text" name="q" size="23" />
-            <input type="submit" name="sa" value="Suche" />
-          </div>
-        </form>
-        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-        <script type="text/javascript">google.load("elements", "1", {packages: "transliteration"});</script>
-        <script type="text/javascript" src="http://www.google.com/cse/t13n?form=cse-search-box&t13n_langs=en"></script>
-        <script type="text/javascript" src="http://www.google.de/coop/cse/brand?form=cse-search-box&amp;lang=de"></script>
-            -->
 			<!-- Google AdSense -->
 			<div id="googleadsense">
 				<h4>Werbung:</h4>
@@ -264,8 +256,7 @@ echo'
 	<footer id="footer" class="footer">
 		<a href='https://alpha.app.net/thomas_m_stuppy' rel='me' style="display:none">app.net</a>
 <!--	  <a href="http://validator.w3.org/check?uri=--><?php //echo $meta_tags['bookmark_link']; ?><!--" target="_blank"><img src="--><?php //echo $img.'valid-xhtml10.png'; ?><!--" alt="Valid XHTML 1.0 Transitional" width="51" height="18" /></a>&nbsp;-->
-<!--	  <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="--><?php //echo $img.'valid-css21.png'; ?><!--" alt="Valid CSS level 2.1" width="51" height="18" /></a>&nbsp;
-	  <a href="http://feed2.w3.org/check.cgi?url=http%3A//feeds.adhs-studien.info/<?php echo $meta_tags['rss_feed']; ?>" target="_blank"><img src="<?php echo $img.'valid-rss2.png'; ?>" alt="Valid RSS 2 Feed" width="51" height="18" /></a>&nbsp;&nbsp;-->
+<!--	  <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="--><?php //echo $img.'valid-css21.png'; ?><!--" alt="Valid CSS level 2.1" width="51" height="18" /></a>&nbsp;-->
 		<?php
 		foreach($navi as $nav) {
 			$id = $nav["id"];

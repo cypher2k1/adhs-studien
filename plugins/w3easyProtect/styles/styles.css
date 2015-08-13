@@ -1,0 +1,81 @@
+/*
+################################################################
+// w3easyProtect | folder protection Script                    #
+// see also w3easy.org cms project                             #
+// styles                                                      #
+// Copyright (C) 2011 Joachim Haack                            #
+// http://w3easy.org/                                          #
+// http://www.w3nord.de/                                       #
+                                                               #
+// This program is free software: you can redistribute         #
+// it and/or modify it under the terms of the                  #
+// GNU General Public License as published by                  #
+// the Free Software Foundation, either version 3 of           #
+// the License, or (at your option) any later version          #
+                                                               #
+// Keep intact all copyright notices!                          #
+                                                               #
+// This program is distributed in the hope that it will        #
+// be useful, but WITHOUT ANY WARRANTY; without even the       #
+// implied warranty of MERCHANTABILITY or FITNESS FOR          #
+// A PARTICULAR PURPOSE.                                       #
+// See the GNU General Public License for more details.        #
+                                                               #
+// You should have received a copy of the                      #
+// GNU General Public License along with this program.         #
+// If not, see <http://www.gnu.org/licenses/>.                 #
+################################################################
+*/
+
+*               {margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+body            {background:url(grad_grey2.bmp) #C7C7C7; background-repeat:repeat-x;}
+a, a:link       {padding:1px; color:#33CC33;}
+a:hover         {color:white; background:#33CC33;}
+table           {width:100%;}
+textarea        {width:576px; height:150px; font-family:monospace; font-size:12px; border:1px solid #33CC33;}
+td              {width:20%; text-align:left;}
+h1              {text-align:left; font-size:24px; padding:5px 5px 10px 5px; color:#33CC33;}
+hr              {margin:10px 0; height:0px; color:#fff;}
+p               {margin:2px 0;}
+#wrap           {width:588px; margin:10px auto; padding:5px;}
+#mbox, #mbox2   {display:none; margin:5px; padding:5px; border:1px solid #fff; background:#aeaeae;}
+.center         {text-align:center;}
+.clearer        {clear:both;}
+.copyright	    {float:right; margin:10px 5px 0 0;}
+
+.explorer_left, .explorer_right {width:270px; height:110px; overflow:auto; margin:5px 0 5px 0; padding:5px;}
+.explorer_left  {float:left;}
+.explorer_right {float:right;}
+.explorer_head  {font-weight:bold; padding:3px; margin-bottom:5px;}
+
+.iframe         {display:block; width:556px; margin:10px auto; padding:10px; border:1px solid #33CC33;}
+.input          {width:100%; height:16px; border:0px solid #fff;}
+.js_link        {text-decoration:underline; cursor:pointer;}
+.options, .options_config
+                {padding:4px; margin:0 3px;}
+.options, .options_config, .options_del
+                {padding:2px; margin:0 3px;}
+.result_ok, .result_no, .result_dis
+                {display:inline; padding:2px 3px 1px 3px; font-weight:bold; margin:0 3px;}
+.select         {width:106px; height:22px; font-size:12px; margin:0 3px; padding:1px;}
+.source         {width:100%; border:0px solid #33CC33; background:#dcf8de;}
+.submit, .reset {width:95%; height:22px; margin:0 3px; font-weight:bold; padding-bottom:2px; cursor:pointer;}
+.text_right     {text-align:right;}
+.title          {color:#33CC33; float:left;}
+
+/* color, background, border */
+#wrap           {background-image:url(grad_grey.bmp); background-repeat:repeat-x; border:1px solid white;}
+.explorer_left, .explorer_right {background:#DCDCDD; border:1px solid #fff;}
+.explorer_head  {background:#F0F0F0; border:1px solid white;}
+.explorer_path  {color:#0000ff;}
+.options        {background:#DCF8DE; border:1px solid white;}
+.options_config {border:1px solid white;}
+.options_del    {color:#fff; background:#ff0000; border:1px solid white;}
+.result_ok	    {color:#0000ff; background:#dce9f8; border:1px solid #0000ff;}
+.result_no	    {color:#d90000; background:#ffbbbb; border:1px solid #d90000;}
+.result_dis     {color:#33CC33; background:#DCF8DE; border:1px solid #33CC33;}
+.sel_dis        {color:#0000ff; font-weight:bold;}
+.select         {background:#DCF8DE; border:1px solid #fff;}
+.submit, .reset {color:#fff; background:#33CC33; border:1px solid #fff;}
+.warning		{color:#d90000; font-weight:bold;}
+

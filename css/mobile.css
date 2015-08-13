@@ -1,0 +1,220 @@
+/* Main
+-----------------------------------------------------------------------------*/
+
+header, section, article, aside, footer {
+}
+html {
+} 
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/wellen.png);
+	font-family: source-sans-pro, sans-serif; # edge webfont
+}
+
+h1 {
+	font-family: source-sans-pro, sans-serif; # edge webfont
+	text-shadow: 0 1px 2px rgba(15,11,6,0.6);
+}
+h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-shadow: 0 1px 2px rgba(15,11,6,0.6);
+}
+h3 {
+	font-family: source-sans-pro, sans-serif; # edge webfont
+	text-shadow: 0 1px 2px rgba(15,11,6,0.6);
+}
+h4 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-shadow: 0 1px 2px rgba(15,11,6,0.6);
+}
+
+p, a, td {
+	font-family: source-sans-pro, sans-serif; # edge webfont
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+#wrapper {
+}
+a {
+	text-decoration: none;
+}
+
+#progress {
+    -webkit-border-radius: 10px;
+    background-color: rgba(0,0,0,.7);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 80px;
+    left: 60px;
+    line-height: 80px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    top: 120px;
+    width: 200px;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+    /*noinspection CssInvalidElement*/
+    background-image: gradient(linear, left top, left bottom, from(#ccc), to(#999));
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
+	background-image: -moz-gradient(linear, left top, left bottom, from(#ccc), to(#999));
+	border-color: #666;
+	border-style: solid;
+	border-width: 0 0 1px 0;
+}
+.head {
+}
+#header h1 {
+	color: #ae6c18;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 auto;
+	padding: 10px 0;
+	text-align: center;
+	text-shadow: 0 1px 1px #fff;
+    /*max-width: 160px;*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#leftButton.hide {
+	display: none;
+}
+#leftButton {
+	height: 45px;
+	width: 45px;
+	float: left;
+	padding-top: 11px;
+}
+#leftButton a {
+	margin-top: 8px;
+	font-weight: bold;
+	padding: 0 5px;
+	color: #fff;
+	text-shadow: 0 1px 1px #333333;
+	text-align: center;
+	border-color: #333333;
+	border: 2px solid;
+	border-radius: 6px;
+	background: #FF9900;	
+	background: linear-gradient(#ae6c18, #FF9900);
+}
+#leftButton a.pressed {
+    -moz-box-shadow:inset 3px 5px 1px #333333;
+    -webkit-box-shadow:inset 3px 5px 1px #333333;
+    box-shadow:inset 3px 5px 1px #333333;
+}
+
+.logo {
+	display: none;
+}
+.head_hl {
+	height: 45px;
+
+}
+.head_hl p {
+	display: none;
+}
+.intro {
+	display: none;
+}
+.intro hgroup {
+}
+#social-icons {
+	display: none;
+}
+#social-icons a {
+}
+#social-icons ul {
+}
+#social-icons ul li {
+}
+
+/* Sidebar Left
+-----------------------------------------------------------------------------*/
+#sideLeft {
+	display: none;
+}
+
+#sideLeft li a:link, #sideLeft li a:visited, #sideLeft li a:visited:hover, #sideLeft li a:hover, #sideLeft li a:active {
+}
+
+#googleadsense {
+	display: none;
+}
+
+/* Navi
+-----------------------------------------------------------------------------*/
+
+nav {
+	background: #FF9900;	
+	background: linear-gradient(#ae6c18, #FF9900);
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+nav.hide {
+	display: none;
+}
+nav ul {
+	list-style: none;
+	margin: 10px;
+	padding:0px;
+}
+nav ul li a {
+	color: #fff;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+}
+nav ul li:first-child a {
+}
+nav ul li:last-child a {
+}
+nav ul li a:active,ul li a:hover {
+	background-color: #0186ba;
+	background-image: linear-gradient(#04acec, #0186ba);
+	color:white;
+}
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	padding-left:5px;
+	padding-right:2px;
+	padding-bottom:5px;
+}
+#middle:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+#content {
+}
+#content p {
+	margin-bottom: 8px;
+}
+#info {
+	border: none;
+}
+#info td {
+	vertical-align: top;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	display: none;
+}
+#sprachmenue {
+}

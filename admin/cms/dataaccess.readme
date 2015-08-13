@@ -1,0 +1,6 @@
+Zur Zeit wird von folgender Konfiguration zu Testzwecken ausgegangen:
+
+MySQL-Datenbank an "localhost" - Benutzer "root" ohne Passwort.
+Name der Datenbank: "psfk"
+
+Zum Import der aktuellen Tabellenstruktur die Datei "hvw.sql" in MySQL importieren.

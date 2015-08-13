@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 9852 $"/>
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
+		<language type="pa"/>
+	</identity>
+	<localeDisplayNames>
+		<localeDisplayPattern>
+			<localePattern>{0} ({1})</localePattern>
+			<localeSeparator>{0}, {1}</localeSeparator>
+			<localeKeyTypePattern>{0}: {1}</localeKeyTypePattern>
+		</localeDisplayPattern>
+		<languages>
+			<language type="ab">ਅਬਖਾਜ਼ੀਅਨ</language>
+			<language type="ace" draft="contributed">ਅਚੀਨੀ</language>
+			<language type="ach" draft="contributed">ਅਕੋਲੀ</language>
+			<language type="af">ਅਫ਼ਰੀਕੀ</language>
+			<language type="am">ਅਮਹਾਰਿਕ</language>
+			<language type="ar">ਅਰਬੀ</language>
+			<language type="ar_001">ਆਧੁਨਿਕ ਸਟੈਂਡਰਡ ਅਰਬੀ</language>
+			<language type="as">ਅਸਾਮੀ</language>
+			<language type="az">ਅਜ਼ਰਬੈਜਾਨੀ</language>
+			<language type="be">ਬੇਲਾਰੂਸੀ</language>
+			<language type="bg">ਬੁਲਗਾਰੀਅਨ</language>
+			<language type="bn">ਬੰਗਾਲੀ</language>
+			<language type="bo">ਤਿੱਬਤੀ</language>
+			<language type="bs">ਬੋਸਨੀਅਨ</language>
+			<language type="ca">ਕੈਟਾਲਾਨ</language>
+			<language type="cs">ਚੈਕ</language>
+			<language type="cy">ਵੈਲਸ਼</language>
+			<language type="da">ਡੈਨਿਸ਼</language>
+			<language type="de">ਜਰਮਨ</language>
+			<language type="de_AT">ਔਸਟ੍ਰੀਅਨ ਜਰਮਨ</language>
+			<language type="de_CH">ਸਵਿਸ</language>
+			<language type="el">ਗ੍ਰੀਕ</language>
+			<language type="en">ਅੰਗਰੇਜ਼ੀ</language>
+			<language type="en_AU">ਆਸਟ੍ਰੇਲੀਆਈ ਅੰਗਰੇਜ਼ੀ</language>
+			<language type="en_CA">ਕਨੈਡੀਅਨ ਅੰਗਰੇਜ਼ੀ</language>
+			<language type="en_GB">ਬ੍ਰਿਟਿਸ਼ ਅੰਗਰੇਜ਼ੀ</language>
+			<language type="en_GB" alt="short">ਯੂ.ਕੇ ਅੰਗਰੇਜ਼ੀ</language>
+			<language type="en_US">ਅਮਰੀਕੀ ਅੰਗਰੇਜ਼ੀ</language>
+			<language type="en_US" alt="short">ਯੂ.ਐਸ. ਅੰਗਰੇਜ਼ੀ</language>
+			<language type="eo">ਇਸਪੇਰਾਂਟੋ</language>
+			<language type="es">ਸਪੈਨਿਸ਼</language>
+			<language type="es_419">ਲੈਟਿਨ ਅਮਰੀਕੀ ਸਪੈਨਿਸ਼</language>
+			<language type="es_ES">ਯੂਰੋਪੀਅਨ ਸਪੈਨਿਸ਼</language>
+			<language type="es_MX">ਮੈਕਸੀਕਨ ਸਪੈਨਿਸ਼</language>
+			<language type="et">ਇਸਟੋਨੀਅਨ</language>
+			<language type="eu">ਬਾਸਕੀ</language>
+			<language type="fa">ਫ਼ਾਰਸੀ</language>
+			<language type="fi">ਫਿਨਿਸ਼</language>
+			<language type="fil">ਫਿਲੀਪਿਨੋ</language>
+			<language type="fj">ਫਿਜੀਅਨ</language>
+			<language type="fo">ਫ਼ੇਰੋਸੇ</language>
+			<language type="fr">ਫ੍ਰੈਂਚ</language>
+			<language type="fr_CA">ਕਨੈਡੀਅਨ ਫ੍ਰੈਂਚ</language>
+			<language type="fr_CH">ਸਵਿਸ ਫ੍ਰੈਂਚ</language>
+			<language type="fy">ਪਛਮੀ ਫ੍ਰਿਸ਼ੀਅਨ</language>
+			<language type="ga">ਆਇਰਿਸ਼</language>
+			<language type="gl">ਗੈਲਿਸ਼ਿਅਨ</language>
+			<language type="gn">ਗੁਆਰਾਨੀ</language>
+			<language type="gsw">ਸਵਿਸ ਜਰਮਨ</language>
+			<language type="gu">ਗੁਜਰਾਤੀ</language>
+			<language type="ha">ਹੌਸਾ</language>
+			<language type="haw">ਹਵਾਈਅਨ</language>
+			<language type="he">ਯਹੂਦੀ</language>
+			<language type="hi">ਹਿੰਦੀ</language>
+			<language type="hr">ਕ੍ਰੋਏਸ਼ਿਆਈ</language>
+			<language type="ht">ਹਾਈਟਿਅਨ</language>
+			<language type="hu">ਹੰਗੇਰੀਅਨ</language>
+			<language type="hy">ਆਰਮੀਨੀਅਨ</language>
+			<language type="id">ਇੰਡੋਨੇਸ਼ੀਆਈ</language>
+			<language type="ig">ਇਗਬੋ</language>
+			<language type="is">ਆਈਸਲੈਂਡਿਕ</language>
+			<language type="it">ਇਤਾਲਵੀ</language>
+			<language type="ja">ਜਾਪਾਨੀ</language>
+			<language type="jv">ਜਾਵਾਨੀਜ਼</language>
+			<language type="ka">ਜਾਰਜੀਅਨ</language>
+			<language type="kk">ਕਜ਼ਾਖ਼</language>
+			<language type="km">ਖਮੇਰ</language>
+			<language type="kn">ਕੰਨੜ</language>
+			<language type="ko">ਕੋਰੀਆਈ</language>
+			<language type="ks">ਕਸ਼ਮੀਰੀ</language>
+			<language type="ku">ਕੁਰਦਿਸ਼</language>
+			<language type="ky">ਕਿਰਗੀਜ਼</language>
+			<language type="la">ਲੈਟਿਨ</language>
+			<language type="lb">ਲਕਜ਼ਮਬਰਗਿਸ਼</language>
+			<language type="lo">ਲਾਓ</language>
+			<language type="lt">ਲਿਥੁਆਨੀਅਨ</language>
+			<language type="lv">ਲਾਟਵਿਅਨ</language>
+			<language type="mg">ਮਾਲਾਗੈਸੀ</language>
+			<language type="mi">ਮਾਉਰੀ</language>
+			<language type="mk">ਮੈਕਡੋਨੀਅਨ</language>
+			<language type="ml">ਮਲਿਆਲਮ</language>
+			<language type="mr">ਮਰਾਠੀ</language>
+			<language type="ms">ਮਲਯ</language>
+			<language type="mt">ਮਾਲਟੀਜ਼</language>
+			<language type="my">ਬਰਮੀ</language>
+			<language type="nb">ਨੌਰਵੇਜਿਅਨ ਬੋਕਮਲ</language>
+			<language type="ne">ਨੇਪਾਲੀ</language>
+			<language type="nl">ਡੱਚ</language>
+			<language type="nl_BE">ਫਲੈਮਿਸ਼</language>
+			<language type="nn">ਨੌਰਵੇਜਿਅਨ ਨਿਨੋਰਸ੍ਕ</language>
+			<language type="no" draft="contributed">ਨਾਰਵੇਜੀਅਨ</language>
+			<language type="or">ਉੜੀਆ</language>
+			<language type="pa">ਪੰਜਾਬੀ</language>
+			<language type="pl">ਪੋਲਿਸ਼</language>
+			<language type="ps">ਪਸ਼ਤੋ</language>
+			<language type="pt">ਪੁਰਤਗਾਲੀ</language>
+			<language type="pt_BR">ਬ੍ਰਾਜ਼ਿਲੀਅਨ ਪੁਰਤਗਾਲੀ</language>
+			<language type="pt_PT">ਯੂਰੋਪੀਅਨ ਪੁਰਤਗਾਲੀ</language>
+			<language type="qu">ਕਿਊਚੁਆ</language>
+			<language type="rm">ਰੋਮਾਂਸ਼</language>
+			<language type="ro">ਰੋਮਾਨੀਆਈ</language>
+			<language type="ru">ਰੂਸੀ</language>
+			<language type="sa">ਸੰਸਕ੍ਰਿਤ</language>
+			<language type="sd">ਸਿੰਧੀ</language>
+			<language type="si">ਸਿੰਹਾਲਾ</language>
+			<language type="sk">ਸਲੋਵਾਕ</language>
+			<language type="sl">ਸਲੋਵੇਨੀਅਨ</language>
+			<language type="so">ਸੋਮਾਲੀ</language>
+			<language type="sq">ਅਲਬਾਨੀਅਨ</language>
+			<language type="sr">ਸਰਬਿਆਈ</language>
+			<language type="su">ਸੂਡਾਨੀ</language>
+			<language type="sv">ਸਵੀਡਿਸ਼</language>
+			<language type="sw">ਸਵਾਹਿਲੀ</language>
+			<language type="ta">ਤਮਿਲ</language>
+			<language type="te">ਤੇਲਗੂ</language>
+			<language type="tg">ਤਾਜਿਕ</language>
+			<language type="th">ਥਾਈ</language>
+			<language type="ti">ਟਿਗਰੀਨਿਆ</language>
+			<language type="tk">ਤੁਰਕਮੇਨ</language>
+			<language type="to">ਟੌਂਗਨ</language>
+			<language type="tr">ਤੁਰਕਿਸ਼</language>
+			<language type="tt">ਤਤਾਰ</language>
+			<language type="tw" draft="contributed">ਤ੍ਵਿ</language>
+			<language type="ug">ਉਇਗੁਰ</language>
+			<language type="uk">ਯੂਕਰੇਨੀਅਨ</language>
+			<language type="und">ਅਗਿਆਤ ਭਾਸ਼ਾ</language>
+			<language type="ur">ਉਰਦੂ</language>
+			<language type="uz">ਉਜ਼ਬੇਕ</language>
+			<language type="vi">ਵਿਯਤਨਾਮੀ</language>
+			<language type="wo">ਵੋਲੋਫ</language>
+			<language type="xh">ਖੋਸਾ</language>
+			<language type="yo">ਯੋਰੂਬਾ</language>
+			<language type="zgh">ਸਟੈਂਡਰਡ ਮੋਰੋਕੈਨ ਟੈਮਾਜ਼ਾਈਟ</language>
+			<language type="zh">ਚੀਨੀ</language>
+			<language type="zh_Hans">ਸਰਲ ਕੀਤੀ ਚੀਨੀ</language>
+			<language type="zh_Hant">ਰਵਾਇਤੀ ਚੀਨੀ</language>
+			<language type="zu">ਜ਼ੁਲੂ</language>
+			<language type="zxx">ਕੋਈ ਭਾਸ਼ਾ-ਵਿਗਿਆਨਿਕ ਸਮੱਗਰੀ ਨਹੀਂ</language>
+		</languages>
+		<scripts>
+			<script type="Arab">ਅਰਬੀ</script>
+			<script type="Armn">ਆਰਮੀਨੀਅਨ</script>
+			<script type="Beng">ਬੰਗਾਲੀ</script>
+			<script type="Bopo">ਬੋਪੋਮੋਫੋ</script>
+			<script type="Brai">ਬ੍ਰੇਲ</script>
+			<script type="Cyrl">ਸਿਰੀਲਿਕ</script>
+			<script type="Deva">ਦੇਵਨਾਗਰੀ</script>
+			<script type="Ethi">ਐਥਿਓਪਿਕ</script>
+			<script type="Geor">ਜਾਰਜੀਅਨ</script>
+			<script type="Grek">ਗ੍ਰੀਕ</script>
+			<script type="Gujr">ਗੁਜਰਾਤੀ</script>
+			<script type="Guru">ਗੁਰਮੁਖੀ</script>
+			<script type="Hang">ਹੰਗੁਲ</script>
+			<script type="Hani">ਹਾਨ</script>
+			<script type="Hans">ਸਰਲ ਕੀਤੀ</script>
+			<script type="Hans" alt="stand-alone">ਸਰਲ ਕੀਤੀ ਹਾਨ</script>
+			<script type="Hant">ਰਵਾਇਤੀ</script>
+			<script type="Hant" alt="stand-alone">ਰਵਾਇਤੀ ਹਾਨ</script>
+			<script type="Hebr">ਹਿਬਰੂ</script>
+			<script type="Hira">ਹਿਰਾਗਾਨਾ</script>
+			<script type="Jpan">ਜਾਪਾਨੀ</script>
+			<script type="Kana">ਕਾਟਾਕਾਨਾ</script>
+			<script type="Khmr">ਖਮੇਰ</script>
+			<script type="Knda">ਕੰਨੜ</script>
+			<script type="Kore">ਕੋਰੀਆਈ</script>
+			<script type="Laoo">ਲਾਓ</script>
+			<script type="Latn">ਲੈਟਿਨ</script>
+			<script type="Mlym">ਮਲਿਆਲਮ</script>
+			<script type="Mong">ਮੰਗੋਲੀਅਨ</script>
+			<script type="Mymr">ਮਿਆਂਮਾਰ</script>
+			<script type="Orya">ਉੜੀਆ</script>
+			<script type="Sinh">ਸਿੰਹਾਲਾ</script>
+			<script type="Taml">ਤਮਿਲ</script>
+			<script type="Telu">ਤੇਲਗੂ</script>
+			<script type="Thaa">ਥਾਨਾ</script>
+			<script type="Thai">ਥਾਈ</script>
+			<script type="Tibt">ਤਿੱਬਤੀ</script>
+			<script type="Zsym">ਪ੍ਰਤੀਕ ਲਿਪੀ</script>
+			<script type="Zxxx">ਅਲਿਖਤ</script>
+			<script type="Zyyy">ਸਧਾਰਨ</script>
+			<script type="Zzzz">ਅਗਿਆਤ ਲਿਪੀ</script>
+		</scripts>
+		<territories>
+			<territory type="001">ਵਿਸ਼ਵ</territory>
+			<territory type="002">ਅਫ਼ਰੀਕਾ</territory>
+			<territory type="003">ਉੱਤਰ ਅਮਰੀਕਾ</territory>
+			<territory type="005">ਦੱਖਣ ਅਮਰੀਕਾ</territory>
+			<territory type="009">ਓਸ਼ਨਿਆ</territory>
+			<territory type="011">ਪੱਛਮੀ ਅਫ਼ਰੀਕਾ</territory>
+			<territory type="013">ਕੇਂਦਰੀ ਅਮਰੀਕਾ</territory>
+			<territory type="014">ਪੂਰਬੀ ਅਫ਼ਰੀਕਾ</territory>
+			<territory type="015">ਉੱਤਰੀ ਅਫ਼ਰੀਕਾ</territory>
+			<territory type="017">ਮੱਧਮ ਅਫ਼ਰੀਕਾ</territory>
+			<territory type="018">ਦੱਖਣੀ ਅਫ਼ਰੀਕਾ</territory>
+			<territory type="019">ਅਮਰੀਕਾ</territory>
+			<territory type="021">ਉੱਤਰੀ ਅਮਰੀਕਾ</territory>
+			<territory type="029">ਕੈਰੇਬੀਅਨ</territory>
+			<territory type="030">ਪੂਰਬੀ ਏਸ਼ੀਆ</territory>
+			<territory type="034">ਦੱਖਣੀ ਏਸ਼ੀਆ</territory>
+			<territory type="035">ਦੱਖਣ-ਪੂਰਬੀ ਏਸ਼ੀਆ</territory>
+			<territory type="039">ਦੱਖਣੀ ਯੂਰਪ</territory>
+			<territory type="053">ਔਸਟ੍ਰਾਲੇਸ਼ੀਆ</territory>
+			<territory type="054">ਮੈਲਾਨੇਸ਼ੀਆ</territory>
+			<territory type="057">ਮਾਇਕ੍ਰੋਨੇਸ਼ੀਆਈ ਖੇਤਰ</territory>
+			<territory type="061">ਪੋਲਿਨੇਸ਼ੀਆ</territory>
+			<territory type="142">ਏਸ਼ੀਆ</territory>
+			<territory type="143">ਕੇਂਦਰੀ ਏਸ਼ੀਆ</territory>
+			<territory type="145">ਪੱਛਮੀ ਏਸ਼ੀਆ</territory>
+			<territory type="150">ਯੂਰਪ</territory>
+			<territory type="151">ਪੂਰਬੀ ਯੂਰਪ</territory>
+			<territory type="154">ਉੱਤਰੀ ਯੂਰਪ</territory>
+			<territory type="155">ਪੱਛਮੀ ਯੂਰਪ</territory>
+			<terr

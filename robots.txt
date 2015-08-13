@@ -1,0 +1,14 @@
+Sitemap: https://www.adhs-studien.info/sitemap.php
+
+User-agent: *
+
+Allow: /
+Disallow: *.pdf$
+Disallow: /warndt20/
+Disallow: /kurse/
+Disallow: /borderline/
+Disallow: /admin/
+Disallow: /valentin/
+Disallow: /psfk-io/
+Disallow: /js/
+Disallow: /php/

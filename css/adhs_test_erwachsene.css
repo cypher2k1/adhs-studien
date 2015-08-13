@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+table {
+	background:#e9eae8;
+	background:rgba(105,115,100,.15);
+	-webkit-border-radius:0 0 10px 10px;
+	-moz-border-radius:0 0 10px 10px;
+	border-radius:0 0 10px 10px;
+	border-collapse:collapse;
+	border-spacing:0;
+	text-align:left;
+	width:100%;}
+	
+caption {
+  background:#656e70;
+  background:-webkit-gradient(linear, left top, left bottom, from(#656e70), color-stop(50%, #515b5c), color-stop(50.1%, #465153), to(#323e40));
+  background:-moz-linear-gradient(top, #656e70, #515b5c 50%, #465153 50.1%, #323e40);
+  background:linear-gradient(top, #656e70, #515b5c 50%, #465153 50.1%, #323e40);
+	-webkit-border-radius:10px 10px 0 0;
+	-moz-border-radius:10px 10px 0 0;
+	border-radius:10px 10px 0 0;
+	color:#fff;
+	font-size:16px;
+	font-weight:bold;
+  padding:10px 0 10px 10px;
+  text-align:left;
+	text-shadow:0 -1px 1px rgba(0,0,0,.5);}
+	
+small {
+	color:#a3a8a9;}
+	
+td {
+	border-bottom:1px solid #fafafa;
+	border-bottom:1px solid rgba(255,255,255,.5);
+	height:59px;
+	padding:6px 10px;
+	color:rgba(0,0,0,.7);}
+	
+tr:last-child td {
+	border-bottom:none;}
+	
+/* !Gestaltung der Spalten ---------- */	
+	
+td:first-child {
+	padding-right:42px;}
+	
+td:nth-child(2) {
+	text-align:center;}
+	
+/* !Gestaltung der Zeilen ---------- */	
+	
+ td {
+  background:#c3c7c1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d9dcd8), color-stop(50%, #d2d5d0), color-stop(50.1%, #cbcec9), to(#c3c7c1));
+  background: -moz-linear-gradient(top, #d9dcd8, #d2d5d0 50%, #cbcec9 50.1%, #c3c7c1);
+  background: linear-gradient(top, #d9dcd8, #d2d5d0 50%, #cbcec9 50.1%, #c3c7c1);}
+
+.green {
+    background:#43eb3f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#b3eba1), color-stop(50%, #98eb87), color-stop(50.1%, #6deb63), to(#43eb3f));
+    background: -moz-linear-gradient(top, #b3eba1, #98eb87 50%, #6deb63 50.1%, #43eb3f);
+    background: linear-gradient(top, #b3eba1, #98eb87 50%, #6deb63 50.1%, #43eb3f);}
+
+tr:last-child td:first-child {
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-left-radius: 10px;}
+	
+tr:last-child td:last-child {	
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-right-radius: 10px;}
+
+.p1 {
+    font-family: "Trebuchet MS", Helvetica, Verdana, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+}

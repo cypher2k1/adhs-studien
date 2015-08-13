@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 9852 $"/>
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
+		<language type="it"/>
+	</identity>
+	<localeDisplayNames>
+		<localeDisplayPattern>
+			<localePattern>{0} ({1})</localePattern>
+			<localeSeparator>{0}, {1}</localeSeparator>
+			<localeKeyTypePattern>{0}: {1}</localeKeyTypePattern>
+		</localeDisplayPattern>
+		<languages>
+			<language type="aa">afar</language>
+			<language type="ab">abcaso</language>
+			<language type="ace">accinese</language>
+			<language type="ach">acioli</language>
+			<language type="ada">adangme</language>
+			<language type="ady">adyghe</language>
+			<language type="ae">avestan</language>
+			<language type="af">afrikaans</language>
+			<language type="afh">afrihili</language>
+			<language type="agq" draft="contributed">aghem</language>
+			<language type="ain">ainu</language>
+			<language type="ak">akan</language>
+			<language type="akk">accado</language>
+			<language type="ale">aleuto</language>
+			<language type="alt">altai meridionale</language>
+			<language type="am">amarico</language>
+			<language type="an">aragonese</language>
+			<language type="ang">inglese antico</language>
+			<language type="anp" draft="contributed">angika</language>
+			<language type="ar">arabo</language>
+			<language type="ar_001">arabo moderno standard</language>
+			<language type="arc">aramaico</language>
+			<language type="arn">araucano</language>
+			<language type="arp">arapaho</language>
+			<language type="arw">aruaco</language>
+			<language type="as">assamese</language>
+			<language type="asa" draft="contributed">asu</language>
+			<language type="ast">asturiano</language>
+			<language type="av">avaro</language>
+			<language type="awa">awadhi</language>
+			<language type="ay">aymara</language>
+			<language type="az">azerbaigiano</language>
+			<language type="az" alt="short">azero</language>
+			<language type="ba">baschiro</language>
+			<language type="bal">beluci</language>
+			<language type="ban">balinese</language>
+			<language type="bas">basa</language>
+			<language type="bax" draft="contributed">bamun</language>
+			<language type="bbj" draft="contributed">ghomala</language>
+			<language type="be">bielorusso</language>
+			<language type="bej">begia</language>
+			<language type="bem">wemba</language>
+			<language type="bez" draft="contributed">bena</language>
+			<language type="bfd" draft="contributed">bafut</language>
+			<language type="bg">bulgaro</language>
+			<language type="bho">bhojpuri</language>
+			<language type="bi">bislama</language>
+			<language type="bik">bicol</language>
+			<language type="bin">bini</language>
+			<language type="bkm" draft="contributed">kom</language>
+			<language type="bla">siksika</language>
+			<language type="bm">bambara</language>
+			<language type="bn">bengalese</language>
+			<language type="bo">tibetano</language>
+			<language type="br">bretone</language>
+			<language type="bra">braj</language>
+			<language type="brx" draft="contributed">bodo</language>
+			<language type="bs">bosniaco</language>
+			<language type="bss" draft="contributed">akoose</language>
+			<language type="bua">buriat</language>
+			<language type="bug">bugi</language>
+			<language type="bum" draft="contributed">bulu</language>
+			<language type="byn">blin</language>
+			<language type="byv" draft="contributed">medumba</language>
+			<language type="ca">catalano</language>
+			<language type="cad">caddo</language>
+			<language type="car">caribico</language>
+			<language type="cay" draft="contributed">cayuga</language>
+			<language type="cch" draft="contributed">atsam</language>
+			<language type="ce">ceceno</language>
+			<language type="ceb">cebuano</language>
+			<language type="cgg" draft="contributed">chiga</language>
+			<language type="ch">chamorro</language>
+			<language type="chb">chibcha</language>
+			<language type="chg">ciagataico</language>
+			<language type="chk">chuukese</language>
+			<language type="chm">mari</language>
+			<language type="chn">gergo chinook</language>
+			<language type="cho">choctaw</language>
+			<language type="chp">chipewyan</language>
+			<language type="chr">cherokee</language>
+			<language type="chy">cheyenne</language>
+			<language type="ckb" draft="contributed">curdo sorani</language>
+			<language type="co">corso</language>
+			<language type="cop">copto</language>
+			<language type="cr">cree</language>
+			<language type="crh">turco crimeo</language>
+			<language type="cs">ceco</language>
+			<language type="csb">kashubian</language>
+			<language type="cu">slavo della Chiesa</language>
+			<language type="cv">chuvash</language>
+			<language type="cy">gallese</language>
+			<language type="da">danese</language>
+			<language type="dak">dakota</language>
+			<language type="dar">dargwa</language>
+			<language type="dav" draft="contributed">taita</language>
+			<language type="de">tedesco</language>
+			<language type="de_AT">tedesco austriaco</language>
+			<language type="de_CH">alto tedesco svizzero</language>
+			<language type="del">delaware</language>
+			<language type="den">slave</language>
+			<language type="dgr">dogrib</language>
+			<language type="din">dinca</language>
+			<language type="dje" draft="contributed">zarma</language>
+			<language type="doi">dogri</language>
+			<language type="dsb">basso sorabo</language>
+			<language type="dua">duala</language>
+			<language type="dum">olandese medio</language>
+			<language type="dv">divehi</language>
+			<language type="dyo" draft="contributed">jola-fony</language>
+			<language type="dyu">diula</language>
+			<language type="dz">dzongkha</language>
+			<language type="dzg" draft="contributed">dazaga</language>
+			<language type="ebu" draft="contributed">embu</language>
+			<language type="ee">ewe</language>
+			<language type="efi">efik</language>
+			<language type="egy">egiziano antico</language>
+			<language type="eka">ekajuka</language>
+			<language type="el">greco</language>
+			<language type="elx">elamitico</language>
+			<language type="en">inglese</language>
+			<language type="en_AU">inglese australiano</language>
+			<language type="en_CA">inglese canadese</language>
+			<language type="en_GB">inglese britannico</language>
+			<language type="en_GB" alt="short">inglese (GB)</language>
+			<language type="en_US">inglese americano</language>
+			<language type="en_US" alt="short">inglese (USA)</language>
+			<language type="enm">inglese medio</language>
+			<language type="eo">esperanto</language>
+			<language type="es">spagnolo</language>
+			<language type="es_419">spagnolo latinoamericano</language>
+			<language type="es_ES">spagnolo europeo</language>
+			<language type="es_MX">spagnolo messicano</language>
+			<language type="et">estone</language>
+			<language type="eu">basco</language>
+			<language type="ewo">ewondo</language>
+			<language type="fa">persiano</language>
+			<language type="fan">fang</language>
+			<language type="fat">fanti</language>
+			<language type="ff">fulah</language>
+			<language type="fi">finlandese</language>
+			<language type="fil">filippino</language>
+			<language type="fj">figiano</language>
+			<language type="fo">faroese</language>
+			<language type="fon" draft="contributed">fon</language>
+			<language type="fr">francese</language>
+			<language type="fr_CA">francese canadese</language>
+			<language type="fr_CH">francese svizzero</language>
+			<language type="frm">francese medio</language>
+			<language type="fro">francese antico</language>
+			<language type="frr">frisone settentrionale</language>
+			<language type="frs" draft="contributed">frisone orientale</language>
+			<language type="fur">friulano</language>
+			<language type="fy">frisone occidentale</language>
+			<language type="ga">irlandese</language>
+			<language type="gaa">ga</language>
+			<language type="gay">gayo</language>
+			<language type="gba">gbaya</language>
+			<language type="gd">gaelico scozzese</language>
+			<language type="gez">geez</language>
+			<language type="gil">gilbertese</language>
+			<language type="gl">galiziano</language>
+			<language type="gmh">tedesco medio alto</language>
+			<language type="gn">guarana</language>
+			<language type="goh">tedesco antico alto</language>
+			<language type="gon">gondi</language>
+			<language type="gor">gorontalo</language>
+			<language type="got">gotico</language>
+			<language type="grb">gerbo</language>
+			<language type="grc">greco antico</language>
+			<language type="gsw">tedesco svizzero</language>
+			<language type="gu">gujarati</language>
+			<language type="guz" draft="contributed">gusii</language>
+			<language type="gv">manx</language>
+			<language type="gwi">gwichʼin</language>
+			<language type="ha">haussa</language>
+			<language type="hai">haida</language>
+			<language type="haw">hawaiano</language>
+			<language type="he">ebraico</language>
+			<language type="hi">hindi</language>
+			<language type="hil">hiligayna</language>
+			<language type="hit">hittite</language>
+			<language type="hmn">hmong</language>
+			<language type="ho">hiri motu</language>
+			<language type="hr">croato</language>
+			<language type="hsb">alto sorabo</language>
+			<language type="ht">haitiano</language>
+			<language type="hu">ungherese</language>
+			<language type="hup">hupa</language>
+			<language type="hy">armeno</language>
+			<language type="hz">herero</language>
+			<language type="ia">interlingua</language>
+			<language type="iba">iban</language>
+			<language type="ibb" draft="contributed">ibibio</language>
+			<language type="id">indonesiano</language>
+			<language type="ie">interlingue</language>
+			<language type="ig">igbo</language>
+			<language type="ii">sichuan yi</language>
+			<language type="ik">inupiak</language>
+			<language type="ilo">ilocano</language>
+			<language type="inh">ingush</language>
+			<language type="io">ido</language>
+			<language type="is">islandese</language>
+			<language type="it">italiano</language>
+			<language type="iu">inuktitut</language>
+			<language type="ja">giapponese</language>
+			<language type="jbo">lojban</language>
+			<language type="jgo" draft="contributed">Ngamambo</language>
+			<language type="jmc" draft="contributed">machame</language>
+			<language type="jpr">giudeo persiano</language>
+			<language type="jrb">giudeo arabo</language>
+			<language type="jv">giavanese</language>
+			<language type="ka">georgiano</language>
+			<language type="kaa">kara-kalpak</language>
+			<language type="kab">kabyle</language>
+			<language type="kac">kachin</language>
+			<language type="kaj" draft="contributed">kai</language>
+			<language type="kam">kamba</language>
+			<language type="kaw">kawi</language>
+			<language type="kbd">kabardia</language>
+			<language type="kbl" draft="contributed">kanembu</language>
+			<language type="kcg" draft="contributed">tyap</language>
+			<language type="kde" draft="contributed">makonde</language>
+			<language type="kea" draft="contributed">capoverdiano</language>
+			<language type="kfo" draft="contributed">koro</language>
+			<language type="kg">kongo</language>
+			<language type="kha">khasi</language>
+			<language type="kho">khotanese</language>
+			<language type="khq" draft="contributed">koyra chiini</language>
+			<language type="ki">kikuyu</language>
+			<language type="kj">kuanyama</language>
+			<language type="kk">kazako</language>
+			<language type="kkj" draft="contributed">kako</language>
+			<language type="kl">kalaallisut</language>
+			<language type="kln" draft="contributed">kalenjin</language>
+			<language type="km">khmer</language>
+			<language type="kmb">kimbundu</language>
+			<language type="kn">kannada</language>
+			<language type="ko">coreano</language>
+			<language type="kok">konkani</language>
+			<language type="kos">kosraean</language>
+			<language type="kpe">kpelle</language>
+			<language type="kr">kanuri</language>
+			<language type="krc">karachay-Balkar</language>
+			<language type="krl">careliano</language>
+			<language type="kru">kurukh</language>
+			<language type="ks">kashmiri</language>
+			<language type="ksb" draft="contributed">shambala</language>
+			<language type="ksf" draft="contributed">bafia</language>
+			<language type="ksh" draft="contributed">coloniese</language>
+			<language type="ku">curdo</language>
+			<language type="kum">kumyk</language>
+			<language type="kut">kutenai</language>
+			<language type="kv">komi</language>
+			<language type="kw">cornico</language>
+			<language type="ky">kirghiso</language>
+			<language type="la">latino</language>
+			<language type="lad">ladino</language>
+			<language type="lag" draft="contributed">langi</language>
+			<language type="lah">lahnda</language>
+			<language type="lam">lamba</language>
+			<language type="lb">lussemburghese</language>
+			<language type="lez">lezghian</language>
+			<language type="lg">ganda</language>
+			<language type="li">limburgese</language>
+			<language type="ln">lingala</language>
+			<language type="lo">lao</language>
+			<language type="lol">lolo bantu</language>
+			<language type="loz">lozi</language>
+			<language type="lt">lituano</language>
+			<language type="lu">luba-katanga</language>
+			<language type="lua">luba-lulua</language>
+			<language type="lui">luiseno</language>
+			<language type="lun">lunda</language>
+			<language type="luo">luo</language>
+			<language type="lus">lushai</language>
+			<language type="luy" draft="contributed">luyia</language>
+			<language type="lv">lettone</language>
+			<language type="mad">madurese</language>
+			<language type="maf" draft="contributed">mafa</language>
+			<language type="mag">magahi</language>
+			<language type="mai">maithili</language>
+			<language type="mak">makasar</language>
+			<language type="man">mandingo</language>
+			<language type="mas">masai</language>
+			<language type="mde" draft="contributed">maba</language>
+			<language type="mdf">moksha</language>
+			<language type="mdr">mandar</language>
+			<language type="men">mende</language>
+			<language type="mer" draft="contributed">meru</language>
+			<language type="mfe" draft="contributed">creolo mauriziano</language>
+			<language type="mg">malgascio</language>
+			<language type="mga">irlandese medio</language>
+			<language type="mgh" draft="contributed">makhuwa-meetto</language>
+			<language type="mgo" draft="contributed">Meta'</language>
+			<language type="mh">marshallese</language>
+			<language type="mi">maori</language>
+			<language type="mic">micmac</language>
+			<language type="min">menangkabau</language>
+			<language type="mk">macedone</language>
+			<language type="ml">malayalam</language>
+			<language type="mn">mongolo</language>
+			<language type="mnc">manchu</language>
+			<language type="mni">manipuri</language>
+			<language type="moh">mohawk</language>
+			<language type="mos">mossi</language>
+			<language type="mr">marathi</language>
+			<language type="ms">malese</language>
+			<language type="mt">maltese</language>
+			<language type="mua" draft="contributed">mundang</language>
+			<language type="mul">multilingua</language>
+			<language type="mus">creek</language>
+			<language type="mwl">mirandese</language>
+			<language type="mwr">marwari</language>
+			<language type="my">birmano</language>
+			<language type="mye" draft="contributed">myene</language>
+			<language type="myv">erzya</language>
+			<language type="na">nauru</language>
+			<language type="nap">napoletano</language>
+			<language type="naq" draft="contributed">nama</language>
+			<language type="nb">norvegese bokmal</language>
+			<language type="nd">ndebele del nord</language>
+			<language type="nds">basso tedesco</language>
+			<language type="ne">nepalese</language>
+			<language type="new">newari</language>
+			<language type="ng">ndonga</language>
+			<language type="nia">nias</language>
+			<language type="niu">niue</language>
+			<language type="nl">olandese</language>
+			<language type="nl_BE">fiammingo</language>
+			<language type="nmg" draft="contributed">kwasio</language>
+			<language type="nn">norvegese nynorsk</language>
+			<language type="nnh" draft="contributed">ngiemboon</language>
+			<language type="no">norvegese</language>
+			<language type="nog">nogai</language>
+			<language type="non">norse antico</language>
+			<language type="nqo">n'ko</language>
+			<language type="nr">ndebele del sud</language>
+			<language type="nso">sotho del nord</language>
+			<language type="nus" draft="contributed">nuer</language>
+			<language type="nv">navajo</language>
+			<language type="nwc">newari classico</language>
+			<language type="ny">nyanja</language>
+			<language type="nym">nyamwezi</language>
+			<language type="nyn">nyankole</language>
+			<language type="nyo">nyoro</language>
+			<language type="nzi">nzima</language>
+			<language type="oc">occitano</language>
+			<language type="oj">ojibwa</language>
+			<language type="om">oromo</language>
+			<language type="or">oriya</language>
+			<language type="os">ossetico</language>
+			<language type="osa">osage</language>
+			<language type="ota">turco ottomano</language>
+			<language type="pa">punjabi</language>
+			<language type="pag">pangasinan</language>
+			<language type="pal">pahlavi</language>
+			<language type="pam">pampanga</language>
+			<language type="pap">papiamento</language>
+			<language type="pau">palau</language>
+			<language type="peo">persiano antico</language>
+			<language type="phn">fenicio</language>
+			<language type="pi">pali</language>
+			<language type="pl">polacco</language>
+			<language type="pon">ponape</language>
+			<language type="pro">provenzale antico</language>
+			<language type="ps">pashto</language>
+			<language type="pt">portoghese</language>
+			<language type="pt_BR">portoghese brasiliano</language>
+			<language type="pt_PT">portoghese europeo</language>
+			<language type="qu">quechua</language>
+			<language type="raj">rajasthani</language>
+			<language type="rap">rapanui</language>
+			<language type="rar">rarotonga</language>
+			<language type="rm">romancio</language>
+			<language type="rn">rundi</language>
+			<language type="ro">rumeno</language>
+			<language type="ro_MD">moldavo</language>
+			<language type="rof" draft="contributed">rombo</language>
+			<language type="rom">romani</language>
+			<language type="root" draft="contributed">root</language>
+			<language type="ru">russo</language>
+			<language type="rup">arumeno</language>
+			<language type="rw">kinyarwanda</language>
+			<language type="rwk" draft="contributed">rwa</language>
+			<language type="sa">sanscrito</language>
+			<language type="sad">sandawe</language>
+			<language type="sah">yakut</language>
+			<language type="sam">aramaico samaritano</language>
+			<language type="saq" draft="contributed">samburu</language>
+			<language type="sas">sasak</language>
+			<language type="sat">santali</language>
+			<language type="sba" draft="contributed">ngambay</language>
+			<language type="sbp" draft="contributed">sangu</language>
+			<language type="sc">sardo</language>
+			<language type="scn">siciliano</language>
+			<language type="sco">scozzese</language>
+			<language type="sd">sindhi</language>
+			<language type="se">sami del nord</language>
+			<language type="see" draft="contributed">seneca</language>
+			<language type="seh" draft="contributed">sena</language>
+			<language type="sel">selkup</language>
+			<language type="ses" draft="contributed">koyraboro senni</language>
+			<language type="sg">sango</language>
+			<language type="sga">irlandese antico</language>
+			<language type="sh">serbo-croato</language>
+			<language type="shi" draft="contributed">tachelhit</language>
+			<language type="shn">shan</language>
+			<language type="shu" draft="contributed">chadian arabic</language>
+			<language type="si">singalese</language>
+			<language type="sid">sidamo</language>
+			<language type="sk">slovacco</language>
+			<language type="sl">sloveno</language>
+			<language type="sm">samoano</language>
+			<language type="sma">sami del sud</language>
+			<language type="smj">sami lule</language>
+			<language type="smn">sami inari</language>
+			<language type="sms">sami skolt</language>
+			<language type="sn">shona</language>
+			<language type="snk">soninke</language>
+			<language type="so">somalo</language>
+			<language type="sog">sogdiano</language>
+			<language type="sq">albanese</language>
+			<language type="sr">serbo</language>
+			<language type="srn">sranan tongo</language>
+			<language type="srr">serer</language>
+			<language type="ss">swati</language>
+			<language type="ssy" draft="contributed">saho</language>
+			<language type="st">sotho del sud</language>
+			<language type="su">sundanese</language>
+			<language type="suk">sukuma</language>
+			<language type="sus">susu</language>
+			<language type="sux">sumero</language>
+			<language type="sv">svedese</language>
+			<language type="sw">swahili</language>
+			<language type="swb">comoriano</language>
+			<language type="swc" draft="contributed">congo swahili</language>
+			<language type="syc" draft="contributed">siriaco classico</language>
+			<language type="syr">siriaco</language>
+			<language type="ta">tamil</language>
+			<language type="te">telugu</language>
+			<language type="tem">temne</language>
+			<language type="teo" draft="contributed">teso</language>
+			<language type="ter">tereno</language>
+			<language type="tet">tetum</language>
+			<language type="tg">tagicco</language>
+			<language type="th">thai</language>
+			<language type="ti">tigrino</language>
+			<language type="tig">tigre</language>
+			<language type="tiv" draft="contributed">tiv</language>
+			<language type="tk">turcomanno</language>
+			<language type="tkl">tokelau</language>
+			<language type="tl">tagalog</language>
+			<language type="tlh">klingon</language>
+			<language type="tli">tlingit</language>
+			<language type="tmh">tamashek</language>
+			<language type="tn">tswana</language>
+			<language type="to">tongano</language>
+			<language type="tog">nyasa del Tonga</language>
+			<language type="tpi">tok pisin</language>
+			<language type="tr">turco</language>
+			<language type="trv" draft="contributed">taroko</language>
+			<language type="ts">tsonga</language>
+			<language type="tsi">tsimshian</language>
+			<language type="tt">tatarico</language>
+			<language type="tum">tumbuka</language>
+			<language type="tvl">tuvalu</language>
+			<language type="tw">ci</language>
+			<language type="twq" draft="contributed">tasawaq</language>
+			<language type="ty">taitiano</language>
+			<language type="tyv">tuvinian</language>
+			<language type="tzm" draft="contributed">tamazight</language>
+			<language type="udm">udmurt</language>
+			<language type="ug">uigurico</language>
+			<language type="ug" alt="variant">uiguro</language>
+			<language type="uga">ugaritico</language>
+			<language type="uk">ucraino</language>
+			<language type="umb">mbundu</language>
+			<language type="und">lingua imprecisata</language>
+			<language type="ur">urdu</language>
+			<language type="uz">usbeco</language>
+			<language type="vai" draft="contributed">vai</language>
+			<language type="ve">venda</language>
+			<language type="vi">vietnamita</language>
+			<language type="vo">volapük</language>
+			<language type="vot">voto</language>
+			<language type="vun" draft="contributed">vunjo</language>
+			<language type="wa">vallone</language>
+			<language type="wae" draft="contributed">walser</language>
+			<language type="wal">walamo</language>
+			<language type="war">waray</language>
+			<language type="was">washo</language>
+			<language type="wo">wolof</language>
+			<language type="xal">kalmyk</language>
+			<language type="xh">xhosa</language>
+			<language type="xog" draft="contributed">soga</language>
+			<language type="yao">yao (bantu)</language>
+			<language type="yap">yapese</language>
+			<language type="yav" draft="contributed">yangben</language>
+			<language type="ybb" draft="contributed">yemba</language>
+			<language type="yi">yiddish</language>
+			<language type="yo">yoruba</language>
+			<language type="yue">cantonese</language>
+			<language type="za">zhuang</language>
+			<language type="zap">zapotec</language>
+			<language type="zbl" draft="contributed">blissymbol</language>
+			<language type="zen">zenaga</language>
+			<language type="zgh">tamazight del Marocco standard</language>
+			<language type="zh">cinese</language>
+			<language type="zh_Hans">cinese semplificato</language>
+			<language type="zh_Hant">cinese tradizionale</language>
+			<language type="zu">zulu</language>
+			<language type="zun">zuni</language>
+			<language type="zxx">nessun contenuto linguistico</language>
+			<language type="zza" draft="contributed">zaza</language>
+		</languages>
+		<scripts>
+			<script type="Afak" draft="contributed">afaka</script>
+			<script type="Arab">arabo</script>
+			<script type="Arab" alt="variant">arabo-persiano</script>
+			<script type="Armi" draft="contributed">aramaico imperiale</script>
+			<script type="Armn">armeno</script>
+			<script type="Avst" draft="contributed">avestico</script>
+			<script type="Bali">balinese</script>
+			<script type="Bamu" draft="contributed">bamum</script>
+			<script type="Bass" draft="contributed">Bassa Vah</script>
+			<script type="Batk">batak</script>
+			<script type="Beng">bengali</script>
+			<script type="Blis">simboli bliss</script>
+			<script type="Bopo">bopomofo</script>
+			<script type="Brah">brahmi</script>
+			<script type="Brai">braille</script>
+			<script type="Bugi">buginese</script>
+			<script type="Buhd">buhid</script>
+			<script type="Cakm" draft="contributed">chakma</script>
+			<script type="Cans">simboli aborigeni canadesi unificati</script>
+			<script type="Cari" draft="contributed">carian</script>
+			<script type="Cham">cham</script>
+			<script type="Cher">cherokee</script>
+			<script type="Cirt">cirth</script>
+			<script type="Copt">copto</script>
+			<script type="Cprt">cipriota</script>
+			<script type="Cyrl">cirillico</script>
+			<script type="Cyrs">cirillico antica chiesa slavonica</script>
+			<script type="Deva">devanagari</script>
+			<script type="Dsrt">deseret</script>
+			<script type="Dupl" draft="contributed">stenografia duployan</script>
+			<script type="Egyd">egiziano demotico</script>
+			<script type="Egyh">ieratico egiziano</script>
+			<script type="Egyp">geroglifici egiziani</script>
+			<script type="Ethi">etiope</script>
+			<script type="Geok">kutsuri</script>
+			<script type="Geor">georgiano</script>
+			<script type="Glag">glagolitico</script>
+			<script type="Goth">gotico</script>
+			<script type="Gran" draft="contributed">grantha</script>
+			<script type="Grek">greco</script>
+			<script type="Gujr">gujarati</script>
+			<script type="Guru">gurmukhi</script>
+			<script type="Hang">hangul</script>
+			<script type="Hani">han</script>
+			<script type="Hano">hanunoo</script>
+			<script type="Hans">semplificato</script>
+			<script type="Hans" alt="stand-alone">han semplificato</script>
+			<script type="Hant">han tradizionale</script>
+			<script type="Hant" alt="stand-alone">han tradizionale</script>
+			<script type="Hebr">ebraico</script>
+			<script type="Hira">hiragana</script>
+			<script type="Hluw" draft="contributed">geroglifici anatolici</script>
+			<script type="Hmng">pahawn hmong</script>
+			<script type="Hrkt">katanaka o hiragana</script>
+			<script type="Hung">antico ungherese</script>
+			<script type="Inds">indu</script>
+			<script type="Ital">italico antico</script>
+			<script type="Java">javanese</script>
+			<script type="Jpan">giapponese</script>
+			<script type="Jurc" draft="contributed">jurchen</script>
+			<script type="Kali" draft="contributed">kayah li</script>
+			<script type="Kana">katakana</script>
+			<script type="Khar" draft="contributed">kharoshthi</script>
+			<script type="Khmr">khmer</script>
+			<script type="Khoj" draft="contributed">khojki</script>
+			<script type="Knda">kannada</script>
+			<script type="Kore">coreano</script>
+			<script type="Kpel" draft="contributed">Kpelle</script>
+			<script type="Kthi" draft="contributed">kaithi</script>
+			<script type="Lana" draft="contributed">lanna</script>
+			<script type="Laoo">lao</script>
+			<script type="Latf">variante fraktur del latino</script>
+			<script type="Latg">variante gaelica del latino</script>
+			<script type="Latn">latino</script>
+			<script type="Lepc" draft="contributed">lepcha</script>
+			<script type="Limb">limbu</script>
+			<script type="Lina">lineare A</script>
+			<script type="Linb">lineare B</script>
+			<script type="Lisu" draft="contributed">lisu</script>
+			<script type="Loma" draft="contributed">loma</script>
+			<script type="Lyci" draft="contributed">lyci</script>
+			<script type="Lydi" draft="contributed">lydi</script>
+			<script type="Mand" draft="contributed">mandaico</script>
+			<script type="Mani" draft="contributed">manicheo</script>
+			<script type="Maya" draft="contributed">geroglifici maya</script>
+			<script type="Mend" draft="contributed">mende</script>
+			<script type="Merc" draft="contributed">corsivo meroitico</script>
+			<script type="Mero" draft="contributed">meroitico</script>
+			<script type="Mlym">malayalam</script>
+			<script type="Mong">mongolo</script>
+			<script type="Moon" draft="contributed">moon</script>
+			<script type="Mroo" draft="contributed">mro</script>
+			<script type="Mtei" draft="contributed">meetei mayek</script>
+			<script type="Mymr">myanmar</script>
+			<script type="Narb" draft="contributed">arabo settentrionale antico</script>
+			<script type="Nbat" draft="contributed">nabateo</script>
+			<script type="Nkgb" draft="contributed">geba naxi</script>
+			<script type="Nkoo" draft="contributed">n'ko</script>
+			<script type="Nshu" draft="contributed">nushu</script>
+			<script type="Ogam">ogham</script>
+			<script type="Olck" draft="contributed">ol chiki</script>
+			<script type="Orkh" draft="contributed">orkhon</script>
+			<script type="Orya">oriya</script>
+			<script type="Osma">osmanya</script>
+			<script type="Palm" draft="contributed">palmireno</script>
+			<script type="Perm" draft="contributed">permico antico</script>
+			<script type="Phag" draft="contributed">phags-pa</script>
+			<script type="Phli" draft="contributed">pahlavi delle iscrizioni</script>
+			<script type="Phlp" draft="contributed">pahlavi psalter</script>
+			<script type="Phlv" draft="contributed">pahlavi book</script>
+			<script type="Phnx" draft="contributed">fenicio</script>
+			<script type="Plrd" draft="contributed">fonetica di pollard</script>
+			<script type="Prti" draft="contributed">partico delle iscrizioni</script>
+			<script type="Rjng" draft="contributed">rejang</script>
+			<script type="Roro" draft="contributed">rongorongo</script>
+			<script type="Runr">runico</script>
+			<script type="Samr" draft="contributed">samaritano</script>
+			<script type="Sara" draft="contributed">sarati</script>
+			<script type="Sarb" draft="contributed">arabo meridionale antico</script>
+			<script type="Saur" draft="contributed">saurashtra</script>
+			<script type="Sgnw" draft="contributed">linguaggio dei segni</script>
+			<script type="Shaw">shaviano</script>
+			<script type="Shrd" draft="contributed">sharada</script>
+			<script type="Sind" draft="contributed">khudawadi</script>
+			<script type="Sinh">singalese</script>
+			<script type="Sora" draft="contributed">sora sompeng</script>
+			<script type="Sund" draft="contributed">sundanese</script>
+			<script type="Sylo" draft="contributed">syloti nagri</script>
+			<script type="Syrc">siriano</script>
+			<script type="Syre" draft="contributed">siriaco estrangelo</script>
+			<script type="Syrj" draft="contributed">siriaco occidentale</script>
+			<script type="Syrn" draft="contributed">siriaco orientale</script>
+			<script type="Tagb">tagbanwa</script>
+			<script type="Takr" draft="contributed">takri</script>
+			<script type="Tale">tai le</script>
+			<script type="Talu" draft="contributed">tai lue</script>
+			<script type="Taml">tamil</script>
+			<script type="Tang" draft="contributed">tangut</script>
+			<script type="Tavt" draft="contributed">tai viet</script>
+			<script type="Telu">telugu</script>
+			<script type="Teng" draft="contributed">tengwar</script>
+			<script type="Tfng" draft="contributed">tifinagh</script>
+			<script type="Tglg">tagalog</script>
+			<script type="Thaa">thaana</script>
+			<script type="Thai">tailandese</script>
+			<script type="Tibt">tibetano</script>
+			<script type="Tirh" draft="contributed">tirhuta</script>
+			<script type="Ugar">ugarita</script>
+			<script type="Vaii" draft="contributed">vaii</script>
+			<script type="Visp" draft="contributed">alfabeto visivo</script>
+			<script type="Wara" draft="contributed">varang kshiti</script>
+			<script type="Wole" draft="contributed">woleai</script>
+			<script type="Xpeo" draft="contributed">persiano antico</script>
+			<script type="Xsux" draft="contributed">sumero-accadiano cuneiforme</script>
+			<script type="Yiii">yi</script>
+			<script type="Zinh">ereditato</script>
+			<script type="Zmth" draft="contributed">notazione matematica</script>
+			<script type="Zsym">simboli</script>
+			<script type="Zxxx">non scritto</script>
+			<script type="Zyyy">comune</script>
+			<script type="Zzzz">ignoto o non valido</script>
+		</scripts>
+		<territories>
+			<territory type="001">Mondo</territory>
+			<territory type="002">Africa</territory>
+			<territory type="003">Nord America</territory>
+			<territory type="005">America del Sud</territory>
+			<territory type="009">Oceania</territory>
+			<territory type="011">Africa occidentale</territory>
+			<territory type="013">America centrale</territory>
+			<territory type="014">Africa orientale</territory>
+			<territory type="015">Africa del Nord</territory>
+			<territory type="017">Africa centrale</territory>
+			<territory type="018">Africa del Sud</territory>
+			<territory type="019">Americhe</territory>
+			<territory type="021">America del Nord</territory>
+			<territory type="029">Caraibi</territory>
+			<territory type="030">Asia orientale</territory>
+			<territory type="034">Asia del Sud</territory>
+			<territory type="035">Asia sudorientale</territory>
+			<territory type="039">Europa del Sud</territory>
+			<territory type="053">Australasia</territory>
+			<territory type="054">Melanesia</territory>
+			<territory type="057">Regione Micronesiana</territory>
+			<territory type="061">Polinesia</territory>
+			<territory type="142">Asia</territory>
+			<territory type="143">Asia centrale</territory>
+			<territory type="145">Asia occidentale</territory>
+			<territory type="150">Europa</territory>
+			<territory type="151">Europa orientale</territory>
+			<territory type="154">Europa del Nord</territory>
+			<territory type="155">Europa occidentale</territory>
+			<territory type="419">America Latina</territory>
+			<territory type="AC">Isola di Ascensione</territory>
+			<territory type="AD">Andorra</territory>
+			<territory type="AE">Emirati Arabi Uniti</territory>
+			<territory type="AF">Afghanistan</territory>
+			<territory type="AG">Antigua e Barbuda</territory>
+			<territory type="AI">Anguilla</territory>
+			<territory type="AL">Albania</territory>
+			<territory type="AM">Armenia</territory>
+			<territory type="AN">Antille Olandesi</territory>
+			<territory type="AO">Angola</territory>
+			<territory type="AQ">Antartide</territory>
+			<territory type="AR">Argentina</territory>
+			<territory type="AS">Samoa Americane</territory>
+			<territory type="AT">Austria</territory>
+			<territory type="AU">Australia</territory>
+			<territory type="AW">Aruba</territory>
+			<territory type="AX">Isole Aland</territory>
+			<territory type="AZ">Azerbaigian</territory>
+			<territory type="BA">Bosnia Erzegovina</territory>
+			<territory type="BB">Barbados</territory>
+			<territory type="BD">Bangladesh</territory>
+			<territory type="BE">Belgio</territory>
+			<territory type="BF">Burkina Faso</territory>
+			<territory type="BG">Bulgaria</territory>
+			<territory type="BH">Bahrein</territory>
+			<territory type="BI">Burundi</territory>
+			<territory type="BJ">Benin</territory>
+			<territory type="BL">San Bartolomeo</territory>
+			<territory type="BM">Bermuda</territory>
+			<territory type="BN">Brunei</territory>
+			<territory type="BO">Bolivia</territory>
+			<territory type="BQ">Caraibi Olandesi</territory>
+			<territory type="BR">Brasile</territory>
+			<territory type="BS">Bahamas</territory>
+			<territory type="BT">Bhutan</territory>
+			<territory type="BV">Isola Bouvet</territory>
+			<territory type="BW">Botswana</territory>
+			<territory type="BY">Bielorussia</territory>
+			<territory type="BZ">Belize</territory>
+			<territory type="CA">Canada</territory>
+			<territory type="CC">Isole Cocos</territory>
+			<territory type="CD">Congo - Kinshasa</territory>
+			<territory type="CD" alt="variant">Congo - RDC</territory>
+			<territory type="CF">Repubblica Centrafricana</territory>
+			<territory type="CG">Congo</territory>
+			<territory type="CG" alt="variant">Repubblica del Congo</territory>
+			<territory type="CH">Svizzera</territory>
+			<territory type="CI">Costa d’Avorio</territory>
+			<territory type="CI" alt="variant">Costa d'Avorio</territory>
+			<territory type="CK">Isole Cook</territory>
+			<territory type="CL">Cile</territory>
+			<territory type="CM">Camerun</territory>
+			<territory type="CN">Cina</territory>
+			<territory type="CO">Colombia</territory>
+			<territory type="CP">Isola di Clipperton</territory>
+			<territory type="CR">Costa Rica</territory>
+			<territory type="CU">Cuba</territory>
+			<territory type="CV">Capo Verde</territory>
+			<territory type="CW">Curaçao</territory>
+			<territory type="CX">Isola di Christmas</territory>
+			<territory type="CY">Cipro</territory>
+			<territory type="CZ">Repubblica Ceca</territory>
+			<territory type="DE">Germania</territory>
+			<territory type="DG">Diego Garcia</territory>
+			<territory type="DJ">Gibuti</territory>
+			<territory type="DK">Danimarca</territory>
+			<territory type="DM">Dominica</territory>
+			<territory type="DO">Repubblica Dominicana</territory>
+			<territory type="DZ">Algeria</territory>
+			<territory type="EA">Ceuta e Melilla</territory>
+			<territory type="EC">Ecuador</territory>
+			<territory type="EE">Estonia</territory>
+			<territory type="EG">Egitto</territory>
+			<territory type="EH">Sahara Occidentale</territory>
+			<territory type="ER">Eritrea</territory>
+			<territory type="ES">Spagna</territory>
+			<territory type="ET">Etiopia</territory>
+			<territory type="EU">Unione Europea</territory>
+			<territory type="FI">Finlandia</territory>
+			<territory type="FJ">Figi</territory>
+			<territory type="FK">Isole Falkland</territory>
+			<territory type="FK" alt="variant">Isole Falkland (isole Malvine)</territory>
+			<territory type="FM">Micronesia</territory>
+			<territory type="FO">Isole Faroe</territory>
+			<territory type="FR">Francia</territory>
+			<territory type="GA">Gabon</territory>
+			<territory type="GB">Regno Unito</territory>
+			<territory type="GB" alt="short">GB</territory>
+			<territory type="GD">Grenada</territory>
+			<territory type="GE">Georgia</territory>
+			<territory type="GF">Guiana Francese</territory>
+			<territory type="GG">Guernsey</territory>
+			<territory type="GH">Ghana</territory>
+			<territory type="GI">Gibilterra</territory>
+			<territory type="GL">Groenlandia</territory>
+			<territory type="GM">Gambia</territory>
+			<territory type="GN">Guinea</territory>
+			<territory type="GP">Guadalupa</territory>
+			<territory type="GQ">Guinea Equatoriale</territory>
+			<territory type="GR">Grecia</territory>
+			<territory type="GS">Georgia del Sud e Isole Sandwich del Sud</territory>
+			<territory type="GT">Guatemala</territory>
+			<territory type="GU">Guam</territory>
+			<territory type="GW">Guinea-Bissau</territory>
+			<territory type="GY">Guyana</territory>
+			<territory type="HK">RAS di Hong Kong</territory>
+			<territory type="HK" alt="short">Hong-Kong</territory>
+			<territory type="HM">Isole Heard ed Isole McDonald</territory>
+			<territory type="HN">Honduras</territory>
+			<territory type="HR">Croazia</territory>
+			<territory type="HT">Haiti</territory>
+			<territory type="HU">Ungheria</territory>
+			<territory type="IC">Isole Canarie</territory>
+			<territory type="ID">Indonesia</territory>
+			<territory type="IE">Irlanda</territory>
+			<territory type="IL">Israele</territory>
+			<territory type="IM">Isola di Man</territory>
+			<territory type="IN">India</territory>
+			<territory type="IO">Territorio Britannico dell’Oceano Indiano</territory>
+			<territory type="IQ">Iraq</territory>
+			<territory type="IR">Iran</territory>
+			<territory type="IS">Islanda</territory>
+			<territory type="IT">Italia</territory>
+			<territory type="JE">Jersey</territory>
+			<territory type="JM">Giamaica</territory>
+			<territory type="JO">Giordania</territory>
+			<territory type="JP">Giappone</territory>
+			<territory type="KE">Kenya</territory>
+			<territory type="KG">Kirghizistan</territory>
+			<territory type="KH">Cambogia</territory>
+			<territory type="KI">Kiribati</territory>
+			<territory type="KM">Comore</territory>
+			<territory type="KN">Saint Kitts e Nevis</territory>
+			<territory type="KP">Corea del Nord</territory>
+			<territory type="KR">Corea del Sud</territory>
+			<territory type="KW">Kuwait</territory>
+			<territory type="KY">Isole Cayman</territory>
+			<territory type="KZ">Kazakistan</territory>
+			<territory type="LA">Laos</territory>
+			<territory type="LB">Libano</territory>
+			<territory type="LC">Saint Lucia</territory>
+			<territory type="LI">Liechtenstein</territory>
+			<territory type="LK">Sri Lanka</territory>
+			<territory type="LR">Liberia</territory>
+			<territory type="LS">Lesotho</territory>
+			<territory type="LT">Lituania</territory>
+			<territory type="LU">Lussemburgo</territory>
+			<territory type="LV">Lettonia</territory>
+			<territory type="LY">Libia</territory>
+			<territory type="MA">Marocco</territory>
+			<territory type="MC">Monaco</territory>
+			<territory type="MD">Moldavia</territory>
+			<territory type="ME">Montenegro</territory>
+			<territory type="MF">Saint Martin</territory>
+			<territory type="MG">Madagascar</territory>
+			<territory type="MH">Isole Marshall</territory>
+			<territory type="MK">Repubblica di Macedonia</territory>
+			<territory type="MK" alt="variant">Repubblica ex Jugoslava di Macedonia</territory>
+			<territory type="ML">Mali</territory>
+			<territory type="MM">Myanmar</territory>
+			<territory type="MN">Mongolia</territory>
+			<territory type="MO">RAS di Macao</territory>
+			<territory type="MO" alt="short">Macao</territory>
+			<territory type="MP">Isole Marianne Settentrionali</territory>
+			<territory type="MQ">Martinica</territory>
+			<territory type="MR">Mauritania</territory>
+			<territory type="MS">Montserrat</territory>
+			<territory type="MT">Malta</territory>
+			<territory type="MU">Mauritius</territory>
+			<territory type="MV">Maldive</territory>
+			<territory type="MW">Malawi</territory>
+			<territory type="MX">Messico</territory>
+			<territory type="MY">Malesia</territory>
+			<territory type="MZ">Mozambico</territory>
+			<territory type="NA">Namibia</territory>
+			<territory type="NC">Nuova Caledonia</territory>
+			<territory type="NE">Niger</territory>
+			<territory type="NF">Isola Norfolk</territory>
+			<territory type="NG">Nigeria</territory>
+			<territory type="NI">Nicaragua</territory>
+			<territory type="NL">Paesi Bassi</territory>
+			<territory type="NO">Norvegia</territory>
+			<territory type="NP">Nepal</territory>
+			<territory type="NR">Nauru</territory>
+			<territory type="NU">Niue</territory>
+			<territory type="NZ">Nuova Zelanda</territory>
+			<territory type="OM">Oman</territory>
+			<territory type="PA">Panama</territory>
+			<territory type="PE">Perù</territory>
+			<territory type="PF">Polinesia Francese</territory>
+			<territory type="PG">Papua Nuova Guinea</territory>
+			<territory type="PH">Filippine</territory>
+			<territory type="PK">Pakistan</territory>
+			<territory type="PL">Polonia</territory>
+			<territory type="PM">Saint Pierre e Miquelon</territory>
+			<territory type="PN">Isole Pitcairn</territory>
+			<territory type="PR">Portorico</territory>
+			<territory type="PS">Territori palestinesi</territory>
+			<territory type="PS" alt="short">Palestina</territory>
+			<territory type="PT">Portogallo</territory>
+			<territory type="PW">Palau</territory>
+			<territory type="PY">Paraguay</territory>
+			<territory type="QA">Qatar</territory>
+			<territory type="QO">Oceania lontana</territory>
+			<territory type="RE">Réunion</territory>
+			<territory type="RO">Romania</territory>
+			<territory type="RS">Serbia</territory>
+			<territory type="RU">Federazione Russa</territory>
+			<territory type="RW">Ruanda</territory>
+			<territory type="SA">Arabia Saudita</territory>
+			<territory type="SB">Isole Solomon</territory>
+			<territory type="SC">Seychelles</territory>
+			<territory type="SD">Sudan</territory>
+			<territory type="SE">Svezia</territory>
+			<territory type="SG">Singapore</territory>
+			<territory type="SH">Sant’Elena</territory>
+			<territory type="SI">Slovenia</territory>
+			<territory type="SJ">Svalbard e Jan Mayen</t

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<title>Responsive Contact Form | Responsive Comment Script</title>
+<style type='text/css'>
+* {margin:0; padding:0;}
+p {margin:10px 0;}
+</style>
+</head>
+<body>
+<div style="padding:5px;">
+<p>A more up to date manual you might find on 
+<a href="http://w3easy.org/" target="_blank">w3easy.org</a> 
+in the <a href="http://w3easy.org/forum/viewforum.php?f=7" target="_blank">w3easy forums</a>.</p>
+<span style="font-weight: bold">SCRIPT:</span><br />
+w3easyProtect<br />
+(C) 2011 Joachim Haack, <a href="http://w3easy.org">http://w3easy.org</a><br />
+<br />
+<span style="font-weight: bold">REQUIREMENTS</span><br />
+PHP 5 (maybe also PHP 4 will do)<br />
+NO DATABASE required.<br />
+<br />
+<span style="font-weight: bold">LICENSE</span><br />
+GNU General Public License, Version 3<br />
+<br />
+<span style="font-weight: bold">DESCRIPTION</span><br />
+With the w3easyProtect script you can easily protect any directory on your webspace with the secure server sided .htaccess protection. w3easyProtect will create a .htaccess file and a .htpasswd file to password protect the folder against access from outside the server.<br />
+<br />
+<span style="font-weight: bold">INSTRUCTIONS</span><br />
+<span style="font-weight: bold">Installation</span><br />
+First unpack and then upload the script folder to your webspace.<br />
+Make sure that only you have access to the scriptfolder (if the folder is not yet protected, you should do it right now with this script).<br />
+Make sure that you have permission to edit the config file (depending on your server settings chmod file to 0666, 0664 or 0644 if necessary.)<br />
+<br />
+<span style="font-weight: bold">Settings</span><br />
+Open the index.php and submit the form with checked 'show config' radio button. Specify the config settings as discribed there. I'd recommend to set the $overwrite_protect setting to 'on' for the beginning. You may change it later, if you like.<br />
+Now save your settings by submitting the form with checked 'edit file' button and close the config file by pressing the 'reset button'.<br />
+<br />
+<span style="font-weight: bold">Usage</span><br />
+Select the directory you want to protect with the 'Select folder' button. Don't forget to press the 'submit button' after selection. Next to the 'Select folder' button the name of the actually selected folder appears.<br />
+Make sure the script has permission to create files in the folder (depending on your server settings chmod folder to 0777, 0775 or 0755 if necessary.)<br />
+To protect the folder, change the user and the password in the resp. fields to your values (the default values won't do). Then check the 'protect' radio button and press 'submit'. Now the script will create the .htaccess file and the .htpasswd file.<br />
+If there is already a .htaccess file and/or a .htpasswd file in the directory and the '$overwrite_protect' setting is not set to 'off', the script will name the new files .htaccess.TXT and/or .htpasswd.TXT to not delete the maybe important informations stored in the original files.<br />
+If this happens, open one of the newly created files by using the 'select file' button and copy the content with the tabs 'ctrl' and 'c'. Afterwards open the original file and decide to keep or not to keep the content and paste the content of the newly created file above or below resp. instead of the former content to the file.<br />
+Then check the 'edit file' button and save your changes by pressing the 'submit' button.<br />
+Afterwards delete the not any more needed files .htaccess.TXT and/or .htpasswd.TXT. 
+For this purpose a red 'delete' button will appear as long as the selected folder contains any 
+.htaccess or .htpasswd or .htaccess.TXT or .htpasswd.TXT file. 
+To delete a file, you first have to select the respective file, then check the 'delete' radio button and then press the submit button.<br />
+<br />
+
+<span style="font-weight: bold">Password Generator</span><br />
+Sometimes you might want to allow access to the protected folder to more than one user. 
+In this case you just have to add for each new user another line with a passphrase [user:passphrase] to the .htpasswd file. 
+To easily get an additional passphrase, 
+you can use the <a href="http://w3easy.org/online-tools/password-generator.php" target="_blank">w3easyPWG</a> .htaccess password generator.
+<br /><br />
+<span style="font-weight: bold">Miscellaneous</span><br />
+(Btw: With the w3easyProtect tool you may also edit other files of your site. 
+But we'd recommend for this purpose the more comfortable tools w3easyEditor or w3easyAdmin.)<br />
+<br />
+That's it!<br />
+<br />
+Have fun and take it w3easy &amp; zorry for my bad English...;)</div>
+</body>
+</html>

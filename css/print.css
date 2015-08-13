@@ -1,0 +1,59 @@
+* {
+    font-family:"times new roman",times,serif;
+    text-align:justify;
+    color:#000;
+    quotes: "\201E" "\201C" "\201A" "\2018";
+}
+a[href]:after {
+    content:" <"attr(href)">";
+    color: #636363;
+    background-color:inherit;
+    font-style:italic;
+    font-size: 80%;
+}
+button #back {
+    display: none;
+}
+h1, h2, h3 {
+    display: block !important;
+}
+q:before, blockquote:before {
+    content:open-quote;
+}
+q:after, blockquote:after {
+    content:close-quote;
+}
+header {
+    display: none;
+}
+nav {
+    display: none;
+}
+#leftButton {
+    display: none;
+}
+.logo {
+    display: none;
+}
+.head_hl {
+    display: none;
+}
+.intro {
+    display: none;
+}
+#social-icons {
+    display: none;
+}
+#sideLeft {
+    display: none;
+}
+#sideLeft li a:link, #sideLeft li a:visited, #sideLeft li a:visited:hover, #sideLeft li a:hover, #sideLeft li a:active {
+    display: none;
+}
+#googleadsense {
+    display: none;
+}
+#footer {
+    display: none;
+}
+

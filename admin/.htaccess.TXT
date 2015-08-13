@@ -1,0 +1,4 @@
+AuthName "protected"
+AuthType Basic
+AuthUserFile /customers/7/5/3/adhs-studien.info/httpd.www/admin/.htpasswd
+require valid-user

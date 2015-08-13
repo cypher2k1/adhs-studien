@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 9728 $"/>
+		<generation date="$Date: 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014) $"/>
+		<language type="ff"/>
+	</identity>
+	<localeDisplayNames>
+		<languages>
+			<language type="ak">Akaan</language>
+			<language type="am">Amarik</language>
+			<language type="ar">Aarabeere</language>
+			<language type="be">Belaruuse</language>
+			<language type="bg">Bulgariire</language>
+			<language type="bn">Bengali</language>
+			<language type="cs">Cekkere</language>
+			<language type="de">Docceere</language>
+			<language type="el">Gerke</language>
+			<language type="en">Engeleere</language>
+			<language type="es">Español</language>
+			<language type="fa">Perseere</language>
+			<language type="ff">Pulaar</language>
+			<language type="fr">Farayseere</language>
+			<language type="ha">Hawsaŋkoore</language>
+			<language type="hi">Hinndi</language>
+			<language type="hu">Hongariire</language>
+			<language type="id">Endonesiire</language>
+			<language type="ig">Igiboore</language>
+			<language type="it">Italiyeere</language>
+			<language type="ja">Saponeere</language>
+			<language type="jv">Sawaneere</language>
+			<language type="km">Kemeere</language>
+			<language type="ko">Koreere</language>
+			<language type="ms">Malayeere</language>
+			<language type="my">Burmeese</language>
+			<language type="ne">Nepaaleere</language>
+			<language type="nl">Dacceere</language>
+			<language type="pa">Punjabeere</language>
+			<language type="pl">Poloneere</language>
+			<language type="pt">Purtugeere</language>
+			<language type="ro">Romaneere</language>
+			<language type="ru">Riis</language>
+			<language type="rw">Ruwaanndeere</language>
+			<language type="so">Somalii</language>
+			<language type="sv">Sweedeere</language>
+			<language type="ta">Tamil</language>
+			<language type="th">Taay</language>
+			<language type="tr">Turkeere</language>
+			<language type="uk">Ukereneere</language>
+			<language type="ur">Urdu</language>
+			<language type="vi">Wiyetnameere</language>
+			<language type="yo">Yorrubaa</language>
+			<language type="zh">Sinuwaare</language>
+			<language type="zu">Suluŋkoore</language>
+		</languages>
+		<territories>
+			<territory type="AD">Anndoora</territory>
+			<territory type="AE">Emiraat Araab Denntuɗe</territory>
+			<territory type="AF">Afganistaan</territory>
+			<territory type="AG">Antiguwaa e Barbudaa</territory>
+			<territory type="AI">Anngiyaa</territory>
+			<territory type="AL">Albanii</territory>
+			<territory type="AM">Armenii</territory>
+			<territory type="AN">Antiiye Nederlanndeeje</territory>
+			<territory type="AO">Anngolaa</territory>
+			<territory type="AR">Arjantiin</territory>
+			<territory type="AS">Samowa Amerik</territory>
+			<territory type="AT">Otiriis</territory>
+			<territory type="AU">Ostaraalii</territory>
+			<territory type="AW">Aruuba</territory>
+			<territory type="AZ">Ajerbayjaan</territory>
+			<territory type="BA">Bosnii Hersegowiin</territory>
+			<territory type="BB">Barbadoos</territory>
+			<territory type="BD">Banglaadees</territory>
+			<territory type="BE">Beljik</territory>
+			<territory type="BF">Burkibaa Faaso</territory>
+			<territory type="BG">Bulgarii</territory>
+			<territory type="BH">Bahreyn</territory>
+			<territory type="BI">Burunndi</territory>
+			<territory type="BJ">Benee</territory>
+			<territory type="BM">Bermudaa</territory>
+			<territory type="BN">Burnaay</territory>
+			<territory type="BO">Boliwii</territory>
+			<territory type="BR">Beresiil</territory>
+			<territory type="BS">Bahamaas</territory>
+			<territory type="BT">Butaan</territory>
+			<territory type="BW">Botswaana</territory>
+			<territory type="BY">Belaruus</territory>
+			<territory type="BZ">Beliise</territory>
+			<territory type="CA">Kanadaa</territory>
+			<territory type="CD">Ndenndaandi Demokaraasiire Konngo</territory>
+			<territory type="CF">Ndenndaandi Santarafrik</territory>
+			<territory type="CG">Konngo</territory>
+			<territory type="CH">Suwiis</territory>
+			<territory type="CI">Kodduwaar</territory>
+			<territory type="CK">Duuɗe Kuuk</terri

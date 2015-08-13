@@ -1,0 +1,381 @@
+*
+{
+	margin:0;
+	padding:0
+}
+
+header,section,article,aside,footer
+{
+	display:block
+}
+
+html
+{
+	-webkit-text-size-adjust:none;
+	height:100%;
+	min-width:1080px;
+	max-width:1248px;
+	background-color:#fff;
+	margin-left:auto;
+	margin-right:auto
+}
+
+body
+{
+	background-attachment:fixed;
+	background-color:rgba(255,255,255,1);
+	min-width:1080px;
+	background-image:url(../img/linien.png);
+	background-position:50% 50%;
+	background-repeat:repeat;
+	color:#1f1f1f;
+	text-align:left;
+	text-decoration:none;
+	display:block
+}
+
+h1
+{
+	font-family:Viga;
+	font-weight:800;
+	line-height:18px;
+	font-size:41px;
+	margin-bottom:10px;
+	margin-top:10px;
+	text-shadow:0 1px 2px rgba(15,11,6,0.6);
+	color:#1f1f1f
+}
+
+h2
+{
+	font-family:Viga;
+	font-size:36px;
+	font-style:normal;
+	font-weight:600;
+	letter-spacing:0;
+	line-height:55px;
+	margin-bottom:7px;
+	margin-top:7px;
+	text-align:left;
+	text-decoration:none;
+	text-shadow:0 1px 2px rgba(15,11,6,0.6);
+	color:#1f1f1f
+}
+
+h3
+{
+	font-family:Viga;
+	font-size:31px;
+	font-style:normal;
+	font-weight:400;
+	letter-spacing:0;
+	line-height:45px;
+	margin-bottom:6px;
+	margin-top:6px;
+	text-align:left;
+	text-decoration:none;
+	text-shadow:0 1px 2px rgba(15,11,6,0.6);
+	color:#1f1f1f
+}
+
+p,a
+{
+	font-family:Merriweather Sans;
+	font-size:18px;
+	font-style:normal;
+	font-weight:400;
+	color:#1f1f1f;
+	outline:none;
+	text-decoration:none
+}
+
+a:hover
+{
+	text-decoration:none
+}
+
+a:link
+{
+	color:#A75401;
+	text-decoration:none;
+	border-style:none
+}
+
+img
+{
+	border:none
+}
+
+#wrapper
+{
+	min-width:1232px;
+	max-width:1400px;
+	margin:0 auto
+}
+
+#header
+{
+	height:400px
+}
+
+.head
+{
+	background-color:transparent;
+	height:140px;
+	vertical-align:middle;
+	margin:0
+}
+
+.logo
+{
+	height:140px;
+	display:table-cell;
+	vertical-align:middle;
+	padding-left:100px
+}
+
+.head_hl
+{
+	height:140px;
+	display:table-cell;
+	vertical-align:middle;
+	padding-left:50px
+}
+
+.intro
+{
+	background-color:#FF9900;
+	background-image:url(../img/header.jpg);
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	height:170px;
+	border:0;
+	padding:30px 650px 60px 100px
+}
+
+#social-icons
+{
+	height:140px;
+	display:table-cell;
+	vertical-align:middle;
+	padding-right:100px;
+	width:300px
+}
+
+#social-icons a
+{
+	display:inline-block;
+	overflow:hidden;
+	width:32px;
+	height:32px
+}
+
+#social-icons ul
+{
+	list-style-type:none;
+	float:right
+}
+
+#social-icons ul li
+{
+	float:left;
+	padding-left:6px
+}
+
+#sideLeft
+{
+	position:relative;
+	padding-left:838px
+}
+
+#menu-wrap
+{
+	margin-top:-47px
+}
+
+#menu,#menu ul
+{
+	list-style:none;
+	margin:0;
+	padding:0
+}
+
+#menu
+{
+	border:0 solid transparent;
+	background-color:transparent;
+	padding-left:100px;
+	zoom:1
+}
+
+#menu:before,#menu:after
+{
+	content:"";
+	display:table
+}
+
+#menu:after
+{
+	clear:both
+}
+
+#menu li
+{
+	float:left;
+	position:relative;
+	white-space:nowrap;
+	border:0 solid #FFFFFF;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	box-shadow:#000000 1px 1px 2px #FFFFFF 1px 1px 2px inset, #000000 -1px 0 1px inset
+}
+
+#menu a
+{
+	float:left;
+	color:#fff;
+	text-decoration:none;
+	padding:12px
+}
+
+#menu ul
+{
+	_margin:0;
+	opacity:0;
+	visibility:hidden;
+	position:absolute;
+	top:47px;
+	left:0;
+	z-index:1;
+	background:linear-gradient(#ae6c18,#FF9900);
+	box-shadow:0 -1px 0 #ae6c18;
+	border-radius:3px;
+	transition:all .2s ease-in-out;
+	margin:20px 0 0
+}
+
+#menu li:hover > ul
+{
+	opacity:1;
+	visibility:visible;
+	margin:0
+}
+
+#menu ul ul
+{
+	top:0;
+	left:150px;
+	_margin:0;
+	box-shadow:-1px 0 0 rgba(255,255,255,.3);
+	margin:0 0 0 20px
+}
+
+#menu ul li
+{
+	float:none;
+	display:block;
+	border:0;
+	_line-height:0;
+	box-shadow:0 1px 0 #111, 0 2px 0 #666;
+	width:auto
+}
+
+#menu ul li:last-child
+{
+	box-shadow:none
+}
+
+#menu ul a
+{
+	_height:10px;
+	display:block;
+	white-space:nowrap;
+	float:none;
+	text-transform:none;
+	padding:10px
+}
+
+#menu ul a:hover
+{
+	background-color:#0186ba;
+	background-image:linear-gradient(#04acec,#0186ba)
+}
+
+#menu ul li:first-child > a:after
+{
+	content:'';
+	position:absolute;
+	left:40px;
+	top:-6px;
+	border-left:6px solid transparent;
+	border-right:6px solid transparent;
+	border-bottom:6px solid #444
+}
+
+#menu ul ul li:first-child a:after
+{
+	left:-6px;
+	top:50%;
+	margin-top:-6px;
+	border-left:0;
+	border-bottom:6px solid transparent;
+	border-top:6px solid transparent;
+	border-right:6px solid #3b3b3b
+}
+
+#menu ul li:first-child a:hover:after
+{
+	border-bottom-color:#04acec
+}
+
+#menu ul ul li:first-child a:hover:after
+{
+	border-right-color:#0299d3;
+	border-bottom-color:transparent
+}
+
+#menu ul li:last-child > a
+{
+	border-radius:0 0 3px 3px
+}
+
+#middle
+{
+	background-image:url(../img/wellen.png);
+	padding-left:100px;
+	padding-right:100px;
+	padding-top:30px;
+	position:relative
+}
+
+#middle:after
+{
+	content:'';
+	clear:both;
+	display:table
+}
+
+#container
+{
+	width:100%;
+	float:left
+}
+
+#content
+{
+	float:left;
+	width:788px
+}
+
+#footer
+{
+	padding-left:100px;
+	height:50px;
+	display:table-cell;
+	vertical-align:middle
+}
+
+#menu li:hover > a,*html #menu li a:hover
+{
+	color:#fafafa
+}

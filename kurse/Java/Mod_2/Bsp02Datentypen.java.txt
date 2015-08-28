@@ -1,0 +1,37 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap2/Bsp02Datentypen.java
+//
+//*************Ende Hinweis*****************************
+
+
+
+
+class Bsp02Datentypen {
+	
+	public static void main (String args[]) { 
+	
+		// ----------------------------------------------------
+
+		System.out.println ("Mehr zu elementaren Datentypen:");
+
+		//
+		// Hier werden noch mehr Variablen deklariert, mit
+		// elementaren Datentypen
+		//
+		boolean		x1 = false;
+		byte		x2 = 123;
+		short		x3 = 20000;
+		double		x4 = 0.5;
+		
+		//
+		// Hier wird der Umgang mit Variablen vom Typ boolean
+		// gezeigt.
+		//
+		System.out.println ("x1 ist: " + x1); 
+		System.out.println ("x1 ist nicht: " + !x1); 
+		System.out.println ("x1 oder nicht x1 ist: " + (x1 || !x1)); 
+
+	} 
+}

@@ -1,0 +1,50 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap3/Animation1.java
+//
+//*************Ende Hinweis*****************************
+
+
+import	java.applet.*;
+import	java.awt.*;
+
+public class Animation1	extends Applet
+    implements Runnable {
+
+	String		farbe;
+
+	public void		init () {
+
+		farbe = "#000000";
+	}
+	
+	public void		paint (Graphics g) {
+
+		g.setColor (Color.decode (farbe));
+		g.fillRect (0, 0, 200, 100);
+	}
+
+	Thread		thread;
+	
+	public void		start () {
+
+		thread = new Thread (this);
+		thread.start ();
+	}
+
+	public void run () {
+	
+		while (true) {
+			try { thread.sleep (1000); } 
+			   catch (InterruptedException e) {}
+		
+			if ((farbe.compareTo ("#000000") == 0))
+				farbe = "#8888ff";
+			else
+				farbe = "#000000";
+
+			repaint ();
+		}
+	}
+}

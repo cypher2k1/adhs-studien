@@ -1,0 +1,15 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap5/RechnerIntf.java
+//
+//*************Ende Hinweis*****************************
+
+
+import java.rmi.*;
+
+public interface RechnerIntf extends Remote {
+
+	int addiere (int a, int b) throws RemoteException;
+	int subtrahiere (int a, int b) throws RemoteException;
+}

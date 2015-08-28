@@ -1,0 +1,42 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap2/Bsp06Typecasting.java
+//
+//*************Ende Hinweis*****************************
+
+
+
+
+
+class Bsp06Typecasting {
+	
+	public static void main (String args[]) { 
+		
+		// ----------------------------------------------------
+
+		System.out.println ("Explizites type-casting:");
+		
+		int			a;
+
+		//
+		// Wenn einer Flieﬂkomma-Zahl in einen Wert vom Typ int
+		// gecastet wird, geht der Anteil hinter dem Komma verloren.
+		// Es wird nicht gerundet.
+		//
+		a = (int) 2.7;
+		System.out.println ("1. Zuweisung von 2.7 an int: " + a); 
+		
+		a = (int) 2.3;
+		System.out.println ("2. Zuweisung von 2.3 an int: " + a); 
+		
+		//
+		// Der Typ einer Flieﬂkomma-Zahl ist per default: double.
+		// Beim Zuweisen an eine float Variable muﬂ man entweder
+		// eine kleines "f" hinter die Zahl schreiben, oder "float"
+		// in Klammern davor.
+		//
+		float		f1 = 1.5f;
+		float		f2 = (float) 1.6;
+	} 
+}

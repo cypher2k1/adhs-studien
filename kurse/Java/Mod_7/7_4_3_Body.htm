@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_7_4_3</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+var Dat_Window;
+
+function Datei()
+{
+  if (Dat_Window!=null)
+          if (Dat_Window.closed==false)
+              Dat_Window.close()
+  Dat_Window= window.open("./IntegerTextField2.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=800,height=260")
+}
+
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+      <td width="550"><b>Hinzuf&uuml;gen und L&ouml;schen von Listenern</b></td>
+      <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+      <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+    </tr>
+
+    <tr>
+      <td><p>Als n&auml;chstes muss die JavaBean nun zwei Methoden anbieten, mit
+          denen sich die interessierten Objekte als Listener <b>eintragen</b> und
+          <b>aus der Liste l&ouml;schen</b> k&ouml;nnen. Diese Methoden sind relativ
+          einfach zu implementieren: Die Aufrufe werden lediglich an das erzeugte
+          Objekt der Klasse <font class="code">PropertyChangeSupport</font>
+          weitergeleitet. </p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+	    <td colspan="2">
+		    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+				<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+		      <tr>
+		        <td width="10">&nbsp;</td>
+		        <td id="code"><br><font id="kw">public void</font> addPropertyChangeListener (PropertyChangeListener l) {&nbsp;&nbsp;&nbsp;
+		                        <br><br>&nbsp;&nbsp;&nbsp;myPCS.addPropertyChangeListener (l);
+		                        <br>}<br><br></td>
+
+		      </tr>
+		    </table>
+	</td>
+	</tr>
+	</table><br>
+	    </td>
+	    <td valign="top" align="left"><img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+                 <a href="javascript:Datei()"  onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+			onMouseOut="self.status='';return true" id="ex">IntegerTextField2.java</a>
+	    </td>
+    </tr>
+    <tr>
+	    <td colspan="2">
+		    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+				<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+		      <tr>
+		        <td width="10">&nbsp;</td>
+		        <td id="code"><br><font id="kw">public void</font> removePropertyChangeListener (PropertyChangeListener l) {
+		                        <br><br>&nbsp;&nbsp;&nbsp;myPCS.removePropertyChangeListener (l);
+		                        <br>}
+		                        <br><br></td>
+
+		      </tr>
+		    </table>
+				</td>
+				</tr>
+	</table>
+	    </td>
+	   <td valign="top" align="left"><img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+                 <a href="javascript:Datei()"  onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+			onMouseOut="self.status='';return true" id="ex">IntegerTextField2.java</a>
+	    </td>
+
+    </tr>
+    <tr>
+      <td><p><br>Durch das Aufrufen genau dieser JavaBean-Methoden k&ouml;nnen <b>sich andere
+          Objekte benachrichtigen lassen, wenn sich eine Bean-Eigenschaft &auml;ndert</b>.</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+</table>
+<br><br><br>
+</body>
+</html>

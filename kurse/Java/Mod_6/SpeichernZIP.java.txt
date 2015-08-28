@@ -1,0 +1,33 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap6/SpeichernZIP.java
+//
+//*************Ende Hinweis*****************************
+
+
+import java.io.*;
+import java.util.zip.*;
+
+class SpeichernZIP  {
+
+	public static void main (String args []) {
+
+
+		try {
+
+			FileOutputStream 	f   = new FileOutputStream ("remember.zip");
+			ZipOutputStream 	zip = new ZipOutputStream (f);
+			String				s   = "Dieses ist ein Test!";
+
+			zip.putNextEntry (new ZipEntry ("test.txt"));
+			zip.write (s.getBytes (), 0, s.length ());
+			zip.close ();
+
+		} catch (Exception e) {
+
+		}
+
+		System.out.println ("fertig.");
+	}
+}

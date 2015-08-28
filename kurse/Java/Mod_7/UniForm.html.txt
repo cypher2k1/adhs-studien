@@ -1,0 +1,22 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap7/UniForm.html
+//
+//*************Ende Hinweis*****************************
+
+
+<html>
+<head>
+	<title>Uni Formular</title>
+</head>
+
+<body>
+<form action="http://localhost:8080/MeineServlets/servlet/UniServlet2"
+	method="GET"
+	target="_blank">
+	<input type=text name="name">
+	<input type=submit value="Student suchen">
+</form>
+</body>
+</html>

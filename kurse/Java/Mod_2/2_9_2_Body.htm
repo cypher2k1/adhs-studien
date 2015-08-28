@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_2_9_2</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script src="../Bildwechsel.js"></script>
+<script langauge="JavaScript">
+<!--
+var Bsp_Window;
+
+function Ausgabe()
+{
+  if (Bsp_Window!=null)
+      if (Bsp_Window.closed==false)
+          Bsp_Window.close()
+  Bsp_Window= window.open("./Applets/Bsp16Applet.html" , "Ausgabe" ,  "scrollbars=no,resizable=yes,location=no,width=280,height=300")
+}
+
+var Dat_Window;
+function Datei()
+{
+  if (Dat_Window!=null)
+        if (Dat_Window.closed==false)
+	Dat_Window.close()
+  Dat_Window= window.open("./Bsp13Break.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,width=660,height=360")
+}
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+    <td width="550"><b>break-Anweisung</b></td>
+    <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+    <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+
+  <tr>
+    <td><p>Die <font class="code">break</font>-Anweisung beendet innerhalb einer <font class="code">while</font>-,
+        <font class="code">do</font>- oder <font class="code">for</font>-Anweisung das
+        <b>Ausf&uuml;hren eben dieser Anweisung</b>, um mit den Anweisungen hinter der
+        <font class="code">while</font>-, <font class="code">do</font>- oder <font class="code">for</font>
+        -Anweisung fortzufahren.</p></td>
+    <td>&nbsp;</td>
+    <td align="left" valign="top"><img src="../Medien/Definition.gif" width="36"
+      	height="36" alt="Hinweis: Definition(en) im Lehrtext"><br><font id="pikto">Definition</font></td>
+  </tr>
+
+  <tr>
+    <td><p>So kann eine <font class="code">while</font>-Schleife, die bis <font class="code">10</font> durchlaufen sollte,
+        auch bei <font class="code">5</font> abgebrochen werden. Die Anweisungen innerhalb der Schleife werden dann nicht mehr ausgef&uuml;hrt.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p>Hier ein Beispiel f&uuml;r die oben beschriebene <font class="code">break</font>-Anweisung:<br><br></p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+	  	<tr>
+	  	<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+        <tr>
+          <td width="20">&nbsp;</td>
+          <td id="code"><br><font id="kw">int</font>  i;
+          				<br><br>i=1;
+          				<br><font id="kw">while</font> (i &lt;= 10) {
+          				<br><br><nobr>&nbsp;&nbsp;System.out.println (i);&nbsp;&nbsp;</nobr>
+          				<br><br>&nbsp;&nbsp;<font id="kw">if</font> (i == 5)
+          				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="kw">break;</font>
+          				<br><br>&nbsp;&nbsp;i ++;
+          				<br>}
+          				<br>&nbsp;</td>
+          <td width="10">&nbsp;</td>
+        </tr>
+      </table>
+	  	</td>
+	  	</tr>
+	</table><br>
+    </td>
+    <td>&nbsp;</td>
+    <td valign="top" align="left"><img src="../Medien/Beispiel.gif" width="36" height="36"
+        alt="Hinweis: Beispiel(e)"><br>
+        <a href="javascript:Datei()" onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true"
+        onMouseOut="self.status='';return true" id="ex">Bsp13Break.java</a>
+        <div style="margin-top:110pt">
+        <table border="0" cellspacing="0" cellpadding="0">
+           <tr>
+              <td><a href="javascript:Ausgabe()"
+                  onMouseOver="Bildwechsel(Highlight2,'b1');self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true"
+                  onMouseOut="Bildwechsel(Normal2,'b1');self.status='';return true">
+                  <img name=b1 src="../Medien/PfeilB.gif" width="13" height="23" border="0" alt="Programmausf&uuml;hrung (Applet) anzeigen"></a></td>
+              <td width="4">&nbsp;</td>
+              <td><a href="javascript:Ausgabe()"
+                  onMouseOver="self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true"
+                  onMouseOut="self.status='';return true" id="ex">Programm-<br>ausf&uuml;hrung</a></td>
+           </tr>
+        </table></div>
+    </td>
+</tr>
+
+
+</table>
+</body>
+</html>

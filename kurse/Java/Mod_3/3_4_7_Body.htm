@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_3_4_7</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script src="../Bildwechsel.js"></script>
+<script langauge="JavaScript">
+<!--
+var Bsp_Window;
+
+function Ausgabe()
+{
+  if (Bsp_Window!=null)
+      if (Bsp_Window.closed==false)
+          Bsp_Window.close()
+  Bsp_Window= window.open("./Applets/Animation1.html" , "Ausgabe" ,  "scrollbars=no,resizable=yes,location=no,width=240,height=220")
+}
+
+var Dat_Window;
+function Datei()
+{
+  if (Dat_Window!=null)
+        if (Dat_Window.closed==false)
+	Dat_Window.close()
+  Dat_Window= window.open("./Animation1.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,width=660,height=360")
+}
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+    <td width="550"><b>Die run()-Methode (4)</b></td>
+    <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+    <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+
+  <tr>
+    <td><p>Das Applet der folgenden Animation kennen Sie bereits aus <a href="javascript:goPage('../Mod_1/1_11_5.htm')" onMouseOver="self.status='zu Kapitel 1.11';return true;"
+        onMouseOut="self.status='';return true" id="hier">Kapitel 1.11</a>. Hier nun <b>wechselt die 
+        Hintergrundfarbe automatisch</b> einmal pro Sekunde von Blau auf Schwarz und zur&uuml;ck.</p><br></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td align="center">
+      <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+	  	<tr>
+	  	<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+        <tr>
+          <td width="20">&nbsp;</td>
+		  <td id="code"><br><font id="kw">public void</font> run() { <br><br>
+		                      &nbsp;&nbsp;&nbsp;<font id="kw">while</font>(<font id="kw">true</font>) {<br><br>
+		                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="kw">try</font> {  thread.sleep(1000);  }<br>
+		                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="kw">catch</font>(InterruptedException e) {}<br><br>
+		                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="kw">if</font>((farbe.compareTo(
+		                               <font id="orange">&quot;#000000&quot;</font>) == 0))<br>
+		                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;farbe = <font id="orange">&quot;#8888ff&quot;</font>;<br>
+		                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="kw">else</font><br>
+		                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;farbe = <font id="orange">&quot;#000000&quot;</font>;<br><br>
+		                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;repaint();<br>
+		                      &nbsp;&nbsp;&nbsp;}<br>
+		                      }<br><br></td>
+          <td width="20">&nbsp;</td>
+        </tr>
+      </table>
+	  	</td>
+	  	</tr>
+	</table>
+    </td>
+    <td>&nbsp;</td>
+    <td valign="top" align="left">
+          <img src="../Medien/Beispiel.gif" width="36" height="36" alt="Hinweis: Beispiel(e)"><br>
+          <a href="javascript:Datei()" onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true"
+          onMouseOut="self.status='';return true" id="ex">Animation1.java</a>
+          <div style="margin-top:148pt">
+          <table border="0" cellspacing="0" cellpadding="0">
+             <tr>
+                <td><a href="javascript:Ausgabe()"
+                    onMouseOver="Bildwechsel(Highlight2,'b1');self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true"
+                    onMouseOut="Bildwechsel(Normal2,'b1');self.status='';return true">
+                    <img name=b1 src="../Medien/PfeilB.gif" width="13" height="23" border="0" alt="Programmausf&uuml;hrung (Applet) anzeigen"></a></td>
+                <td width="4">&nbsp;</td>
+                <td><a href="javascript:Ausgabe()"
+                    onMouseOver="self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true"
+                    onMouseOut="self.status='';return true" id="ex">Applet anzeigen</a></td>
+             </tr>
+          </table></div>
+    </td>
+  </tr>
+  
+
+</table>
+</body>
+</html>

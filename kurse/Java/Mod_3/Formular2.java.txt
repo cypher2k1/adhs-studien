@@ -1,0 +1,23 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap3/Formular2.java
+//
+//*************Ende Hinweis*****************************
+
+import	java.applet.*;
+import	java.awt.*;
+
+public class Formular2 extends Applet {
+
+	public void		init () {
+	
+		setLayout (new BorderLayout ());
+
+		add (new Button ("button 1"), "North");
+		add (new Button ("button 2"), "West");
+		add (new Button ("button 3"), "South");
+		add (new Button ("button 4"), "East");
+		add (new Button ("button 5"), "Center");
+	}
+}

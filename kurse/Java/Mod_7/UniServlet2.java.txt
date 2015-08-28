@@ -1,0 +1,82 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap7/UniServlet2.java
+//
+//*************Ende Hinweis*****************************
+
+import java.io.*;
+import java.sql.*;
+import java.util.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class UniServlet2 extends HttpServlet {
+
+    public void doGet (HttpServletRequest  request,
+    				   HttpServletResponse response)
+    	throws IOException, ServletException {
+
+        response.setContentType ("text/html");
+        PrintWriter out = response.getWriter ();
+
+        out.println ("<html>");
+        out.println ("<body>");
+        out.println ("<head>");
+        out.println ("<title>Meine Uni</title>");
+        out.println ("</head>");
+        out.println ("<body>");
+
+
+		String			value = request.getParameter ("name");
+		Connection		c = null;
+
+		if (value == null) {
+
+	        out.println ("Oops!");
+
+		} else try {
+
+			Class.forName ("sun.jdbc.odbc.JdbcOdbcDriver");
+			c = DriverManager.getConnection ("jdbc:odbc:UNI_DB_ODBC");
+
+			if (c != null) {
+				Statement	s  = c.createStatement ();
+
+				if (s != null) {
+
+					String		sql;
+					ResultSet	rs;
+					int			id = -1;
+					boolean		nix_gefunden = true;
+
+
+					sql = "SELECT s.f_matrikelnummer, p.f_vorname, p.f_name ";
+					sql = sql + "FROM Person p, Student s ";
+					sql = sql + "WHERE p.ID = s.ID AND f_name like '" + value + "'";
+
+					rs  = s.executeQuery (sql);
+					while (rs.next ()) {
+
+						out.print (rs.getString (2));
+						out.print (" <b>");
+						out.print (rs.getString (3));
+						out.print ("</b>, Matrikelnummer: ");
+						out.print (rs.getInt (1));
+						out.println ("<br>");
+
+						nix_gefunden = false;
+					}
+
+
+					if (nix_gefunden)
+						out.println ("Niemanden gefunden!<br>");
+				}
+				c.close ();
+			}
+
+		} catch (Exception e) {out.println (e);}
+        out.println ("</body>");
+        out.println ("</html>");
+    }
+}

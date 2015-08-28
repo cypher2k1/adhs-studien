@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_2_2_3</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script src="../Bildwechsel.js"></script>
+<script langauge="JavaScript">
+<!--
+var Bsp_Window;
+
+function Ausgabe()
+{
+  if (Bsp_Window!=null)
+      if (Bsp_Window.closed==false)
+          Bsp_Window.close()
+  Bsp_Window= window.open("./Applets/Bsp03Applet.html" , "Ausgabe" ,  "scrollbars=no,resizable=yes,location=no,width=280,height=300")
+}
+
+var Dat_Window;
+function Datei()
+{
+  if (Dat_Window!=null)
+        if (Dat_Window.closed==false)
+	Dat_Window.close()
+  Dat_Window= window.open("./Bsp03Strings.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,width=660,height=360")
+}
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+    <td width="550"><b>String - Beispiele</b></td>
+    <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+    <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+
+  <tr>
+    <td><p>Und nun einige Beispiele f&uuml;r den Umgang mit Strings.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+<tr>
+    <td valign="top">
+      <table>
+        <tr>
+          <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="74" ></td>
+          <td>Wenn nicht anders vermerkt, finden Sie alle <b>Originaldateien</b> zu den Beispielen, die <b>in Kapitel 2</b> besprochen werden, auf der CD-ROM unter <font class="code">work/Kap2</font> unter den angegebenen Dateinamen. Wenn Sie auf den jeweils neben stehenden Link klicken,
+        k&ouml;nnen Sie den Quellcode einsehen. Die vorgestellten <b>Demonstrationsapplets</b> sind unter <font class="code">work/Kap2/Applets</font> abgelegt.</td>
+        </tr>
+      </table>
+    </td>
+    <td>&nbsp;</td>
+    <td align="left" valign="top"><img src="../Medien/Hinweis.gif" width="36" height="36"
+        alt="Hinweis: wichtige Hinweis(e) im Lehrtext"><br><font id="pikto">Hinweis</font></td>
+   </tr> 
+<tr>
+    <td>&nbsp;<br></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+   <td align="center">
+        <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+			<tr>
+			<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+                <tr>
+                    <td rowspan="4" width="20">&nbsp;</td>
+                    <td id="code"><br>
+                        String s1 = <font id="orange">&quot;Anfang&quot;</font>;<br>
+                            String s1b = <font id="kw">new</font>
+                        String (<font font id="orange">&quot;Anfang&quot;</font>);<br>
+                        String s2;<br>
+                        String s3;
+                    </td>
+                    <td rowspan="4" width="10">&nbsp;</td>
+                </tr>
+
+                <tr>
+                   <td id="code"><br>
+                           s2 = <font id="orange"> &quot;Ende&quot;</font>;<br>
+                           s3 = s1 + <font id="orange">&quot;...&quot;</font> + s2;<br>
+                   </td>
+                </tr>
+
+                <tr>
+                   <td id="code"><br>
+                        System.out.println (s3);<br>
+                        System.out.println (s3.length () + <font id="orange"> &quot; Zeichen lang.&quot;</font>);<br>
+                        <nobr>System.out.println (<font id="orange">&quot;Viertes Zeichen ist: &quot;</font>+ s3.charAt&nbsp;(3));</nobr>
+                   </td>
+                </tr>
+
+                <tr>
+                   <td id="code"><br>
+                        <font id="kw">
+                        if</font> (s1.equals (s2))<br>&nbsp;&nbsp;&nbsp;&nbsp;System.out.println (<font id="orange">&quot;s1 ist gleich s2&quot;</font>);<br>
+                        <font id="kw">
+                        else</font><br>&nbsp;&nbsp;&nbsp;&nbsp;System.out.println (<font id="orange">&quot;s1 ist nicht gleich s2&quot;</font>);<br>
+                        <font id="kw">
+                        if</font> (s1.indexOf (<font id="orange">&quot;fang&quot;</font>) &gt;= 0)<br>&nbsp;&nbsp;&nbsp;&nbsp;System.out.println (<font id="orange">"'fang' steckt in s1"</font>);<br><br>
+                   </td>
+                </tr>
+          </table>
+          </td>
+		  	</tr>
+	</table><br>
+    </td>
+    <td>&nbsp;</td>
+    <td valign="top" align="left"><img src="../Medien/Beispiel.gif" width="36"
+      height="36" alt="Hinweis: Praxisbeispiel"><br><a href="javascript:Datei()"
+      onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Bsp03Strings.java</a>
+      	 <div style="margin-top:186pt">
+         <table border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                         <td><a href="javascript:Ausgabe()"
+                        onMouseOver="Bildwechsel(Highlight2,'b1');self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true" onMouseOut="Bildwechsel(Normal2,'b1');self.status='';return true">
+                        <img name=b1 src="../Medien/PfeilB.gif" width="13" height="23" border="0" alt="Programmausf&uuml;hrung (Applet) anzeigen"></a></td>
+                        <td width="4">&nbsp;</td>
+                        <td ><a href="javascript:Ausgabe()"
+                        onMouseOver="self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Programm-<br>ausf&uuml;hrung</a></td>
+                      </tr>
+              </table></div>
+    </td>
+ </tr>
+ <tr>
+    <td><br><p>Informationen &uuml;ber die <b>Zuweisung mit Gleichheitszeichen</b> finden Sie in <a href="javascript:goPage('2_4_7.htm')" onMouseOver="self.status='zu Kapitel 2.4';return true;"
+   	onMouseOut="self.status='';return true" id="hier">Kapitel 2.4</a>.<br><br>
+	Die Erkl&auml;rungen zu den verwendeten <font class="code"><b>if</font>-Anweisungen</b> finden Sie in <a href="javascript:goPage('2_6_1.htm')" onMouseOver="self.status='zu Kapitel 2.6';return true;"
+    	onMouseOut="self.status='';return true" id="hier">Kapitel 2.6</a>.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+ </tr>
+
+
+
+
+
+</table>
+<br><br><br>
+</body>
+</html>

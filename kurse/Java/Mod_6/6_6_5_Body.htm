@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_6_6_5</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+var Dat_Window;
+
+function Datei()
+{
+  if (Dat_Window!=null)
+          if (Dat_Window.closed==false)
+              Dat_Window.close()
+  Dat_Window= window.open("./UniDB.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=730,height=260")
+}
+
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+      <td width="550"><b>Abfragen aufbauen, abschicken und auswerten (2)</b></td>
+      <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+      <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+    </tr>
+
+    <tr>
+      <td><p>Mit einer Reihe von <font class="code">get&lt;...&gt; ()</font>-Methoden
+          des <font class="code">ResultSets</font> k&ouml;nnen die <b>Spalten der Zeile
+          an der aktuellen Cursorposition ausgelesen</b> werden. &lt;...&gt; steht
+          dabei f&uuml;r die verschiedenen <b>Datentypen</b>. Als
+          Parameter werden den Methoden die <b>Nummern der auszulesenden Spalten</b>
+          &uuml;bergeben. Die folgende Anweisung liefert den Wert vom Typ
+          <font class="code">int</font>, der in der ersten Spalte des aktuellen
+          Datensatzes steht.</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+	    <td align="center">
+		    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+				<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+		      <tr>
+		        <td width="20">&nbsp;</td>
+		        <td id="code"><br>UniID = rs.getInt (1);<br><br></td>
+		        <td width="20">&nbsp;</td>
+		      </tr>
+		    </table>
+				</td>
+				</tr>
+	</table>
+	    </td>
+	    <td>&nbsp;</td>
+	    <td valign="top" align="left">
+                <img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+                <a href="javascript:Datei()"  onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+			onMouseOut="self.status='';return true" id="ex">UniDB.java</a>
+	    </td>
+	</tr>
+    <tr>
+      <td><p><br>Dieser Wert kann beim Zusammenbauen von weiteren <b>SQL</b>-Anweisungen verwendet werden.</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><p>Weitere Methoden des <font class="code">ResultSets</font> sind:</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td><div style="margin-left:50">
+	    <table BORDER="0" >
+	      <tr>
+	        <td width="20">&nbsp;</td>
+	        <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+	        <td><font class="code">getString ()</font></td>
+	        <td width="40">&nbsp;</td>
+			<td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+	        <td ><font class="code">getBigNum ()</font></td>
+	      </tr>
+	      <tr>
+  	        <td width="20">&nbsp;</td>
+  	        <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+  	        <td><font class="code">getBytes ()</font></td>
+  	        <td width="40">&nbsp;</td>
+  			<td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+  	        <td><font class="code">getDate ()</font></td>
+	      </tr>
+	      <tr>
+  	        <td width="20">&nbsp;</td>
+  	        <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+  	        <td><font class="code">getTime ()</font></td>
+  	        <td width="40">&nbsp;</td>
+  			<td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+  	        <td><font class="code">getTimestamp ()</font></td>
+	      </tr>
+	      <tr>
+  	        <td width="20">&nbsp;</td>
+  	        <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+  	        <td><font class="code">getAsciiStream ()</font></td>
+  	        <td width="40">&nbsp;</td>
+  			<td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+  	        <td><font class="code">getUnicodeStream ()</font></td>
+	      </tr>
+	      <tr>
+  	        <td width="20">&nbsp;</td>
+  	        <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+  	        <td><font class="code">getBinaryStream ()</font></td>
+  	        <td width="40">&nbsp;</td>
+  			<td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+  	        <td><font class="code">getObject ()</font></td>
+	      </tr>
+	      <tr>
+  	        <td width="20">&nbsp;</td>
+  	        <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+  	        <td><font class="code">getByte ()</font></td>
+  	        <td width="40">&nbsp;</td>
+  			<td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+  	        <td><font class="code">getShort ()</font></td>
+	      </tr>
+	      <tr>
+  	        <td width="20">&nbsp;</td>
+  	        <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+  	        <td><font class="code">getInt ()</font></td>
+  	        <td width="40">&nbsp;</td>
+  			<td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+  	        <td><font class="code">getLong ()</font></td>
+	      </tr>
+	      <tr>
+  	        <td width="20">&nbsp;</td>
+  	        <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+  	        <td><font class="code">getFloat ()</font></td>
+  	        <td width="40">&nbsp;</td>
+  			<td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+  	        <td><font class="code">getDouble ()</font></td>
+	      </tr>
+	      <tr>
+  	        <td width="20">&nbsp;</td>
+  	        <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+  	        <td><font class="code">getBoolean ()</font></td>
+  	        <td width="40">&nbsp;</td>
+  			<td valign="baseline">&nbsp;</td>
+  	        <td>&nbsp;</td>
+	      </tr>
+	    </table></div>
+      </td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+    </tr>
+</table>
+</body>
+</html>

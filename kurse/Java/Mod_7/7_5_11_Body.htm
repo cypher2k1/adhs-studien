@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_7_5_11</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script src="../Bildwechsel.js"></script>
+<script langauge="JavaScript">
+<!--
+
+var Dat_Window;
+function Datei()
+{
+  if (Dat_Window!=null)
+        if (Dat_Window.closed==false)
+	Dat_Window.close()
+  Dat_Window= window.open("./beispiel.jsp.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,width=660,height=360")
+}
+
+var Bsp_Window;
+
+function Screen()
+{
+  if (Bsp_Window!=null)
+          if (Bsp_Window.closed==false)
+              Bsp_Window.close()
+  Bsp_Window= window.open("./Medien/7_5_11_neu_1.gif" , "Screen" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=680,height=400")
+}
+
+function Screen2()
+{
+  if (Bsp_Window!=null)
+          if (Bsp_Window.closed==false)
+              Bsp_Window.close()
+  Bsp_Window= window.open("./Medien/7_5_9_neu_2.gif" , "Screen2" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=700,height=400")
+}
+//-->
+</script>
+
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+      <td width="550"><b>Die JSP-Seite im Detail (2/4)</b></td>
+      <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+      <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+    </tr>
+     <tr>
+	     <td><p>Das dritte Beispiel f&uuml;r Java-Code in dieser JSP-Seite ist die Ausgabe von Text mit der <span class="code">println()</span>-Methode:</p></td>
+	     <td>&nbsp;</td>
+	     <td>&nbsp;</td>
+   </tr>
+
+    <tr>
+     	    <td align="center">
+     	      <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+   		  	  	<tr>
+   		  	  	<td class="gelb">
+   		  		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+   		          <tr>
+   		            <td width="10">&nbsp;</td>
+   		            <td id="code"><br>&lt;%=
+   		  						<br>&nbsp;&nbsp;&nbsp;&nbsp;System.out.println( <font id="orange">&quot;Ausgabe auf dem Server&quot;</font> );
+   		  						<br>&nbsp;&nbsp;&nbsp;&nbsp;out.println( <font id="orange">&quot;Ausgabe in die HTML Seite&quot;</font> );
+   		  						<br>%&gt;<br><br></td>
+   		            <td width="80">&nbsp;</td>
+   		          </tr>
+   		        </table>
+   		  	  	</td>
+   		  	  	</tr>
+   	</table>
+     	    </td>
+     	    <td>&nbsp;</td>
+     	    <td valign="top" align="left">
+     	        <img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+     	        <a href="javascript:Datei()" onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+     	        onMouseOut="self.status='';return true" id="ex">beispiel.jsp</a>
+     	    </td>
+    </tr>
+
+    <tr>
+      <td><p><br><span class="code">System.out.println([...])</span> gibt einen <b>Text auf dem Webserver aus</b>. Der Webserver <i>Tomcat</i> zeigt diese Zeile jedoch nicht direkt auf dem Bildschirm an, sondern <b>schreibt sie in eine</b> <span class="codeb">log</span><b>-Datei</b>. Diese Datei wird automatisch in einem Unterverzeichnis namens <span class="code">logs</span> angelegt und hei&szlig;t <span class="code">stdout</span>, gefolgt von dem aktuellen Datum. Den Inhalt der Datei k&ouml;nnen Sie sich unter <i>MS DOS</i> mit dem Befehl <span class="code">more</span> anschauen:</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+   <tr>
+   	       <td><div style="margin-left:20px">
+   	 	     <table border="0" cellspacing="0" cellpadding="0">
+   	 	       <tr>
+   	 	         <td><a href="javascript:Screen()"
+   	 	             onMouseOver="Bildwechsel(So2,'b1');self.status='So sieht es aus.';return true"
+   	 	             onMouseOut="Bildwechsel(So1,'b1');self.status='';return true">
+   	 	             <img name=b1 src="../Medien/So.gif" border="0" alt="So sieht es aus."></a></td>
+   	 	         <td width="10">&nbsp;</td>
+   	 	         <td><a href="javascript:Screen()"
+   	 	             onMouseOver="self.status='So sieht es aus.';return true"
+   	 	             onMouseOut="self.status='';return true" id="info">So sieht es aus.</a></td>
+   	 	       </tr>
+   	 	     </table></div>
+   	       </td>
+   	       <td>&nbsp;</td>
+   		   <td>&nbsp;</td>
+	   </tr>
+
+  <tr>
+             <td><p><br>Vergleichen Sie dies doch einmal mit der Ausgabe im Browser (zweite Zeile von oben):</p></td>
+             <td>&nbsp;</td>
+             <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+     	       <td><div style="margin-left:20px">
+     	 	     <table border="0" cellspacing="0" cellpadding="0">
+     	 	       <tr>
+     	 	         <td><a href="javascript:Screen2()"
+     	 	             onMouseOver="Bildwechsel(So2,'b2');self.status='So sieht es aus.';return true"
+     	 	             onMouseOut="Bildwechsel(So1,'b2');self.status='';return true">
+     	 	             <img name=b2 src="../Medien/So.gif" border="0" alt="So sieht es aus."></a></td>
+     	 	         <td width="10">&nbsp;</td>
+     	 	         <td><a href="javascript:Screen2()"
+     	 	             onMouseOver="self.status='So sieht es aus.';return true"
+     	 	             onMouseOut="self.status='';return true" id="info">So sieht es aus.</a></td>
+     	 	       </tr>
+     	 	     </table></div>
+     	       </td>
+     	       <td>&nbsp;</td>
+     		   <td>&nbsp;</td>
+	   </tr>
+<tr>
+             <td><p><br>Dazu wird das <b>Objekt</b> <span class="codeb">out</span> <b>verwendet</b>, welches implizit in jeder JSP-Seite definiert wird. Sie können dieses Objekt einsetzen, <b>um Text in die generierte HTML-Seite zu schreiben</b>.</p></td>
+             <td>&nbsp;</td>
+             <td>&nbsp;</td>
+  </tr>
+
+</table>
+<br><br><br>
+</body>
+</html>

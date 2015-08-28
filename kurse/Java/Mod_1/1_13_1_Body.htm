@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>&Uuml;bung_1_13_1</title>
+
+	<link rel="stylesheet" type="text/css" href="../Format/Format_Ubung.css">
+	<script src="../BrowserCheck.js" type="text/javascript"></script>
+	<script src="../Go_Seite.js" type="text/javascript"></script>
+	<script src="../Uebung/check.js" type="text/javascript"></script>
+	<script src="../Uebung/layer.js" type="text/javascript"></script>
+	<script src="../Uebung/LueckeElement.js" type="text/javascript"></script>
+	<script src="../Uebung/Auswertung.js" type="text/javascript"></script>
+
+	<script language="JavaScript">
+	<!--
+		hauptfrage = "Wie sieht der Weg von einem Java-Quelltext zum Ausf&uuml;hren des Java-Programms aus?";
+
+		frage = new Array();
+		frage[0] = "Der Quelltext wird zun&auml;chst in den <> "
+		  + "mit dem <>-Tool &uuml;bersetzt. Dieser wird ausschlie&szlig;lich von der virtuellen "
+		  + "Java-Maschine ausgef&uuml;hrt, die bei Programmen explizit durch das <>-Tool aufgerufen wird.<br><br>"
+		  + "Applets werden in HTML eingebunden. Werden diese Dateien in einem Java-f&auml;higen <> betrachtet, wird automatisch die virtuelle Maschine aufgerufen.";
+
+		text = new Array();
+		text[0] = "";
+
+		LueckeElement1 = new LueckeElement(0,"Bytecode",["bytecode"],["ByTECODE"],true,10,10,10,"norm","left");
+		LueckeElement2 = new LueckeElement(1,"javac",["javac"],["javac"],true,10,10,10,"code","left");
+		LueckeElement3 = new LueckeElement(2,"java",["java"],["java"],true,10,10,10,"code","left");
+		LueckeElement4 = new LueckeElement(3,"Browser",["browser"],["BROWSER"],true,10,10,10,"norm","left");
+
+		var hilfeLink = new Array();
+		hilfeLink[0] = new Array(2);
+		hilfeLink[0][0] = "Kapitel 1.3, Seite 3";
+		hilfeLink[0][1] = "../Mod_1/1_3_3.htm";
+
+		// Hoehe * Breite für IE Hoehe,Breite,N4 Hoehe,Breite,N6 Hoehe,Breite
+		setFensterLoesung(320,730,320,730,320,730);
+
+		if (meldung)
+		{
+			statusAufgabe = window.opener.parent.parent.frames[0].document.kurs.statusAufgabe.value;
+			userEingabeL = window.opener.userEingabe;
+		}
+		else
+		{
+			statusAufgabe = parent.parent.frames[0].document.kurs.statusAufgabe.value;
+			userEingabeL = userEingabe;
+		}
+
+		function Init()
+		{
+			setMusterLoesung();
+
+			if (meldung)
+			{
+				showOutput();
+				changeInOut(false);
+			}
+			else
+			{
+				parent.parent.savePage();
+				showInput();
+				changeOutIn();
+				loadLuecke();
+			}			
+		}
+
+		function Seite(name)
+		{
+			if (meldung)
+			{
+				window.opener.parent.parent.frames[2].location.href=name;
+				window.close();
+			}
+			else parent.parent.frames[2].location.href=name;
+		}
+	//-->
+	</script>
+
+	<script src="../Uebung/Standarddhtml.js" type="text/javascript"></script>
+	<script src="../Uebung/Lueckedhtml.js" type="text/javascript"></script>
+	<script src="../Uebung/lernpfad.js" type="text/javascript"></script>
+	<script src="../Bildwechsel_A.js" type="text/javascript"></script>
+	<script src="../Uebung/PopUpFenster.js" type="text/javascript"></script>
+</head>
+
+<body onLoad="Init()" onUnload="javascript:if (ml != null) if (ml.closed == false) ml.close()">
+
+<!-- Tabelle mit Feedback + Aufgabenstellung + LernerEingabe + Navigationsleiste + Hilfelinks -->
+<div id="LernerInput" style="position:absolute; top:15px; visibility:visible;">
+</div>
+
+</body>
+</html>
+

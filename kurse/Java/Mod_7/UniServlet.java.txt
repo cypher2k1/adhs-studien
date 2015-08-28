@@ -1,0 +1,78 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap7/UniServlet.java
+//
+//*************Ende Hinweis*****************************
+
+import java.io.*;
+import java.sql.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class UniServlet extends HttpServlet {
+
+    public void doGet (HttpServletRequest  request,
+    				   HttpServletResponse response)
+    	throws IOException, ServletException {
+
+        response.setContentType ("text/html");
+        PrintWriter out = response.getWriter ();
+
+        out.println ("<html>");
+        out.println ("<body>");
+        out.println ("<head>");
+        out.println ("<title>Meine Uni</title>");
+        out.println ("</head>");
+        out.println ("<body>");
+
+
+		Connection		c = null;
+
+		try {
+
+			Class.forName ("sun.jdbc.odbc.JdbcOdbcDriver");
+			c = DriverManager.getConnection ("jdbc:odbc:UNI_DB_ODBC");
+
+			if (c != null) {
+				Statement	s  = c.createStatement ();
+
+				if (s != null) {
+
+					String		sql;
+					ResultSet	rs;
+
+					sql = "SELECT ID, f_name FROM Uni";
+
+					rs = s.executeQuery (sql);
+
+					if (rs.next ()) {
+
+						/* out.println (rs.getInt (1)); */
+
+						out.print ("<b>");
+						out.print (rs.getString (2));
+						out.println ("</b>");
+					}
+
+
+					out.println ("<hr align=left noshade size=1 width=200>");
+
+					sql = "SELECT ID, f_vorname, f_name FROM Person";
+					rs  = s.executeQuery (sql);
+					while (rs.next ()) {
+
+						out.print (rs.getString (2));
+						out.print (" ");
+						out.print (rs.getString (3));
+						out.print ("<br>");
+					}
+				}
+				c.close ();
+			}
+
+		} catch (Exception e) {out.println (e);}
+        out.println ("</body>");
+        out.println ("</html>");
+    }
+}

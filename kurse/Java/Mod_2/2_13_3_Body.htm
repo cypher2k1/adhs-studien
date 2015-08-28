@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_2_13_3</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+
+var Dat_Window;
+function Datei()
+{
+  if (Dat_Window!=null)
+        if (Dat_Window.closed==false)
+	Dat_Window.close()
+  Dat_Window= window.open("./ListenVerwaltung.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,width=660,height=360")
+}
+
+var Docs_Window;
+
+function Docs()
+
+{
+  if (Docs_Window!=null)
+        if (Docs_Window.closed==false)
+	Docs_Window.close()
+  Docs_Window= window.open("../../docs/api/java/util/Iterator.html" , "Docs" ,  "scrollbars=yes,resizable=yes,location=no,width=800,height=600")
+}
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+    <td width="550"><b>Iteratoren</b></td>
+    <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+    <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+  <tr>
+    <td><p>Java bietet außerdem so genannte <b>Iteratoren</b> zum Durchlaufen der Liste an. Ein Iterator ist ein Objekt, welches auf eine Liste verweist und (in gewisser Weise) mit einem Zeiger in dieser Liste ein aktuelles Element der Liste markiert. Mit diesem Zeiger l&auml;sst sich dann das &quot;aktuelle&quot; Element der Liste auslesen. Alle folgenden Elemente der Liste lassen sich ebenfalls auslesen, indem man zum Beispiel diesen Zeiger in der Liste immer weiter nach hinten schiebt, bis kein weiteres Element mehr vorhanden ist.</p></td>
+    <td>&nbsp;</td>
+    <td align="left" valign="top" ><img src="../Medien/Definition.gif" width="36"
+      height="36" alt="Hinweis: Definition(en) im Lehrtext"><br><font id="pikto">Definition</font></td>
+  </tr>
+ <tr>
+    <td><p>Konkret wird ein Iterator zu der Liste aller Klassenkameraden wie folgt erzeugt:</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td align="center">
+	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+			<tr>
+			<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+	      <tr>
+	        <td width="20">&nbsp;</td>
+	        <td id="code"><br>Iterator iter = klassenkameraden.iterator();<br><br></td>
+	        <td width="50">&nbsp;</td>
+	      </tr>
+	    </table>
+			</td>
+			</tr>
+	</table>
+    </td>
+    <td>&nbsp;</td>
+	 <td valign="top" align="left"><img src="../Medien/Beispiel.gif" width="36"
+          height="36" alt="Hinweis: Beispiel(e)"><br><font id="pikto">Beispiel</font></td>
+  </tr>
+
+  <tr>
+    <td><br><p>Der Iterator wird <b>vor (!) dem ersten Element</b> der Liste platziert. Die wichtigsten <b>Methoden</b> des Iterators sind: </p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+<tr>
+      <td>
+        <table BORDER="0" >
+           <tr>
+            <td width="20">&nbsp;</td>
+            <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+            <td><font class="code">next()</font>, die das jeweils n&auml;chste Element der Liste als aktuell markiert und dieses Element als Ergebnis zur&uuml;ckliefert.</td>
+          </tr>
+          <tr>
+		  <td width="20">&nbsp;</td>
+		  <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+		  <td><font class="code">hasNext()</font> pr&uuml;ft, ob es &uuml;berhaupt ein n&auml;chstes Element gibt oder ob der Zeiger bereits am Ende der Liste angekommen ist.</td>
+          </tr>
+         </table>
+     </td>
+     <td>&nbsp;</td>
+   <td>&nbsp;</td>
+
+<tr>
+    <td><br><p>Ein <b>&uuml;blicher Durchlauf</b> durch eine Liste sieht also wie folgt aus:</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+<tr>
+      <td>
+        <table BORDER="0" >
+           <tr>
+            <td width="20">&nbsp;</td>
+            <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+            <td>Zun&auml;chst wird ein <font class="code">Iterator</font> zu der Liste erzeugt.</td>
+          </tr>
+          <tr>
+		  <td width="20">&nbsp;</td>
+		  <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+		  <td>Anschlie&szlig;end wird eine <font class="code">while</font>-Schleife konstruiert, die solange durchlaufen wird, wie es n&auml;chste Elemente in der Liste gibt.</td>
+          </tr>
+         <tr>
+		 <td width="20">&nbsp;</td>
+		 <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+		 <td>Innerhalb der Schleife wird dann das jeweils n&auml;chste Element mit der <font class="code">next()</font>-Methode aus der Liste ausgelesen. Diese Methode liefert ein Objekt der Klasse <font class="code">java.lang.Object</font> zur&uuml;ck, das man gegebenenfalls in den korrekten Datentyp der Listenelemente castet, beispielsweise in Strings.</td>
+         </tr>
+         </table>
+         <br>
+     </td>
+     <td>&nbsp;</td>
+   <td>&nbsp;</td>
+</tr>
+<tr>
+    <td><p>Die Liste aller Klassenkameraden l&auml;sst sich nun zum Beispiel wie folgt auf dem Bildschirm ausgeben:</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center">
+	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+			<tr>
+			<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+			      <tr>
+			        <td width="20">&nbsp;</td>
+			        <td id="code"><br>Iterator iter = klassenkameraden.iterator();
+			        <br><font id="kw">while</font>( iter.hasNext() ){
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String name = (String) iter.next();
+					<br>
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println( name );
+					<br>}
+					<br><br></td>
+			        <td width="50">&nbsp;</td>
+			      </tr>
+	    </table>
+			</td>
+			</tr>
+	</table><br>
+    </td>
+    <td>&nbsp;</td>
+   <td valign="top" align="left">
+           <img src="../Medien/Beispiel.gif" width="36" height="36" alt="Hinweis: Beispiel(e)"><br>
+           <a href="javascript:Datei()" onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true"
+        onMouseOut="self.status='';return true" id="ex">ListenVerwaltung.java</a></td>
+  </tr>
+<tr>
+    <td>
+      <table>
+        <tr>
+   	       <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="30" ></td>
+  	       <td><div style="margin-left:8pt">Mehr Informationen zum Thema Iteratoren finden Sie in der <b>JDK-Dokumentation</b> auf der CD-ROM unter:</div></td>
+        </tr>
+      </table>
+    </td>
+    <td>&nbsp;</td>
+    <td align="left" valign="top" rowspan="2"><img src="../Medien/Hinweis.gif" width="36" height="36"
+        alt="Hinweis: wichtige Hinweis(e) im Lehrtext"><br><font id="pikto">Hinweis</font></td>
+ </tr>
+ <tr>
+    <td>
+      <table>
+        <tr>
+   	       <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="12" ></td>
+  	       <td><div style="margin-left:8pt"><a href="javascript:Docs()" onMouseOver="self.status='zu: JDK-Dokumentation';return true"
+	      onMouseOut="self.status='';return true" id="url">docs\api\java\util\Iterator.html</font></a></div></td>
+        </tr>
+      </table>
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+
+</table>
+<br><br><br>
+</body>
+</html>

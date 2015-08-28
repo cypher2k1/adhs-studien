@@ -1,0 +1,48 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap6/uni.xml
+//
+//*************Ende Hinweis*****************************
+
+
+
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<!DOCTYPE universitaet
+[
+<!ELEMENT universitaet (name, student+)>
+<!ELEMENT student (matrikelnummer, person)>
+<!ELEMENT person (vorname, name)>
+<!ELEMENT matrikelnummer (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT vorname (#PCDATA)>
+]>
+
+<universitaet>
+	<name>Uni. XY</name>
+	
+	<student>
+		<matrikelnummer>101</matrikelnummer>
+		<person>
+			<vorname>Till</vorname>
+			<name>Hansen</name>
+		</person>
+	</student>
+
+	<student>
+		<matrikelnummer>102</matrikelnummer>
+		<person>
+			<vorname>Sabine</vorname>
+			<name>Sahlmann</name>
+		</person>
+	</student>
+
+	<student>
+		<matrikelnummer>103</matrikelnummer>
+		<person>
+			<vorname>Sabine</vorname>
+			<name>Stonebraker</name>
+		</person>
+	</student>
+</universitaet>

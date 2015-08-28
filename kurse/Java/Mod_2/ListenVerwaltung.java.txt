@@ -1,0 +1,40 @@
+
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap2/ListenVerwaltung.java
+//
+//*************Ende Hinweis*****************************
+
+
+import java.util.*;
+
+public class ListenVerwaltung {
+
+	public static void main( String args [] ){
+
+		// Erzeuge eine leere List:
+		List	klassenkameraden = new LinkedList();
+
+		// Trage einige alte Kameraden in die Liste ein
+		klassenkameraden.add( "Hans-Georg" );
+		klassenkameraden.add( "Korinna" );
+		klassenkameraden.add( "Sabine" );
+		klassenkameraden.add( "Sebastian" );
+
+
+		// Erzeuge einen Iterator zum Durchlaufen
+		// der Liste
+		System.out.println( "Klassenkameraden:" );
+		Iterator iter = klassenkameraden.iterator();
+		while( iter.hasNext() ){
+
+			// Solange es noch Objekte in der Liste gibt
+			// hole das nŠchste Objekt, 'caste' und es in
+			// einen String
+			String name = (String) iter.next();
+
+			System.out.println( name );
+		}
+	}
+};

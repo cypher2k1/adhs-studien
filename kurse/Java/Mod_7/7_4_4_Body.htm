@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_7_4_4</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+var Dat_Window;
+
+function Datei()
+{
+  if (Dat_Window!=null)
+          if (Dat_Window.closed==false)
+              Dat_Window.close()
+  Dat_Window= window.open("./IntegerTextField2.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=800,height=260")
+}
+
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+      <td width="550"><b>Signalisieren von &Auml;nderungen</b></td>
+      <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+      <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+    </tr>
+
+    <tr>
+      <td><p>Wenn sich andere Objekte als Listener eingetragen haben, muss die JavaBean
+          entscheiden, <b>wann sich der Wert der Eigenschaft &auml;ndert und es dann
+          signalisieren</b>. Die entsprechende Methode, die diesen Event ausl&ouml;st
+          und ihn automatisch an alle eingetragenen Listener versendet, steckt bereits
+          in der Klasse <font class="code">PropertyChangeSupport</font> und hei&szlig;t
+          <font class="code">firePropertyChange ()</font>.</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td><p>Beim Aufrufen der Methode werden zun&auml;chst <b>der alte und der neue Wert
+          der Eigenschaft &uuml;bergeben</b>. Ein weiterer Parameter <b>legt einen Namen
+          f&uuml;r die Eigenschaft fest</b>, damit die eingetragenen Listener wissen,
+          welche sich ge&auml;ndert hat.</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><p>Das Ausl&ouml;sen oder &quot;Feuern&quot; des Events findet hier in der
+          Methode statt, in der ein neuer Wert der Eigenschaft eingetragen wird:
+          <font class="code">setIntegerValue()</font>.Sie <b>merkt sich den alten Wert</b>,
+          der zuletzt in das Feld eingetragen wurde, <b>und &uuml;berpr&uuml;ft, ob sich
+          dieser von dem neuen Wert des Feldes unterscheidet</b>.</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><p>In diesem Fall werden die angeschlossenen Listener durch Ausl&ouml;sen eines
+          Events benachrichtigt.</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+  <tr>
+      <td align="center">
+  	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+			<tr>
+			<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+  	      <tr>
+  	        <td width="20">&nbsp;</td>
+  	        <td id="code"><br>[...]
+  	                        <br><font id="kw">if</font> (alt != neu) {
+  	                        <br>&nbsp;&nbsp;&nbsp;myPCS.firePropertyChange (<font id="orange">&quot;Integer Value&quot;</font>,
+  	                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  	                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  	                        <font id="kw">new</font> Integer (alt),
+  	                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  	                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  	                        <font id="kw">new</font> Integer (neu));
+  	                        <br>} <br><br></td>
+  	        <td width="20">&nbsp;</td>
+  	      </tr>
+  	    </table>
+			</td>
+			</tr>
+	</table>
+      </td>
+      <td>&nbsp;</td>
+      <td valign="top" align="left"><img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+           <a href="javascript:Datei()"  onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+  		onMouseOut="self.status='';return true" id="ex">IntegerTextField2.java</a>
+      </td>
+  </tr>
+  <tr>
+      <td><p><br>Beim Ausl&ouml;sen des Events wird <b>ein Name festgelegt</b>, der
+          die ge&auml;nderte Eigenschaft der JavaBean identifiziert, <b>sowie zwei
+          Objekte, die ihren alten und neuen Wert</b> repr&auml;sentieren.</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+</table>
+<br><br><br>
+</body>
+</html>

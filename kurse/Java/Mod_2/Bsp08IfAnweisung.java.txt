@@ -1,0 +1,64 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap2/Bsp08IfAnweisung.java
+//
+//*************Ende Hinweis*****************************
+
+
+
+class Bsp08IfAnweisung {
+	
+	public static void main (String args[]) { 
+
+		// ----------------------------------------------------
+
+		System.out.println ("if-else-Anweisung:");
+
+		//
+		// Von den folgenden zwei Anweisungen wird genau
+		// die erste ausgeführt. Die zweite Anweisung
+		// natürlich nicht.
+		//
+		if (1 < 2)
+			System.out.println ("1 ist kleiner als 2!"); 
+
+		if (2 < 1)
+			System.out.println ("2 ist kleiner als 1!"); 
+
+		int		a = 1;
+		
+		//
+		// Die drei Anweisungen innerhalb der if-Anweisung
+		// werden ausgeführt, wenn die Variable a gerade den
+		// Wert 1 hat.
+		//
+		if (a == 1) {
+			
+			System.out.println ("Mehere Anweisungen..."); 
+			System.out.println ("... werden in Klammern...");
+			System.out.println ("... eingeschlossen!"); 
+		}
+		
+		
+		//
+		// Auch für den Fall, dass die Bedingung nicht erfüllt ist,
+		// können Anweisungen angegeben werden, zum Beispiel auch
+		// weitere if-Anweisungen
+		//
+		if (a == 2)
+			System.out.println ("a hat den Wert 2"); 
+		else
+			System.out.println ("a hat nicht den Wert 2"); 
+
+
+		if (a == 2)
+			System.out.println ("a hat den Wert 2"); 
+		else if (a == 3)
+				System.out.println ("a hat den Wert 3"); 
+			 else
+				System.out.println ("a hat weder den Wert 2 noch 3"); 
+
+			
+	} 
+}

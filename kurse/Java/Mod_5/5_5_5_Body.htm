@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_5_5_5</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script src="../Bildwechsel.js"></script>
+<script langauge="JavaScript">
+<!--
+var Dat_Window;
+
+function Datei()
+{
+  if (Dat_Window!=null)
+          if (Dat_Window.closed==false)
+              Dat_Window.close()
+  Dat_Window= window.open("./Schlagzeilen.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=650,height=260")
+}
+function Datei2()
+{
+  if (Dat_Window!=null)
+          if (Dat_Window.closed==false)
+              Dat_Window.close()
+  Dat_Window= window.open("./Schlagzeilen.htm" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=650,height=260")
+}
+
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+    <td width="550"><b>Anzeigen der Schlagzeilen</b></td>
+    <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+    <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+
+  <tr>
+    <td><p>Der <b>zweite Schritt</b> in unserem Java-Programm besteht nun darin, die Schlagzeilen aus dem heruntergeladenen Text herauszufiltern und anzuzeigen. Auch dies ist nicht schwierig:</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td></td>
+  </tr>
+
+  <tr>
+    <td><p>Als erstes muss das Programm in dem Inhalt der heruntergeladenen Seite nach den <b>XML-Tags</b> <font class="code">&lt;title&gt;</font> und <font class="code">&lt;/title&gt;</font> <b>suchen</b>:</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+          <td align="center">
+      	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+      			<tr>
+      			<td class="gelb">
+      		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+      	      <tr>
+      	        <td width="20">&nbsp;</td>
+      	        <td id="code"><br><font id="kw">int</font>&nbsp;&nbsp;&nbsp;&nbsp;start	= content.indexOf( <font id="orange">&quot;&lt;title&gt;&quot;</font> );
+  							  <br><font id="kw">int</font>&nbsp;&nbsp;&nbsp;&nbsp;ende&nbsp; = content.indexOf( <font id="orange">&quot;&lt;/title&gt;&quot;</font> );
+  								<br><br></td>
+      	        <td width="102">&nbsp;</td>
+      	      </tr>
+      	    </table>
+      			</td>
+      			</tr>
+      	</table><br><br>
+          </td>
+          <td>&nbsp;</td>
+          <td valign="top" align="left"><img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+                      <a href="javascript:Datei()"  onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+      		onMouseOut="self.status='';return true" id="ex">Schlagzeilen.java</a>
+          </td>
+    </tr>
+<tr>
+    <td><p>Und solange zum Beispiel das Start-Tag (<font class="code">&lt;title&gt;</font>) in dem Text noch vorkommt, wird der <b>Teilstring</b>, der zwischen dem Start- und dem End-Tag liegt, <b>herausgefiltert und angezeigt</b>.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+<tr>
+          <td align="center">
+      	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+      			<tr>
+      			<td class="gelb">
+      		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+      	      <tr>
+      	        <td width="20">&nbsp;</td>
+      	        <td id="code"><br><font id="kw">while</font>( start != -1 ){
+							  <br>&nbsp;&nbsp;&nbsp;&nbsp;String schlagzeile = content.substring( start <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <font id="orange">&quot;&lt;title&gt;&quot;</font>.length(),ende );
+							  <br>&nbsp;&nbsp;&nbsp;&nbsp;System.out.println( schlagzeile );
+   							  <br><br></td>
+      	        <td width="30">&nbsp;</td>
+      	      </tr>
+      	    	</table>
+      			</td>
+      			</tr>
+      		</table><br><br>
+          </td>
+          <td>&nbsp;</td>
+          <td valign="top" align="left"><img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+           <a href="javascript:Datei()" onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Schlagzeilen.java</a>
+          </td>
+    </tr>
+ <tr>
+     <td><p>Alles was danach noch zu tun ist, den bereits bearbeiteten Teil des Nachrichtentexts &quot;wegzuwerfen&quot; und in dem verbliebenen Teil <b>erneut</b> nach den Tags <font class="code">&lt;title&gt;</font> und <font class="code">&lt;/title&gt;</font> <b>zu suchen</b>.</p></td>
+     <td>&nbsp;</td>
+     <td>&nbsp;</td></td>
+  </tr>
+<tr>
+          <td align="center">
+      	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+      			<tr>
+      			<td class="gelb">
+      		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+      	      <tr>
+      	        <td width="20">&nbsp;</td>
+      	        <td id="code"><br>content = content.substring( ende + <font id="orange">&quot;&lt;/title&gt;&quot;</font>.length() );
+						<br>start&nbsp;&nbsp;&nbsp;= content.indexOf( <font id="orange">&quot;&lt;title&gt;&quot;</font> );
+						<br>ende&nbsp;&nbsp;&nbsp;&nbsp;= content.indexOf( <font id="orange">&quot;&lt;/title&gt;&quot;</font> );
+   					  <br><br></td>
+      	        <td width="10">&nbsp;</td>
+      	      </tr>
+      	    	</table>
+      			</td>
+      			</tr>
+      		</table><br><br>
+          </td>
+          <td>&nbsp;</td>
+          <td valign="top" align="left"><img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+           <a href="javascript:Datei()" onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Schlagzeilen.java</a>
+          </td>
+ </tr>
+ <tr>
+      <td><p>Und dies sind dann die aktuellen Schlagzeilen:</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td></td>
+  </tr>
+  <tr>
+    	    <td><div style="margin-left:20px">
+    		<table border="0" cellspacing="0" cellpadding="0">
+    	          <tr>
+    			<td><a href="javascript:Datei2()"
+    	      		onMouseOver="Bildwechsel(So2,'b1');self.status='So sieht es aus.';return true" onMouseOut="Bildwechsel(So1,'b1');self.status='';return true">
+    	      		<img name=b1 src="../Medien/So.gif" border="0" alt="So sieht es aus."></a></td>
+    	    		<td width="10">&nbsp;</td>
+    	    		<td ><a href="javascript:Datei2()" onMouseOver="self.status='So sieht es aus.';return true"
+    	    		onMouseOut="self.status='';return true" id="info">So sieht es aus.</a></td>
+    	      	  </tr>
+    	     	</table></div>
+    	    </td>
+    	    <td>&nbsp;</td>
+    	    <td>&nbsp;</td>
+  	</tr>
+</table>
+<br><br><br>
+</body>
+</html>

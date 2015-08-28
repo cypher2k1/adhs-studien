@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_6_7_5</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script src="../Bildwechsel.js"></script>
+<script langauge="JavaScript">
+<!--
+var Dat_Window;
+
+function Datei()
+{
+  if (Dat_Window!=null)
+          if (Dat_Window.closed==false)
+              Dat_Window.close()
+  Dat_Window= window.open("./hibernate.cfg.xml.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=680,height=260")
+}
+
+var Bsp_Window;
+
+function Screen()
+{
+  if (Bsp_Window!=null)
+          if (Bsp_Window.closed==false)
+              Bsp_Window.close()
+  Bsp_Window= window.open("./Medien/Java_6_13.gif" , "Screen" ,  "scrollbars=no,resizable=yes,location=no,dependent=yes,width=660,height=620")
+}
+
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+ <tr>
+     <td width="550"><b>Hibernate-Konfiguration</b></td>
+     <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+     <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+   </tr>
+
+   <tr>
+     <td>In einem weiteren Schritt wird Hibernate konfiguriert. Dazu geh&ouml;ren die <b>Datenbank-Einstellungen</b>, die Sie auch in dem Quelltext des urspr&uuml;nglichen Programms finden, wie beispielsweise</td>
+     <td>&nbsp;</td>
+     <td>&nbsp;</td>
+   </tr>
+   <tr>
+           <td>
+             <table BORDER="0" >
+                <tr>
+                 <td width="20">&nbsp;</td>
+                 <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+                 <td>der verwendete JDBC-Treiber,</td>
+               </tr>
+               <tr>
+     		  <td width="20">&nbsp;</td>
+     		  <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+     		  <td>der Name der Datenbank,</td>
+               </tr>
+              <tr>
+     		 <td width="20">&nbsp;</td>
+     		 <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+     		 <td>und eventuell der Benutzername und das Passwort.</td>
+              </tr>
+              </table>
+              <br>
+          </td>
+          <td>&nbsp;</td>
+        <td>&nbsp;</td>
+</tr>
+
+   <tr>
+     <td align="center">
+	 	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+				<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+	 	      <tr>
+	 	        <td width="10">&nbsp;</td>
+	 	        <td id="code"><br>&lt;hibernate-configuration&gt;
+						<br>&nbsp;&nbsp;&nbsp;&lt;session-factory&gt;
+						<br>&nbsp;&nbsp;&nbsp;&lt;!-- Database connection settings --&gt;
+						<br>&nbsp;&nbsp;&nbsp;&lt;property name=&quot;connection.driver_class"&gt;
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sun.jdbc.odbc.JdbcOdbcDriver&lt;/property&gt;
+						<br>&nbsp;&nbsp;&nbsp;&lt;property name=&quot;connection.url&quot;&gt;jdbc:odbc:UNI_DB_ODBC
+						<br>&nbsp;&nbsp;&nbsp;&lt;/property&gt;
+						<br>&nbsp;&nbsp;&nbsp;&lt;property name=&quot;connection.username&quot;&gt;&lt;/property&gt;
+						<br>&nbsp;&nbsp;&nbsp;&lt;property name=&quot;connection.password&quot;&gt;&lt;/property&gt;
+						<br>
+						<br>[...]
+						<br>
+						<br>&nbsp;&nbsp;&nbsp;&lt;!-- Echo all executed SQL to stdout --&gt;
+						<br>&nbsp;&nbsp;&nbsp;&lt;property name=&quot;show_sql&quot;&gt;true&lt;/property&gt;
+
+						<br>&nbsp;&nbsp;&nbsp;&lt;mapping resource=&quot;hibernatebsp/Uni.hbm.xml&quot;/&gt;
+						<br>&nbsp;&nbsp;&nbsp;&lt;/session-factory&gt;
+					<br>&lt;/hibernate-configuration&gt;<br><br></td>
+	 	        <td width="20">&nbsp;</td>
+	 	      </tr>
+	 	    </table>
+				</td>
+				</tr>
+	</table>
+     </td>
+     <td>&nbsp;</td>
+     <td valign="top" align="left">
+          <img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+          <a href="javascript:Datei()"  onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+   		onMouseOut="self.status='';return true" id="ex">hibernate.cfg.xml</a>
+       </td>
+   </tr>
+   <tr>
+     <td><p><br>Au&szlig;erdem legen wir in diesem Beispiel fest, dass alle von Hibernate generierten <b>SQL-Anweisungen</b> ausgegeben werden (vgl. <a href="javascript:goPage('../Mod_6/6_7_7.htm')" onMouseOver="self.status='zu: Seite 7';return true;"
+               onMouseOut="self.status='';return true" id="hier">Seite 7</a>).</p></td>
+     <td>&nbsp;</td>
+     <td>&nbsp;</td>
+   </tr>
+
+</table>
+<br><br><br>
+</body>
+</html>

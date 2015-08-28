@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Bsp08IfAnweisung.java mit Kommentar</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+
+<script langauge="JavaScript">
+<!--
+
+
+  Normal1 = new Image();
+  Normal1.src = "../Medien/Zu.gif";
+  Highlight1 = new Image();
+  Highlight1.src = "../Medien/Zu_Mo.gif";
+ 
+  Normal2 = new Image();
+  Normal2.src = "../Medien/Print.gif";
+  Highlight2 = new Image();
+  Highlight2.src = "../Medien/Print_Mo.gif";
+function Bildwechsel(Bildobjekt,PName)
+  {
+
+   command= "window.document."+PName+".src = Bildobjekt.src";
+   eval(command);
+  }
+
+//-->
+</script>
+</head>
+
+<body bgcolor="#ffffff">
+
+<div style="margin-left:10">
+<table><tr>
+      <td>
+      <a href="javascript:print()"
+      onMouseOver="Bildwechsel(Highlight2,'b2');self.status='Fensterinhalt drucken';return true" onMouseOut="Bildwechsel(Normal2,'b2');self.status='';return true">
+      <img name=b2 src="../Medien/Print.gif" border="0" alt="Fensterinhalt drucken"></a></td>
+      <td ><a href="javascript:print()"
+      onMouseOver="self.status='Fensterinhalt drucken';return true" onMouseOut="self.status='';return true" id="ex">Fensterinhalt drucken</a>
+      </td>
+      <td width="100">&nbsp;</td>
+      
+      <td>
+      <a href="javascript:window.close()"
+      onMouseOver="Bildwechsel(Highlight1,'b1');self.status='Fenster schlie&szlig;en';return true" onMouseOut="Bildwechsel(Normal1,'b1');self.status='';return true">
+      <img name=b1 src="../Medien/Zu.gif" border="0" alt="Fenster schlie&szlig;en"></a></td>
+      <td ><a href="javascript:window.close()"
+      onMouseOver="self.status='Fenster schlie&szlig;en';return true" onMouseOut="self.status='';return true" id="ex">Fenster schlie&szlig;en</a>
+      </td>
+      
+      
+      
+    
+     </tr>
+ </table>
+
+ <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+	<tr>
+	<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+
+                <tr>
+                    <td width="20">&nbsp;</td>
+                    <td id="code"><br>
+			<font id="kom">
+			&nbsp;//<br>
+			&nbsp;// Beispiel f&uuml;r eine if...else-Anweisung:<br>
+			&nbsp;// Der Variablen a wird der Wert 1 zugewiesen <br>
+			&nbsp;// </font><br>
+
+			&nbsp;a = 1;<br><br>
+			<font id="kom">
+			&nbsp;//<br>
+			&nbsp;// Im if-Zweig der Anweisung wird gepr&uuml;ft, <br>
+			&nbsp;// ob a den Wert 2 hat. Da die Bedingung nicht<br>
+			&nbsp;// erf&uuml;llt ist, wird die Anweisung nicht<br>
+			&nbsp;// ausgef&uuml;hrt.<br>
+			&nbsp;// </font><br>
+                        &nbsp;<font id="kw">if</font> (a == 2)<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; System.out.println (<font id="orange">&quot;a hat den Wert 2&quot</font>);&nbsp;&nbsp;<br>
+			</td>
+		    <td>&nbsp;</td>
+                </tr>
+ 		<tr>
+                    <td width="20">&nbsp;</td>
+                    <td id="code"><br>
+			<font id="kom">
+                        &nbsp;//<br>
+			&nbsp;// Stattdessen wird der else-Zweig ausgef&uuml;hrt.<br>
+			&nbsp;// </font><br>
+                        &nbsp;<font id="kw">else</font><br>
+			<nobr>&nbsp;&nbsp;&nbsp;&nbsp; System.out.println (<font id="orange">&quot;a hat nicht den Wert 2&quot</font>);&nbsp;&nbsp;</nobr><br><br>
+			</td>
+		    <td>&nbsp;</td>
+                </tr>
+	</table>
+	</td>
+	</tr>
+	</table></div>
+
+</body>
+</html>

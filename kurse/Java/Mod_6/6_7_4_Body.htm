@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_6_7_4</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script src="../Bildwechsel.js"></script>
+<script langauge="JavaScript">
+<!--
+var Dat_Window;
+
+function Datei()
+{
+  if (Dat_Window!=null)
+          if (Dat_Window.closed==false)
+              Dat_Window.close()
+  Dat_Window= window.open("./Uni.hbm.xml.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=680,height=260")
+}
+
+
+
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+ <tr>
+     <td width="550"><b>Die Datei Hibernate-Mapping</b></td>
+     <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+     <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+   </tr>
+
+   <tr>
+     <td><p>Der n&auml;chste Schritt besteht darin, ein <b>Mapping</b> zu <b>definieren</b>: Zu jedem Attribut der Klasse <font class="code">Uni</font> wird darin beschrieben, wie die enthaltenen Werte in der Datenbank abgelegt werden sollen.</p></td>
+     <td>&nbsp;</td>
+     <td>&nbsp;</td>
+   </tr>
+<tr>
+     <td>In dem folgenden Mapping wird festgelegt, dass</td>
+     <td>&nbsp;</td>
+     <td>&nbsp;</td>
+   </tr>
+   <tr>
+           <td>
+             <table BORDER="0" >
+                <tr>
+                 <td width="20">&nbsp;</td>
+                 <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+                 <td>die Objekte der Klasse <font class="code">Uni</font> in der Tabelle <font class="code">UNI</font> in der Datenbank abgelegt werden.</td>
+               </tr>
+               <tr>
+     		  <td width="20">&nbsp;</td>
+     		  <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+     		  <td>f&uuml;r jedes Objekt das Attribut <font class="code">id</font> in der Spalte <font class="code">ID</font> der Tabelle abgelegt wird. Beim Anlegen neuer Objekte wird dann automatisch eine aufsteigende Folge von Zahlen als ID vergeben.</td>
+               </tr>
+              <tr>
+     		 <td width="20">&nbsp;</td>
+     		 <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+     		 <td>der Name der Uni aus dem Attribut <font class="code">title</font> der Klasse in der Spalte <font class="code">F_NAME</font> der Tabelle abgelegt wird.</td>
+              </tr>
+              </table>
+              <br>
+          </td>
+          <td>&nbsp;</td>
+        <td>&nbsp;</td>
+</tr>
+   <tr>
+     <td align="center">
+	 	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+				<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+	 	      <tr>
+	 	        <td width="20">&nbsp;</td>
+	 	        <td id="code"><br>&lt;hibernate-mapping&gt;
+										<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;class name="&quot;hibernatebsp.Uni&quot; table=&quot;UNI&quot;&gt;
+										<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;id name=&quot;id&quot; column=&quot;ID&quot;&gt;
+										<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;generator class=&quot;increment&quot;/&gt;
+										<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/id>
+										<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;property name=&quot;title&quot; column=&quot;F_NAME&quot; /&gt;
+										<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/class&gt;
+									<br>&lt;/hibernate-mapping&gt;
+<br><br></td>
+	 	        <td width="20">&nbsp;</td>
+	 	      </tr>
+	 	    </table>
+				</td>
+				</tr>
+	</table>
+     </td>
+     <td>&nbsp;</td>
+     <td valign="top" align="left">
+          <img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+          <a href="javascript:Datei()"  onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+   		onMouseOut="self.status='';return true" id="ex">Uni.hbm.xml</a>
+       </td>
+   </tr>
+
+
+   <tr>
+     <td><p><br><b>Eine Mapping-Datei</b> wird in Hibernate &uuml;blicherweise <b>f&uuml;r jede Klasse</b> definiert, deren Objekte in einer Datenbank abgelegt werden sollen - <b>oder</b> es werden <b>mehrere Mappings in einer einzelnen Datei</b> definiert.</p></td>
+     <td>&nbsp;</td>
+     <td>&nbsp;</td>
+  </tr>
+  <tr>
+     <td><p>Der <b>Vorteil</b> gegen&uuml;ber der &quot;normalen&quot; Programmierung liegt darin, dass all dies nicht in dem Quelltext des Programms versteckt wird, sondern &uuml;bersichtlich in einer gesonderten Datei liegt. Dadurch wird es auch m&ouml;glich, das Mapping der Daten zu &auml;ndern, ohne das Programm selber &auml;ndern zu m&uuml;ssen.</p></td>
+     <td>&nbsp;</td>
+     <td>&nbsp;</td>
+  </tr>
+
+
+</table>
+<br><br>
+</body>
+</html>

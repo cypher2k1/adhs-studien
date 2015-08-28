@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_3_3_2</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+var Docs_Window;
+
+function Docs()
+
+{
+  if (Docs_Window!=null)
+        if (Docs_Window.closed==false)
+	Docs_Window.close()
+  Docs_Window= window.open("../../docs/api/java/awt/Graphics.html" , "Docs" ,  "scrollbars=yes,resizable=yes,location=no,width=800,height=600")
+}
+
+
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+    <td width="550"><b>Applet und Malfunktionen</b></td>
+    <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+    <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+
+  <tr>
+    <td><p>Die <font class="code">paint()</font>-Methode eines Applets wird vom Browser aufgerufen,
+        wenn die <b>Fl&auml;che des Applets neu gezeichnet</b> werden soll - weil die Applet-Seite
+        gerade erst aufgerufen wurde oder durch ein anderes Fenster verdeckt war.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td><p>Als <b>Parameter</b> liefert der Browser dem Applet eine <b>Umgebung</b> vom Typ
+        <font class="code">Graphics</font>. Diese Umgebung bietet eine ganze Reihe von
+        Grafikoperationen zum Malen an. Beispiele sind:</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+      <table BORDER="0" >
+         <tr>
+          <td width="20">&nbsp;</td>
+          <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+          <td>&nbsp;<font class="code">drawArc()</font></td>
+        </tr>
+        <tr>
+          <td width="20">&nbsp;</td>
+          <td width="20" valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+          <td>&nbsp;<font class="code">drawImage()</font></td>
+        </tr>
+        <tr>
+          <td width="20">&nbsp;</td>
+          <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+          <td>&nbsp;<font class="code">drawLine()</font></td>
+        </tr>
+        <tr>
+          <td width="20">&nbsp;</td>
+          <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+          <td>&nbsp;<font class="code">drawOval()</font></td>
+        </tr>
+        <tr>
+          <td width="20">&nbsp;</td>
+          <td width="20" valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+          <td>&nbsp;<font class="code">drawPolygon()</font></td>
+        </tr>
+        <tr>
+          <td width="20">&nbsp;</td>
+          <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+          <td>&nbsp;<font class="code">drawPolyline()</font></td>
+        </tr>
+        <tr>
+          <td width="20">&nbsp;</td>
+          <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+          <td>&nbsp;<font class="code">drawRect()</font></td>
+        </tr>
+        <tr>
+          <td width="20">&nbsp;</td>
+          <td width="20" valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+          <td>&nbsp;<font class="code">drawRoundRect()</font></td>
+        </tr>
+        <tr>
+          <td width="20">&nbsp;</td>
+          <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+          <td>&nbsp;<font class="code">drawString()</font></td>
+        </tr>
+        <tr>
+          <td width="20">&nbsp;</td>
+          <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+          <td>&nbsp;<font class="code">fillArc()</font></td>
+        </tr>
+        <tr>
+          <td width="20">&nbsp;</td>
+          <td width="20" valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+          <td>&nbsp;<font class="code">fillOval()</font></td>
+        </tr>
+        <tr>
+          <td width="20">&nbsp;</td>
+          <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+          <td>&nbsp;<font class="code">fillRect()</font></td>
+        </tr>
+	
+       </table>
+    </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p><br>Au&szlig;erdem k&ouml;nnen Sie mit <font class="code">setColor()</font> die <b>Farbe des
+        Pinsels</b> bestimmen und mit <font class="code">setFont()</font> einen <b>Font</b> ausw&auml;hlen.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr>
+   	       <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="30" ></td>
+  	       <td><div style="margin-left:8pt">Mehr Informationen zu der Klasse <font class="code">Graphics</font>
+		finden Sie in der <b>JDK-Dokumentation</b> auf der CD-ROM unter:</div></td>
+        </tr>
+      </table>
+    </td>
+    <td>&nbsp;</td>
+    <td align="left" valign="top" rowspan="2"><img src="../Medien/Hinweis.gif" width="36" height="36"
+        alt="Hinweis: wichtige Hinweis(e) im Lehrtext"><br><font id="pikto">Hinweis</font></td>
+ </tr>
+ <tr>
+    <td>
+      <table>
+        <tr>
+   	       <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="12" ></td>
+  	       <td><div style="margin-left:8pt"><a href="javascript:Docs()" onMouseOver="self.status='zu: JDK-Dokumentation';return true"
+	      onMouseOut="self.status='';return true" id="url">docs\api\java\awt\Graphics.html</font></a></div></td>
+        </tr>
+      </table>
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+</table>
+</body>
+</html>

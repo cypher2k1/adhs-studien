@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_3_4_2</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+var Docs_Window;
+
+function Docs()
+
+{
+  if (Docs_Window!=null)
+        if (Docs_Window.closed==false)
+	Docs_Window.close()
+  Docs_Window= window.open("../../docs/api/java/lang/Runnable.html" , "Docs" ,  "scrollbars=yes,resizable=yes,location=no,width=800,height=600")
+}
+
+var Dat_Window;
+function Datei()
+{
+  if (Dat_Window!=null)
+        if (Dat_Window.closed==false)
+	Dat_Window.close()
+  Dat_Window= window.open("./Animation1.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,width=660,height=360")
+}
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+    <td width="550"><b>Threads</b></td>
+    <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+    <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+
+  <tr>
+    <td><p>Eine der St&auml;rken von <b>Java</b> liegt darin, dass bestimmte Bereiche, die in
+        anderen Programmiersprachen und Systemen sehr umst&auml;ndlich zu programmieren sind, sehr elegant
+	unterst&uuml;tzt werden. Gemeint sind <b>die API</b> (<i><b>A</b>pplication <b>P</b>rogramming <b>I</b>nterface</i>).
+	Hierzu geh&ouml;ren die <i>Threads</i> - Programmteile, die <b>&quot;zur selben Zeit&quot;</b> ausgef&uuml;hrt werden.</p></td>
+    <td>&nbsp;</td>
+    <td align="left" valign="top" ><img src="../Medien/Definition.gif" width="36"
+      height="36" alt="Hinweis: Definition(en) im Lehrtext"><br><font id="pikto">Definition</font></td>
+  </tr>
+  <tr>
+    <td><p>Das Applet zu dem folgenden Beispiel k&ouml;nnen Sie in <a href="javascript:goPage('3_4_7.htm')"
+        onMouseOver="self.status='zu Seite 7';return true;"
+        onMouseOut="self.status='';return true" id="hier">Kapitel 3.4</a> unter <i>Applet anzeigen</i> anschauen.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td><p>Der erste Schritt beim Erzeugen eines Threads, d.h. eines Programmzweigs, der
+        <b>parallel zum Rest</b> ausgef&uuml;hrt werden soll, besteht darin, dass das Applet das
+        Interface <font class="code">runnable</font> implementiert.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+	  	<tr>
+	  	<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+        <tr>
+          <td width="20">&nbsp;</td>
+          <td id="code"><br><font id="kw">public class</font> Animation1 <font id="kw">extends</font>
+                                 Applet<br>
+                          <font id="kw">implements</font> Runnable {
+                          <br><br></td>
+          <td width="20">&nbsp;</td>
+        </tr>
+      </table>
+	  	</td>
+	  	</tr>
+	</table>
+    </td>
+    <td>&nbsp;</td>
+    <td valign="top" align="left">
+        <img src="../Medien/Beispiel.gif" width="36" height="36" alt="Hinweis: Beispiel(e)"><br>
+        <a href="javascript:Datei()" onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true"
+        onMouseOut="self.status='';return true" id="ex">Animation1.java</a>
+    </td>
+  </tr>
+  <tr>
+    <td><p><br>Hierdurch erbt das Applet eine neue <font class="code">run()</font>-Methode, die es implementieren
+	muss. Darauf kommen wir sp&auml;ter noch zu sprechen.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr>
+   	       <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="30" ></td>
+  	       <td><div style="margin-left:8pt">Mehr Informationen zu dem Interface <font class="code">runnable</font>
+		finden Sie in der <b>JDK-Dokumentation</b> auf der CD-ROM unter:</div></td>
+        </tr>
+      </table>
+    </td>
+    <td>&nbsp;</td>
+    <td align="left" valign="top" rowspan="2"><img src="../Medien/Hinweis.gif" width="36" height="36"
+        alt="Hinweis: wichtige Hinweis(e) im Lehrtext"><br><font id="pikto">Hinweis</font></td>
+ </tr>
+ <tr>
+    <td>
+      <table>
+        <tr>
+   	       <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="12" ></td>
+  	       <td><div style="margin-left:8pt"><a href="javascript:Docs()" onMouseOver="self.status='zu: JDK-Dokumentation';return true"
+	      onMouseOut="self.status='';return true" id="url">docs\api\java\lang\Runnable.html</font></a></div></td>
+        </tr>
+      </table>
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+
+</table>
+</body>
+</html>

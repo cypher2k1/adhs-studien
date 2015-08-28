@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_6_2_5</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+
+var Dat_Window;
+function Datei()
+{
+  if (Dat_Window!=null)
+        if (Dat_Window.closed==false)
+            Dat_Window.close()
+  Dat_Window= window.open("./SpeichernZIP.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,width=720,height=360")
+}
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+      <td width="550"><b>Streams</b></td>
+      <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+      <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+    </tr>
+    
+    <tr>
+      <td><p>Als <i>Streams</i> bezeichnet man in Java <b>ein weiteres Konzept f&uuml;r 
+          geschachtelte Ein- und Ausgabeobjekte</b>. Sie hei&szlig;en nun nicht mehr 
+          <i>Reader</i> und <i>Writer</i>, sondern <i>InputStreams</i> und <i>OutputStreams</i> 
+          und sind <b>nicht mehr auf Strings beschr&auml;nkt</b>.</p></td>
+      <td>&nbsp;</td>
+      <td align="left" valign="top" ><img src="../Medien/Definition.gif" width="36"
+      height="36" alt="Hinweis: Definition(en) im Lehrtext"><br><font id="pikto">Definition</font></td>
+    </tr>
+    
+    <tr>
+      <td><p>So gibt es zum Beispiel auf der unteren Ebene die Klasse 
+          <font class="code">FileOutputStream</font> zum Schreiben von Daten in eine Datei. 
+          Dar&uuml;ber gibt es die Klasse <font class="code">ZipOutputStream</font> zum 
+          Komprimieren von Daten (und Schreiben der Daten in den enthaltenen <i>Stream</i>).
+          </p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+   
+    <tr>
+	  <td align="center">
+	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+			<tr>
+			<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+	      <tr>
+	        <td width="10">&nbsp;</td>
+	        <td id="code"><br>FileOutputStream&nbsp;f&nbsp;&nbsp;&nbsp;= <font id="kw">new</font> FileOutputStream 
+	                        (<font id="orange">&quot;remember.zip&quot;</font>);
+	                        <br>ZipOutputStream&nbsp;&nbsp;zip&nbsp;= <font id="kw">new</font> ZipOutputStream (f);<br><br></td>
+	        <td width="10">&nbsp;</td>
+	      </tr>
+	    </table>
+			</td>
+			</tr>
+	</table>
+	  </td>
+	  <td>&nbsp;</td>
+	  <td valign="top" align="left">
+	      <img src="../Medien/Beispiel.gif" width="36" height="36" alt="Hinweis: Beispiel(e)"><br>
+	      <a href="javascript:Datei()" onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true" 
+	      onMouseOut="self.status='';return true" id="ex">SpeichernZIP.java</a>
+	      
+	  </td>
+    </tr>
+    <tr>
+      <td><p><br>Dieser Stream kann nun verwendet werden, um einen Text unter einem 
+          bestimmten Namen (<font class="code">test.txt</font>) in einem 
+          <b><i>ZIP</i>-Archiv</b> abzulegen.</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+   <tr>
+     <td align="center">
+       <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+	   	<tr>
+	   	<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+         <tr>
+           <td width="10">&nbsp;</td>
+           <td id="code"><br>String  s = <font id="orange">&quot;Dieses ist ein Test!&quot;</font>;
+                           <br><br>zip.putNextEntry (<font id="kw">new</font> ZipEntry 
+                               (<font id="orange">&quot;test.txt&quot;</font>));
+                           <br>zip.write (s.getBytes (), 0, s.length ());
+                           <br>zip.close ();
+                           <br><br></td>
+           <td width="136">&nbsp;</td>
+         </tr>
+       </table>
+	   	</td>
+	   	</tr>
+	</table>
+     </td>
+     <td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="16" ></td>
+          <td><b>Weitere Beispiele f&uuml;r den Umgang mit Streams folgen auf den n&auml;chsten 
+              Seiten</b>.</td>
+        </tr>
+      </table>
+    </td>
+    <td>&nbsp;</td>
+    <td align="left" valign="top"><img src="../Medien/Hinweis.gif" width="36" height="36" 
+        alt="Hinweis: wichtige Hinweis(e) im Lehrtext"><br><font id="pikto">Hinweis</font></td>
+ </tr>
+</table>
+<br><br><br>
+</body>
+</html>

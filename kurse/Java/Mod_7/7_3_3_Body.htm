@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_7_3_3</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+var Dat_Window;
+
+function Datei()
+{
+  if (Dat_Window!=null)
+          if (Dat_Window.closed==false)
+              Dat_Window.close()
+  Dat_Window= window.open("./Anwendung1.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=680,height=260")
+}
+
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+ <tr>
+     <td width="550"><b>Das Erzeugen von JavaBean-Instanzen</b></td>
+     <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+     <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+   </tr>
+
+   <tr>
+     <td><p>In das Layout kann dann eine Instanz der JavaBean eingetragen
+         werden, wie jede andere Komponente auch:</p></td>
+     <td>&nbsp;</td>
+     <td>&nbsp;</td>
+   </tr>
+   <tr>
+       <td align="center">
+   	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+			<tr>
+			<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+   	      <tr>
+   	        <td width="20">&nbsp;</td>
+   	        <td id="code"><br>[...]
+   	                        <br>setLayout (<font id="kw">new</font> FlowLayout (FlowLayout.LEFT, 10, 10));
+   	                        <br><br>IntegerTextField1 tf1 = <font id="kw">new</font> IntegerTextField1 (); <br><br></td>
+   	        <td width="20">&nbsp;</td>
+   	      </tr>
+   	    </table>
+			</td>
+			</tr>
+	</table>
+       </td>
+       <td>&nbsp;</td>
+       <td valign="top" align="left"><img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+               <a href="javascript:Datei()"  onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+   		onMouseOut="self.status='';return true" id="ex">Anwendung1.java</a>
+       </td>
+   </tr>
+   <tr>
+     <td><p><br>Da sie in diesem Fall <b>alle Eigenschaften und Methoden</b> von
+         <font class="code">TextField</font> erbt, k&ouml;nnen die Methoden benutzt
+         werden, um die <b>Anzahl der Spalten</b> festzulegen, bevor die JavaBean
+         in das Layout eingetragen und angezeigt wird. So wird ein leeres
+         Textfeld erzeugt:</p></td>
+     <td>&nbsp;</td>
+     <td>&nbsp;</td>
+   </tr>
+   <tr>
+     <td align="center">
+	    	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+					<tr>
+					<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+	    	      <tr>
+	    	        <td width="20">&nbsp;</td>
+	    	        <td id="code"><br>tf1.setColumns (10);
+	    	             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    	             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    	             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    	                        <br>add (tf1);
+	    	                        <br>[...]<br><br></td>
+	    	        <td width="20">&nbsp;</td>
+	    	      </tr>
+	    	    </table>
+					</td>
+					</tr>
+	</table>
+       </td>
+     <td>&nbsp;</td>
+     <td valign="top" align="left"><img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+               <a href="javascript:Datei()"  onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+   		onMouseOut="self.status='';return true" id="ex">Anwendung1.java</a>
+       </td>
+   </tr>
+   <tr>
+     <td><p><br>Zus&auml;tzlich k&ouml;nnen die neu definierten JavaBean-Methoden benutzt
+         werden, um zum Beispiel einen Startwert f&uuml;r das neue Feld festzulegen.
+         <b>Mit der zus&auml;tzlichen Anweisung</b> <font class="code">setIntegerValue (0);</font>
+         w&uuml;rde der Wert 0 als Startwert in das Feld eingetragen werden.</p></td>
+     <td>&nbsp;</td>
+     <td>&nbsp;</td>
+   </tr>
+
+
+</table>
+<br><br><br>
+</body>
+</html>

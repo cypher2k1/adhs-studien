@@ -1,0 +1,31 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap6/hibernate_bsp/src/hibernatebsp/UniBsp.java
+//
+//*************Ende Hinweis*****************************
+
+
+
+package hibernatebsp;
+
+import org.hibernate.Session;
+import java.util.Date;
+import util.HibernateUtil;
+
+public class UniBsp {
+	public static void main(String[] args) {
+
+		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+
+		session.beginTransaction();
+
+		Uni dieFeU = new Uni();
+
+		dieFeU.setTitle( "FernUni Hagen" );
+		session.save( dieFeU );
+		session.getTransaction().commit();
+
+		HibernateUtil.getSessionFactory().close();
+	}
+}

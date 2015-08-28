@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_5_1_4</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+    <td width="550"><b>Das RMI von Java</b></td>
+    <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+    <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+
+  <tr>
+    <td><p>Ein Mechanismus f&uuml;r verteilte Anwendungen in Java ist <i><b>R</b>emote <b>M</b>ethod <b>I</b>nvocation</i> (<b>RMI</b>). Als ein Bestandteil von Java benutzt RMI praktischerweise die Java-API f&uuml;r Netzwerkzugriffe, beispielsweise f&uuml;r das Versenden von Daten &uuml;ber ein Netzwerk. Die notwendigen Tools sind bereits im JDK enthalten.</p></td>
+    <td>&nbsp;</td>
+    <td align="left" valign="top" ><img src="../Medien/Definition.gif" width="36"
+	      height="36" alt="Hinweis: Definition(en) im Lehrtext"><br><font id="pikto">Definition</font></td>
+  </tr>
+
+  <tr>
+    <td><p>Die Arbeitsweise von RMI l&auml;sst sich wie folgt beschreiben:</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+	  <table BORDER="0" >
+	    <tr>
+	      <td width="20">&nbsp;</td>
+	      <td valign="baseline">1.</td>
+	      <td><b>Ein Interface wird definiert</b>, damit<br>
+	          <div style="margin-left:20pt">
+              a. der Client wei&szlig;, welche Methoden der Server zur Verf&uuml;gung stellt,<br>
+              b. der Server informiert wird, welche Methoden er implementieren muss.</div>
+          </td>
+	    </tr>
+	    <tr>
+	      <td width="20">&nbsp;</td>
+	      <td width="20" valign="baseline">2.</td>
+	      <td><b>Eine Klasse wird geschrieben, die genau die geforderte Funktionalit&auml;t des Servers implementiert</b>.</td>
+	    </tr>
+	    <tr>
+	      <td width="20">&nbsp;</td>
+	      <td width="20" valign="baseline">3.</td>
+	      <td><b>Der Server wird programmiert</b>. Dazu wird ein Objekt der Klasse aus Schritt 2 erzeugt und unter einem Namen im Netzwerk bekannt gemacht. Oftmals werden die Schritte 2 und 3 auch in einer einzelnen Klasse zusammengefasst.</td>
+	    </tr>
+	    <tr>
+	      <td width="20">&nbsp;</td>
+	      <td width="20" valign="baseline">4.</td>
+	      <td>F&uuml;r das &quot;Bekannt machen&quot; sorgt die <font class="code">RMIRegistry</font>, ein im JDK enthaltenes Tool, die auf dem Server gestartet wird. Hier werden <b>alle auf diesem einen Rechner existierenden Serverobjekte</b> unter einem Namen &quot;angemeldet&quot;.</td>
+	     </tr>
+	     <tr>
+		    <td width="20">&nbsp;</td>
+		    <td width="20" valign="baseline">5.</td>
+		    <td>Als n&auml;chstes wird eine <b>Client-Applikation</b> programmiert, die auf dem Client-Rechner l&auml;uft und die Dienste des Servers in Anspruch nehmen soll. Die Information &uuml;ber die angebotenen Server-Dienste liefert das Interface aus Schritt 1.</td>
+		 </tr>
+	  </table>
+    </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+</table>
+</body>
+</html>

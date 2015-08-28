@@ -1,0 +1,55 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap5/Schlagzeilen.java
+//
+//*************Ende Hinweis*****************************
+
+
+import java.io.*;
+import java.net.*;
+
+public class Schlagzeilen {
+
+	public static void main (String args []) {
+
+
+		URL		url;
+		String	adresse = "http://www.spiegel.de/schlagzeilen/rss/index.xml";
+		String	content = "";
+
+		try {
+			url  = new URL( adresse );
+
+			InputStream 		is	= url.openStream();
+			InputStreamReader	isr	= new InputStreamReader( is );
+			BufferedReader		br	= new BufferedReader( isr );
+
+			String zeile;
+			while(( zeile = br.readLine() ) != null ){
+				content = content + zeile;
+			}
+
+		} catch( Exception e ){
+			System.out.println (e);
+		}
+
+		System.out.println( content );
+
+		System.out.print( "Nachrichten am " );
+		System.out.println( new java.util.Date() );
+
+		int		start	= content.indexOf( "<title>" );
+		int		ende	= content.indexOf( "</title>" );
+
+		while( start != -1 ){
+			String schlagzeile = content.substring( start + "<title>".length(),
+													ende );
+			System.out.println( schlagzeile );
+
+			content = content.substring( ende + "</title>".length() );
+			start	= content.indexOf( "<title>" );
+			ende	= content.indexOf( "</title>" );
+		}
+	}
+}

@@ -1,0 +1,25 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap2/Datentypen.java
+//
+//*************Ende Hinweis*****************************
+
+
+public class Datentypen {
+
+	public static void main( String args [] ){
+
+		// Wrapper-Klassen in Java
+		int		i = 5;
+		Integer		j = new Integer( 17 );
+		Integer		k = Integer.valueOf( "35" );
+
+		System.out.println( i + j.intValue() + k.intValue() );
+
+
+		// Auto-Boxing in Java 1.5
+		Integer		j2 = 17;
+		System.out.println( j2 + 1 );
+	}
+};

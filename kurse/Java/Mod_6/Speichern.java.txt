@@ -1,0 +1,30 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap6/Speichern.java
+//
+//*************Ende Hinweis*****************************
+
+
+import java.io.*;
+
+class Speichern  {
+
+	public static void main (String args []) {
+
+
+		try {
+
+			FileWriter		f   = new FileWriter("remember.txt");
+			BufferedWriter	out = new BufferedWriter (f);
+
+			out.write ("Dieses ist ein Test!");
+			out.close();
+
+		} catch (Exception e) {
+
+		}
+
+		System.out.println ("fertig.");
+	}
+}

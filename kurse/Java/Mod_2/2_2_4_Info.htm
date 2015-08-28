@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Bsp04StringBuffer.java mit Kommentar</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script langauge="JavaScript">
+<!--
+
+
+  Normal1 = new Image();
+  Normal1.src = "../Medien/Zu.gif";
+  Highlight1 = new Image();
+  Highlight1.src = "../Medien/Zu_Mo.gif";
+ 
+  Normal2 = new Image();
+  Normal2.src = "../Medien/Print.gif";
+  Highlight2 = new Image();
+  Highlight2.src = "../Medien/Print_Mo.gif";
+function Bildwechsel(Bildobjekt,PName)
+  {
+
+   command= "window.document."+PName+".src = Bildobjekt.src";
+   eval(command);
+  }
+
+//-->
+</script>
+</head>
+
+<body bgcolor="#ffffff">
+
+<div style="margin-left:10">
+<table><tr>
+      <td>
+      <a href="javascript:print()"
+      onMouseOver="Bildwechsel(Highlight2,'b2');self.status='Fensterinhalt drucken';return true" onMouseOut="Bildwechsel(Normal2,'b2');self.status='';return true">
+      <img name=b2 src="../Medien/Print.gif" border="0" alt="Fensterinhalt drucken"></a></td>
+      <td ><a href="javascript:print()"
+      onMouseOver="self.status='Fensterinhalt drucken';return true" onMouseOut="self.status='';return true" style="font-family: Verdana, Arial, Helvetica; font-size: 7.5pt; color: #000000 ">Fensterinhalt drucken</a>
+      </td>
+      <td width="100">&nbsp;</td>
+      
+      <td>
+      <a href="javascript:window.close()"
+      onMouseOver="Bildwechsel(Highlight1,'b1');self.status='Fenster schlie&szlig;en';return true" onMouseOut="Bildwechsel(Normal1,'b1');self.status='';return true">
+      <img name=b1 src="../Medien/Zu.gif" border="0" alt="Fenster schlie&szlig;en"></a></td>
+      <td ><a href="javascript:window.close()"
+      onMouseOver="self.status='Fenster schlie&szlig;en';return true" onMouseOut="self.status='';return true" style="font-family: Verdana, Arial, Helvetica; font-size: 7.5pt; color: #000000 ">Fenster schlie&szlig;en</a>
+      </td>
+      
+      
+      
+    
+     </tr>
+ </table>
+
+
+<table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+	<tr>
+	<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+	<tr>
+ 		<td rowspan="4" width="20">&nbsp;</td>
+                <td id="code"><br>
+		<font id="kom">&nbsp;//<br>
+				&nbsp;// Beispiel f&uuml;r den Umgang mit StringBuffern:<br>
+				&nbsp;// In der folgenden Zeile wird ein<br>
+				&nbsp;// StringBuffer erzeugt, der drei Zeichen<br>
+				&nbsp;// lang ist, und in dem die drei Zeichen<br>
+				&nbsp;// d, e und f stehen<br>
+				&nbsp;//<br></font>
+				&nbsp;StringBuffer sb = <font id="kw">new</font> StringBuffer (<font id="orange">&quot;def&quot;</font>)</font>;<br>
+                </td>
+		<td rowspan="4" width="20">&nbsp;</td>
+	</tr>
+  			    
+	<tr>
+                 <td id="code"><br>
+		 <font font id="kom">&nbsp;//<br>
+				&nbsp;// Jetzt werden diese drei Positionen<br>
+				&nbsp;// mit neuen Zeichen belegt.<br>
+				&nbsp;//</font><br>
+				&nbsp;sb.setCharAt (0, <font id="orange">'a'</font>);<br>
+				&nbsp;sb.setCharAt (1, <font id="orange">'b'</font>);<br>
+				&nbsp;sb.setCharAt (2, <font id="orange">'c'</font>);<br>  
+			     		      
+		</td>
+			    
+	</tr>
+        <tr>
+                <td id="code"><br>
+		<font id="kom">&nbsp;//<br>
+				&nbsp;// Dann wird das Ganze in einen<br>
+				&nbsp;// &quot;richtigen &quot; String konvertiert.<br>
+				&nbsp;// </font><br>
+				&nbsp;String		s4 = sb.toString ();<br><br>
+				
+                             	&nbsp;<nobr>System.out.println (<font id="orange">&quot;Zusammengebaut wurde: &quot;</font> + s4);<br><br>
+		</td>
+	</tr>
+			    
+                            
+  			   
+                           
+</table>
+	</td>
+	</tr>
+	</table></div>
+</body>
+</html>

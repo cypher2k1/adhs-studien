@@ -1,0 +1,98 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap5/Wetterkarte.java
+//
+//*************Ende Hinweis*****************************
+
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.image.*;
+import java.net.*;
+
+public class Wetterkarte extends Frame {
+
+	static Image		bild;
+	static String		bildURL;
+
+	public static void main (String args []) {
+
+		bildURL = args [0];
+		new Wetterkarte ();
+	}
+
+
+	logic 		l;
+
+	public Wetterkarte () {
+		super ("Wetterkarte");
+
+		l = new logic ();
+
+		MenuBar		mBar	= new MenuBar ();
+		Menu		mFile	= new Menu ("Datei");
+		MenuItem	cmdQuit	= new MenuItem ("Beenden");
+
+		mBar.add (mFile);
+		mFile.add (cmdQuit);
+		this.setMenuBar (mBar);
+
+		cmdQuit.addActionListener (l);
+
+		//
+		// Bild laden
+		//
+		System.out.println ("Versuche Bild zu laden. Bitte warten...");
+
+
+		Toolkit			toolkit = Toolkit.getDefaultToolkit ();
+
+		URL				url = null;
+		MediaTracker	mt  = null;
+
+		try {
+
+			url  = new URL (bildURL);
+			bild = toolkit.createImage (url);
+			mt   =  new MediaTracker (this);
+
+			mt.addImage (bild, 1);
+			mt.waitForAll ();
+
+		} catch (Exception e) {
+
+			System.out.println (e);
+		}
+
+		System.out.println ("Fertig!");
+
+		//
+		// Fenster in der entsprechenden Größe anzeigen
+		//
+		setTitle (bildURL);
+
+		int		w = bild.getWidth (this);
+		int		h = bild.getHeight (this);
+
+		setSize (w, h);
+		setVisible (true);
+	}
+
+
+	public void		paint (Graphics g) {
+
+		g.drawImage (bild, 4, 15, this);
+	}
+}
+
+
+class logic implements ActionListener {
+
+	public void actionPerformed (ActionEvent e) {
+
+		String		cmd = e.getActionCommand ();
+
+		if (cmd == "Beenden")
+			System.exit (0);
+	}
+}

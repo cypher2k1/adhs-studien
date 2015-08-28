@@ -1,0 +1,144 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap4/ScrollPaneGUITree.java
+//
+//*************Ende Hinweis*****************************
+
+
+import javax.swing.*;
+import javax.swing.tree.*;
+import java.awt.event.*;
+import javax.swing.event.*;
+import java.awt.*;
+
+public class ScrollPaneGUITree extends JFrame {
+
+	public ScrollPaneGUITree () {
+		super ("Eine Anwendung");
+
+		addWindowListener (new myWindowAdapter ());
+		JMenuBar	mBar	= new JMenuBar();
+		JMenu		mFile	= new JMenu ("Datei");
+		JMenuItem	cmdQuit	= new JMenuItem ("Beenden");
+
+		mFile.setMnemonic ('D');
+		cmdQuit.setMnemonic ('B');
+		cmdQuit.setToolTipText ("Beendet das Programm");
+		cmdQuit.addActionListener (new Anwendung ());
+
+		mBar.add (mFile);
+		mFile.add (cmdQuit);
+		setJMenuBar(mBar);
+
+
+		JPanel			topPanel = new JPanel ();
+		topPanel.setLayout (new BorderLayout ());
+
+		getContentPane().add (topPanel);
+
+
+		JScrollPane		scrollPane;
+		scrollPane = new JScrollPane ();
+
+
+		topPanel.add (scrollPane, BorderLayout.CENTER);
+
+
+
+
+		DefaultMutableTreeNode		root;
+		DefaultMutableTreeNode		kapitel;
+		DefaultTreeModel			treeModel;
+		JTree						tree;
+
+		root		= new DefaultMutableTreeNode ("Java2 Kurs");
+		treeModel	= new DefaultTreeModel (root);
+		tree		= new JTree (treeModel);
+
+
+		kapitel		= new DefaultMutableTreeNode ("Kapitel 1 - Einleitungen und erste Beispiele");
+		root.add (kapitel);
+		kapitel.add (new DefaultMutableTreeNode ("Was ist Java?"));
+		kapitel.add (new DefaultMutableTreeNode ("Download des JDK"));
+		kapitel.add (new DefaultMutableTreeNode ("Entwicklungsumgebungen und Tools"));
+		kapitel.add (new DefaultMutableTreeNode ("usw..."));
+
+
+		kapitel		= new DefaultMutableTreeNode ("Kapitel 2 - Sprachelemente von Java");
+		root.add (kapitel);
+		kapitel.add (new DefaultMutableTreeNode ("Elementare Datentypen"));
+		kapitel.add (new DefaultMutableTreeNode ("Strings & Arrays"));
+		kapitel.add (new DefaultMutableTreeNode ("Ausdrücke"));
+		kapitel.add (new DefaultMutableTreeNode ("Variablen"));
+		kapitel.add (new DefaultMutableTreeNode ("usw..."));
+
+
+		kapitel		= new DefaultMutableTreeNode ("Kapitel 3 - Java und das Internet");
+		root.add (kapitel);
+		kapitel.add (new DefaultMutableTreeNode ("Ein bisschen HTML"));
+		kapitel.add (new DefaultMutableTreeNode ("Applets und HTML Seiten"));
+		kapitel.add (new DefaultMutableTreeNode ("usw..."));
+
+
+		scrollPane.getViewport().add (tree);
+
+
+        tree.addTreeSelectionListener(new myTreeSelectionListener ());;
+
+
+		setSize (300, 300);
+		setVisible (true);
+
+	}
+
+
+
+	public static void main (String args []) {
+
+		new ScrollPaneGUITree ();
+	}
+}
+
+
+class myWindowAdapter extends WindowAdapter {
+
+	public void windowClosing (WindowEvent e) {
+
+		System.exit (0);
+	}
+}
+
+
+
+class Anwendung implements ActionListener {
+
+	public void actionPerformed (ActionEvent e) {
+		String		cmd = e.getActionCommand ();
+
+		if (cmd == "Beenden")
+			System.exit (0);
+	}
+}
+
+
+
+class myTreeSelectionListener implements TreeSelectionListener {
+
+	public void valueChanged(TreeSelectionEvent e) {
+
+		JTree		tree = (JTree) e.getSource ();
+
+		DefaultMutableTreeNode node = (DefaultMutableTreeNode)
+										tree.getLastSelectedPathComponent();
+
+		if (node != null) {;
+
+			Object nodeInfo = node.getUserObject ();
+			if (node.isLeaf ()) {
+
+				System.out.println (nodeInfo.toString());
+			}
+		}
+	}
+}

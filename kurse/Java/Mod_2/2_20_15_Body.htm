@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>&Uuml;bung 2_20_15</title>
+
+	<link rel="stylesheet" type="text/css" href="../Format/Format_Ubung.css">
+
+
+	<script src="../BrowserCheck.js" type="text/javascript"></script>
+		<script src="../Go_Seite.js" type="text/javascript"></script>
+		<script src="../Uebung/check.js" type="text/javascript"></script>
+		<script src="../Uebung/layer.js" type="text/javascript"></script>
+		<script src="../Uebung/CBElement.js" type="text/javascript"></script>
+		<script src="../Uebung/CBAuswertung.js" type="text/javascript"></script>
+
+
+
+		<script language="JavaScript" type="text/javascript">
+		<!--
+
+		hauptfrage = "In welcher der folgenden drei Zeilen wird Autoboxing verwendet?";
+
+		frage = new Array();
+		frage[0] = "<span class='code'> int d = 1;</span>";
+		frage[1] = "<span class='code'>Integer zahl = 2;</span>";
+		frage[2] = "<span class='code'>Integer anzahl = new Integer(6);</span>";
+
+
+		text = new Array();
+		text[0] = " ";
+		text[1] = " ";
+		text[2] = " ";
+
+
+
+		CBElement1 = new CBElement(true,0,frage[0],text[0],false);
+		CBElement2 = new CBElement(true,1,frage[1],text[1],true);
+		CBElement3 = new CBElement(true,2,frage[2],text[2],false);
+
+
+
+		var hilfeLink = new Array();
+		hilfeLink[0] = new Array(2);
+		hilfeLink[0][0] = "Kapitel 2.15, Seite 4";
+		hilfeLink[0][1] = "../Mod_2/2_15_4.htm";
+
+		// Hoehe * Breite für IE Hoehe,Breite,N4 Hoehe,Breite,N6 Hoehe,Breite
+		setFensterLoesung(330,730,330,730,340,730);
+
+								if (meldung)
+								{
+									statusAufgabe = window.opener.parent.parent.frames[0].document.kurs.statusAufgabe.value;
+									userEingabeL = window.opener.userEingabe;
+								}
+								else
+								{
+									statusAufgabe = parent.parent.frames[0].document.kurs.statusAufgabe.value;
+									userEingabeL = userEingabe;
+								}
+
+								function Init()
+								{
+									setMusterLoesung();
+
+									if (meldung)
+									{
+										showOutput();
+										changeInOut(false);
+									}
+									else
+									{
+										parent.parent.savePage();
+										showInput();
+										changeOutIn();
+loadCB();
+									}
+								}
+
+								function Seite(name)
+								{
+									if (meldung)
+									{
+										window.opener.parent.parent.frames[2].location.href=name;
+										window.close();
+									}
+									else parent.parent.frames[2].location.href=name;
+								}
+		//-->
+		</script>
+
+		<script src="../Uebung/Standarddhtml.js" type="text/javascript"></script>
+		<script src="../Uebung/CBdhtml.js" type="text/javascript"></script>
+		<script src="../Bildwechsel_A.js" type="text/javascript"></script>
+		<script src="../Uebung/PopUpFenster.js" type="text/javascript"></script>
+		<script src="../Uebung/lernpfad.js" type="text/javascript"></script>
+</head>
+
+
+<body onLoad="Init()" onUnload="javascript:if (ml != null) if (ml.closed == false) ml.close()">
+
+<!-- Tabelle mit Feedback + Aufgabenstellung + LernerEingabe + Navigationsleiste + Hilfelinks -->
+<div id="LernerInput" style="position:absolute; top:15px; visibility:visible;">
+</div>
+
+</body>
+</html>

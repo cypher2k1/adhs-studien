@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_6_5_5</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+      <td width="550"><b>SQL - Abfragen und Einf&uuml;gen</b></td>
+      <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+      <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+    </tr>
+    
+    <tr>
+      <td><p>Mit dem <font class="code">INSERT-INTO</font>-Kommando k&ouml;nnen in 
+          <b>SQL</b> Werte in eine Tabelle eingef&uuml;gt werden. So kann zum Beispiel 
+          eine neue Uni erzeugt werden:</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    <tr>
+      <td align="center">
+	  	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+				<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+	  	      <tr>
+	  	        <td width="20">&nbsp;</td>
+	  	        <td id="code"><br>INSERT INTO Uni (ID, f_name) VALUES (1, <font id="orange">&quot;Uni. XY&quot;</font>);<br><br></td>
+	  	        <td width="20">&nbsp;</td>
+	  	      </tr>
+	  	    </table>
+				</td>
+				</tr>
+	</table>
+      </td>
+      <td>&nbsp;</td>
+      <td valign="top" align="left"><img src="../Medien/Beispiel.gif" width="36"
+          height="36" alt="Hinweis: Beispiel(e)"><br><font id="pikto">Beispiele</font></td> 
+    </tr>
+    <tr>
+      <td><p><br>Dabei werden hinter dem <font class="code">INSERT INTO Uni</font> 
+          <b>zun&auml;chst die Spalten angegeben</b>, in die die <b>tats&auml;chlichen Werte</b> 
+          eingetragen werden sollen. Da der Wert der ID-Spalte von der 
+          Datenbank selber vergeben wird, braucht dieser nicht mehr angegeben zu 
+          werden: </p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center">
+	  	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+				<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+	  	      <tr>
+	  	        <td width="20">&nbsp;</td>
+	  	        <td id="code"><br>INSERT INTO Uni (f_name) VALUES (<font id="orange">&quot;Uni. XY&quot;</font>);
+	  	                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br></td>
+	  	        <td width="20">&nbsp;</td>
+	  	      </tr>
+	  	    </table>
+	</td>
+	</tr>
+	</table><br>
+      </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+	   <td><p>Mit der <font class="code">SELECT</font>-Anweisung k&ouml;nnen die 
+	       Werte aufgerufen werden, die in einer Tabelle stehen. Die folgende Anweisung 
+	       liefert alle Werte in der Tabelle zur&uuml;ck.</p></td>
+	   <td>&nbsp;</td>
+	   <td>&nbsp;</td>
+	</tr>
+	<tr>
+	   <td align="center">
+	     <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+		 	<tr>
+		 	<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+	       <tr>
+	         <td width="20">&nbsp;</td>
+	         <td id="code"><br>SELECT * FROM Uni;
+	                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	                         <br><br></td>
+	         <td width="70">&nbsp;</td>
+	       </tr>
+	      </table>
+		  	</td>
+		  	</tr>
+	</table>
+	    </td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><p><br>Folgende Einschr&auml;nkungen sind m&ouml;glich: Statt des Sterns (*) 
+          k&ouml;nnen genau die Spalten angeben werden, die angezeigt werden sollen. 
+          Die Einf&uuml;gung einer <font class="code">WHERE</font>-Klausel erlaubt 
+          die selektive Abfrage bestimmter Datens&auml;tze. Mit der folgenden 
+          Anweisung wird die ID der zuvor eingef&uuml;gten Universit&auml;t abgefragt:</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center">
+	  	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+				<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+	  	      <tr>
+	  	        <td width="20">&nbsp;</td>
+	  	        <td id="code"><br>SELECT ID FROM Uni WHERE f_name = <font id="orange">&quot;Uni. XY&quot;</font>; <br><br></td>
+	  	        <td width="78">&nbsp;</td>
+	  	      </tr>
+	  	    </table>
+				</td>
+				</tr>
+	</table><br><br>
+      </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+</table>
+</body>
+</html>

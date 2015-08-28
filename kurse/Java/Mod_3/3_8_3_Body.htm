@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_3_8_3</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script src="../Bildwechsel.js"></script>
+<script langauge="JavaScript">
+<!--
+var Docs_Window;
+
+function Docs()
+
+{
+  if (Docs_Window!=null)
+        if (Docs_Window.closed==false)
+	Docs_Window.close()
+  Docs_Window= window.open("../../docs/api/java/awt/BorderLayout.html" , "Docs" ,  "scrollbars=yes,resizable=yes,location=no,width=800,height=600")
+}
+
+var Bsp_Window;
+
+function Ausgabe()
+{
+  if (Bsp_Window!=null)
+      if (Bsp_Window.closed==false)
+          Bsp_Window.close()
+  Bsp_Window= window.open("./Applets/Formular2.html" , "Ausgabe" ,  "scrollbars=no,resizable=yes,location=no,width=250,height=250")
+}
+
+var Dat_Window;
+function Datei()
+{
+  if (Dat_Window!=null)
+        if (Dat_Window.closed==false)
+	Dat_Window.close()
+  Dat_Window= window.open("./Formular2.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,width=660,height=360")
+}
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+    <td width="550"><b>BorderLayout</b></td>
+    <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+    <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+
+  <tr>
+    <td><p>Das <font class="code">BorderLayout</font> ist ein LayoutManager, der die zur
+        Verf&uuml;gung stehende <b>Fl&auml;che in f&uuml;nf Bereiche unterteilt</b>:
+        Norden, S&uuml;den, Osten, Westen und die Mitte. In jedem dieser Bereiche
+        k&ouml;nnen Elemente, wie zum Beispiel Buttons, platziert werden:</p></td>
+    <td>&nbsp;</td>
+    <td align="left" valign="top" ><img src="../Medien/Definition.gif" width="36"
+      height="36" alt="Hinweis: Definition(en) im Lehrtext"><br><font id="pikto">Definition</font></td>
+  </tr>
+  
+  <tr>
+    <td>&nbsp;<br></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr> 
+  <tr>
+      <td align="center">
+        <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+			<tr>
+			<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+          <tr>
+            <td width="20">&nbsp;</td>
+            <td id="code"><br>
+                     setLayout (<font id="kw">new</font> BorderLayout ());<br><br>
+                     add (<font id="kw">new</font> Button (<font id="orange">&quot;button 1&quot;</font>), <font id="orange">&quot;North&quot;</font>);<br>
+                     add (<font id="kw">new</font> Button (<font id="orange">&quot;button 2&quot;</font>), <font id="orange">&quot;West&quot;</font>);<br>
+                     add (<font id="kw">new</font> Button (<font id="orange">&quot;button 3&quot;</font>), <font id="orange">&quot;South&quot;</font>);<br>
+                     add (<font id="kw">new</font> Button (<font id="orange">&quot;button 4&quot;</font>), <font id="orange">&quot;East&quot;</font>);<br>
+                     add (<font id="kw">new</font> Button (<font id="orange">&quot;button 5&quot;</font>), <font id="orange">&quot;Center&quot;</font>);<br><br></td>
+            <td width="20">&nbsp;</td>
+          </tr>
+        </table>
+			</td>
+			</tr>
+	</table>
+      </td>
+      <td>&nbsp;</td>
+      <td valign="top" align="left">
+  	      <img src="../Medien/Beispiel.gif" width="36" height="36" alt="Hinweis: Beispiel(e)"><br>
+  	      <a href="javascript:Datei()" onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true"
+  	      onMouseOut="self.status='';return true" id="ex">Formular2.java</a>
+  	      <div style="margin-top:48pt">
+  	      <table border="0" cellspacing="0" cellpadding="0">
+  	         <tr>
+  	            <td><a href="javascript:Ausgabe()"
+  	                onMouseOver="Bildwechsel(Highlight2,'b1');self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true"
+  	                onMouseOut="Bildwechsel(Normal2,'b1');self.status='';return true">
+  	                <img name=b1 src="../Medien/PfeilB.gif" width="13" height="23" border="0" alt="Programmausf&uuml;hrung (Applet) anzeigen"></a></td>
+  	            <td width="4">&nbsp;</td>
+  	            <td><a href="javascript:Ausgabe()"
+  	                onMouseOver="self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true"
+  	                onMouseOut="self.status='';return true" id="ex">Applet anzeigen</a></td>
+  	         </tr>
+  	      </table></div>
+    </td>
+  </tr>
+
+  <tr>
+    <td><br>
+      <table>
+        <tr>
+   	       <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="30" ></td>
+  	       <td><div style="margin-left:8pt">Mehr Informationen zu der Klasse <font class="code">BorderLayout</font>
+		finden Sie in der <b>JDK-Dokumentation</b> auf der CD-ROM unter:</div></td>
+        </tr>
+      </table>
+    </td>
+    <td>&nbsp;</td>
+    <td align="left" valign="top" rowspan="2"><br><img src="../Medien/Hinweis.gif" width="36" height="36"
+        alt="Hinweis: wichtige Hinweis(e) im Lehrtext"><br><font id="pikto">Hinweis</font></td>
+ </tr>
+ <tr>
+    <td>
+      <table>
+        <tr>
+   	       <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="12" ></td>
+  	       <td><div style="margin-left:8pt"><a href="javascript:Docs()" onMouseOver="self.status='zu: JDK-Dokumentation';return true"
+	      onMouseOut="self.status='';return true" id="url">docs\api\java\awt\BorderLayout.html</font></a></div></td>
+        </tr>
+      </table>
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+
+</table>
+<br><br><br>
+</body>
+</html>

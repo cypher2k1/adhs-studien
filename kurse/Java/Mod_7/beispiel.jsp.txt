@@ -1,0 +1,82 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work\Kap7\BeispielApp\beispiel.jsp
+//
+//*************Ende Hinweis*****************************
+
+
+<html>
+	<head>
+		<title>JSP-Beispielprogramm</title>
+	</head>
+
+	<body bgcolor=white>
+
+		<h1>Dieses ist ein Beispiel-Programm</h1>
+	
+		<p>Guten Tag! Heute ist <%= new java.util.Date() %></p>
+
+		<hr />
+		
+		<p>1 + 1 ist
+		<%	// Ein Java "scriptlet"
+			int summe = 1 + 1;
+		%>
+
+		<%= "(Ergebnis) " + summe %>
+		</p>
+
+		<hr />
+
+		<p>
+		<%
+			System.out.println( "Ausgabe auf dem Server" );
+			out.println( "Ausgabe in die HTML-Seite" );
+		%>
+		</p>
+
+		<hr />
+
+		<TABLE>
+		<%
+		    int i;
+		    for( i = 1; i<=10; i++ ) {
+			%>
+			<TR bgcolor="<%
+				if( (i % 2) == 0 ){
+					out.print("#ddddff");
+				} else {
+					out.print("#ffffff");
+				} %>">
+				<TD>Zeile <%= i %></TD>
+			</TR>
+			<%
+		    }
+		%>
+		</TABLE>
+		
+		<hr />
+
+		<%		
+			String name = request.getParameter( "benutzer" );
+			
+			if( (name == null) || (name.length() == 0) ){
+		%>
+		
+		<FORM METHOD=GET ACTION="beispiel.jsp">
+			Guten Tag! Wie heissen Sie? <INPUT TYPE=TEXT NAME=benutzer SIZE=20>
+			<INPUT TYPE=SUBMIT>
+		</FORM>
+		
+		<%
+			} else {
+		%>
+
+		<p>Hallo <%= name %></p>
+		<%
+			}
+		%>
+		
+	</body>
+</html>

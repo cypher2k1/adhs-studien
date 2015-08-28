@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_6_6_4</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+var Dat_Window;
+
+function Datei()
+{
+  if (Dat_Window!=null)
+          if (Dat_Window.closed==false)
+              Dat_Window.close()
+  Dat_Window= window.open("./UniDB.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=680,height=260")
+}
+
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+      <td width="550"><b>Abfragen aufbauen, abschicken und auswerten</b></td>
+      <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+      <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+    </tr>
+
+    <tr>
+      <td><p>Nun wird eine <font class="code">SELECT</font>-Anweisung definiert,
+          <b>an die Datenbank geschickt und dort ausgef&uuml;hrt</b>:</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+	    <td align="center">
+		    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+				<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+		      <tr>
+		        <td width="20">&nbsp;</td>
+		        <td id="code"><br>ResultSet rs;
+		                        <br><br>sql = <font id="orange">&quot;SELECT ID FROM Uni WHERE f_name = '&quot;</font>;
+		                        <br>sql = sql + u.m_name;
+		                        <br>sql = sql + <font id="orange">&quot;'&quot;</font>;
+		                        <br><br>rs = s.executeQuery (sql); <br><br></td>
+		        <td width="20">&nbsp;</td>
+		      </tr>
+		    </table>
+				</td>
+				</tr>
+	</table>
+	    </td>
+	    <td>&nbsp;</td>
+	    <td valign="top" align="left">
+                <img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+                <a href="javascript:Datei()"  onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+			onMouseOut="self.status='';return true" id="ex">UniDB.java</a>
+	    </td>
+    </tr>
+    <tr>
+      <td><p><br><b>R&uuml;ckgabe</b> dieser <i>Query</i> ist ein Objekt vom Typ
+             <font class="code">ResultSet</font>, also die <b>Ergebnismenge der Datenbank</b>.
+             Ein <font class="code">ResultSet</font> beinhaltet <b>alle zur&uuml;ck
+             gelieferten Datens&auml;tze</b>. Jeweils einer davon wird mittels eines
+             <b>Cursors</b> als &quot;aktueller Datensatz&quot; markiert, dessen
+             Werte mit entsprechenden Methoden ausgelesen werden k&ouml;nnen.
+             <b>Zun&auml;chst steht der Cursor noch vor dem ersten Datensatz</b>.
+             Mit der Anweisung <font class="code">next ()</font> wird er um eine
+             Position nach vorne geschoben. Die Funktion liefert <font class="code">true</font>
+             zur&uuml;ck, solange an der aktuellen Position noch ein g&uuml;ltiger
+             Datensatz existiert. Nach dem letzten Datensatz wird
+             <font class="code">false</font> zur&uuml;ckgeliefert.</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+	  <td><p>Die folgende Anweisung pr&uuml;ft, ob &uuml;berhaupt ein g&uuml;ltiger Datensatz vorhanden ist:</p></td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+    </tr>
+    <tr>
+	    <td align="center">
+		    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+				<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+		      <tr>
+		        <td width="20">&nbsp;</td>
+		        <td id="code"><br><font id="kw">if</font> (rs.next ())
+		                        <br>[...] <br><br></td>
+		        <td width="20">&nbsp;</td>
+		      </tr>
+		    </table>
+				</td>
+				</tr>
+	</table>
+	    </td>
+	    <td>&nbsp;</td>
+	   <td valign="top" align="left">
+                <img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+                <a href="javascript:Datei()"  onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+			onMouseOut="self.status='';return true" id="ex">UniDB.java</a>
+	    </td>
+    </tr>
+ <tr>
+	  <td>&nbsp;<br></td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+    </tr>
+    <tr>
+	  <td>
+	    <table>
+	      <tr>
+	        <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="30" ></td>
+	        <td>Alternativ k&ouml;nnen mit <font class="code">while (rs.next ())</font>
+	            alle gefundenen Datens&auml;tze durchlaufen werden.</td>
+	      </tr>
+	    </table>
+	  </td>
+	  <td>&nbsp;</td>
+	  <td align="left" valign="top"><img src="../Medien/Hinweis.gif" width="36" height="36"
+	      alt="Hinweis: wichtige Hinweis(e) im Lehrtext"><br><font id="pikto">Hinweis</font></td>
+    </tr>
+
+</table>
+<br><br><br>
+</body>
+</html>

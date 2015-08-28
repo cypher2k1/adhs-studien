@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_2_17_3</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script src="../Bildwechsel.js"></script>
+<script langauge="JavaScript">
+<!--
+var Bsp_Window;
+
+	 function Screen()
+	 {
+	   if (Bsp_Window!=null)
+		   if (Bsp_Window.closed==false)
+		       Bsp_Window.close()
+	   Bsp_Window= window.open("./Medien/2_17_3n.gif" , "Screen" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=500,height=220")
+	 }
+
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+    <td width="550"><b>Missbrauch von Interfaces (2)</b></td>
+    <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+    <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+
+
+  <tr>
+    <td><p>Das Programm, das wir Ihnen auf der letzten Seite vorgestellt haben, k&ouml;nnte nun so aufgerufen werden:</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+          <td align="center">
+      	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+      			<tr>
+      			<td class="gelb">
+      		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+      	      <tr>
+      	        <td width="10">&nbsp;</td>
+      	        <td id="code"><br>System.out.println( berechnen( 5.0, 2.5, ADDITION ));<br><br></td>
+      	        <td width="10">&nbsp;</td>
+      	      </tr>
+      	    </table>
+      			</td>
+      			</tr>
+      	</table><br>
+        </td>
+          <td>&nbsp;</td>
+		       <td valign="top" align="left"><img src="../Medien/Beispiel.gif" width="36"
+          height="36" alt="Hinweis: Beispiel(e)"><br><font id="pikto">Beispiel</font></td>
+    </tr>
+    <tr>
+	       <td><p>Und so sieht es dann aus:</p></td>
+	       <td>&nbsp;</td>
+	       <td>&nbsp;</td>
+	  </tr>
+	  <tr>
+	  	    <td><div style="margin-left:20px">
+	  		<table border="0" cellspacing="0" cellpadding="0">
+	  	          <tr>
+	  			<td><a href="javascript:Screen()"
+	  	      		onMouseOver="Bildwechsel(So2,'b1');self.status='So sieht es aus.';return true" onMouseOut="Bildwechsel(So1,'b1');self.status='';return true">
+	  	      		<img name=b1 src="../Medien/So.gif" border="0" alt="So sieht es aus."></a></td>
+	  	    		<td width="10">&nbsp;</td>
+	  	    		<td ><a href="javascript:Screen()" onMouseOver="self.status='So sieht es aus.';return true"
+	  	    		onMouseOut="self.status='';return true" id="info">So sieht es aus.</a></td>
+	  	      	  </tr>
+	  	     	</table></div>
+	  	    </td>
+	  	    <td>&nbsp;</td>
+	  	    <td>&nbsp;</td>
+	  	</tr>
+
+  <tr>
+    <td><p><br>Dieses ist aber in gewisser Weise ein <b>Missbrauch des urspr&uuml;nglichen Konzepts</b>, denn das Programm <font class="code">Rechner</font> implementiert hier die Aktionen im eigentlichen Sinne gar nicht, da das Interface <font class="code">Aktion</font> ja &uuml;berhaupt keine Methoden definiert, die implementiert werden m&uuml;ssten.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td><p>Au&szlig;erdem ist dieses Programm <b>nicht typ-sicher</b>, denn letztlich ist so eine Aktion, wie sie hier definiert ist, ja nur eine Zahl zwischen <font class="code">1</font> und <font class="code">4</font>, auch wenn dieser Zahl ein Name zugeordnet wurde. Ein Programmierer könnte nun aber &quot;aus Versehen&quot; einen Funktionsaufruf wie den folgenden programmieren:</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+<tr>
+          <td align="center">
+      	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+      			<tr>
+      			<td class="gelb">
+      		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+      	      <tr>
+      	        <td width="10">&nbsp;</td>
+      	        <td id="code"><br>System.out.println( berechnen( 1, 2, 37));<br><br></td>
+      	        <td width="92">&nbsp;</td>
+      	      </tr>
+      	    </table>
+      			</td>
+      			</tr>
+      	</table><br>
+        </td>
+          <td>&nbsp;</td>
+		       <td valign="top" align="left"><img src="../Medien/Beispiel.gif" width="36"
+          height="36" alt="Hinweis: Beispiel(e)"><br><font id="pikto">Beispiel</font></td>
+    </tr>
+    <tr>
+	    <td><p>Kein Compiler der Welt h&auml;tte an diesem Aufruf irgendetwas auszusetzen. Erst beim Ausf&uuml;hren des Programms w&uuml;rde auffallen, dass das Programm &uuml;berhaupt nicht wei&szlig;, was es mit der Zahl <font class="code">37</font> anfangen soll: <i>Sollen hier die Werte 1 und 2 addiert werden? Oder multipliziert?</i></p></td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+  </tr>
+
+</table>
+<br><br><br>
+</body>
+</html>

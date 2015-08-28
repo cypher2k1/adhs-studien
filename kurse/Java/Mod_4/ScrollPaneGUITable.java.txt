@@ -1,0 +1,96 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap4/ScrollPaneGUITable.java
+//
+//*************Ende Hinweis*****************************
+
+
+import javax.swing.*;
+import javax.swing.tree.*;
+import java.awt.event.*;
+import javax.swing.event.*;
+import java.awt.*;
+
+public class ScrollPaneGUITable extends JFrame {
+
+	public ScrollPaneGUITable () {
+		super ("Eine Anwendung");
+
+		addWindowListener (new myWindowAdapter ());
+		JMenuBar	mBar	= new JMenuBar();
+		JMenu		mFile	= new JMenu ("Datei");
+		JMenuItem	cmdQuit	= new JMenuItem ("Beenden");
+
+		mFile.setMnemonic ('D');
+		cmdQuit.setMnemonic ('B');
+		cmdQuit.setToolTipText ("Beendet das Programm");
+		cmdQuit.addActionListener (new Anwendung ());
+
+		mBar.add (mFile);
+		mFile.add (cmdQuit);
+		setJMenuBar(mBar);
+
+
+		JPanel			topPanel = new JPanel ();
+		topPanel.setLayout (new BorderLayout ());
+
+		getContentPane().add (topPanel);
+
+
+		JScrollPane		scrollPane;
+		scrollPane = new JScrollPane ();
+
+
+		topPanel.add (scrollPane, BorderLayout.CENTER);
+
+
+
+		// Create columns names
+		String columnNames [] = { "Name", "Vorname", "Telefon" };
+
+		// Create some data
+		String dataValues[][] = {
+
+			{ "Meier", "Werner", "069 - xxx" },
+			{ "Müller", "Frank", "089 - xxx" },
+			{ "Müller", "Sybille", "089 - xxx" },
+			{ "xyz", "Sabine", "02331 - xxx" }
+		};
+
+		JTable		table = new JTable( dataValues, columnNames );
+
+		scrollPane.getViewport().add (table);
+
+		setSize (300, 300);
+		setVisible (true);
+	}
+
+
+
+	public static void main (String args []) {
+
+		new ScrollPaneGUITable ();
+	}
+}
+
+
+class myWindowAdapter extends WindowAdapter {
+
+	public void windowClosing (WindowEvent e) {
+
+		System.exit (0);
+	}
+}
+
+
+
+class Anwendung implements ActionListener {
+
+	public void actionPerformed (ActionEvent e) {
+		String		cmd = e.getActionCommand ();
+
+		if (cmd == "Beenden")
+			System.exit (0);
+	}
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_3_4_6</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+var Dat_Window;
+function Datei()
+{
+  if (Dat_Window!=null)
+        if (Dat_Window.closed==false)
+	Dat_Window.close()
+  Dat_Window= window.open("./Animation1.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,width=660,height=360")
+}
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+    <tr>
+       <td width="550"><b>Die run()-Methode (3)</b></td>
+       <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+       <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+   <tr>
+    <td><p>Wenn ein <b>neues Bild einer Animation berechnet wurde</b>, kann die
+        <font class="code">repaint()</font>-Methode des Applets aufgerufen werden. Sie
+        veranlasst den Browser,  den Bereich des Applets neu zeichnen zu lassen.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td><p><b>Der Browser ruft dann automatisch</b> die <font class="code">paint()</font>-Methode
+        des Applets auf - und <b>nicht das Applet selber</b>. Genau genommen ruft der Browser die
+        <font class="code">update()</font>-Methode des Applets auf. Sie l&ouml;scht den Hintergrund
+        und aktiviert zum Neuzeichnen die <font class="code">paint()</font>-Methode.</p><br></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+	  	<tr>
+	  	<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+        <tr>
+          <td width="20">&nbsp;</td>
+          <td id="code"><br><font id="kw">public void</font> run() { <br><br>
+                              &nbsp;&nbsp;&nbsp;<font id="kw">while</font>(<font id="kw">true</font>) {<br><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="kw">try</font> {  thread.sleep(1000);  }<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="kw">catch</font>(InterruptedException e) {}<br><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ ... ]<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;repaint();<br>
+                              &nbsp;&nbsp;&nbsp;}<br>
+                              }<br><br></td>
+          <td width="20">&nbsp;</td>
+        </tr>
+      </table>
+	</td>
+	</tr>
+	</table><br>
+    </td>
+    <td>&nbsp;</td>
+    <td valign="top" align="left">
+        <img src="../Medien/Beispiel.gif" width="36" height="36" alt="Hinweis: Beispiel(e)"><br>
+        <a href="javascript:Datei()" onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true"
+        onMouseOut="self.status='';return true" id="ex">Animation1.java</a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <table>
+        <tr>
+   	       <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="16" ></td>
+  	       <td>Mehr &uuml;ber die <font class="code">update()</font>-Methode finden Sie in
+               <a href="javascript:goPage('3_5_2.htm')" onMouseOver="self.status='zu Kapitel 3.5';return true;"
+               onMouseOut="self.status='';return true" id="hier">Kapitel 3.5</a>.</td>
+        </tr>
+      </table>
+    </td>
+    <td>&nbsp;</td>
+    <td align="left" valign="top"><img src="../Medien/Hinweis.gif" width="36" height="36"
+        alt="Hinweis: wichtige Hinweis(e) im Lehrtext"><br><font id="pikto">Hinweis</font></td>
+  </tr>
+
+</table>
+</body>
+</html>

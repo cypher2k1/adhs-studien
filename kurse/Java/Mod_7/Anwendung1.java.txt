@@ -1,0 +1,59 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap7/Anwendung1.java
+//
+//*************Ende Hinweis*****************************
+
+
+import java.awt.*;
+import java.awt.event.*;
+
+
+class Anwendung1 extends Frame {
+
+	public Anwendung1 () {
+
+		super ("Bindet die Bean ein");
+
+		MenuBar		mBar	= new MenuBar ();
+		Menu		mFile	= new Menu ("Datei");
+		MenuItem	cmdQuit	= new MenuItem ("Beenden");
+
+		cmdQuit.addActionListener (new logic ());
+		mBar.add (mFile);
+		mFile.add (cmdQuit);
+		this.setMenuBar (mBar);
+
+
+		setLayout (new FlowLayout (FlowLayout.LEFT, 10, 10));
+
+
+		IntegerTextField1	tf1 = new IntegerTextField1 ();
+
+		tf1.setColumns (10);
+		add (tf1);
+
+
+		this.setSize (200, 100);
+		this.setVisible (true);
+	}
+
+
+	public static void main (String args []) {
+
+		new Anwendung1 ();
+	}
+}
+
+
+class logic implements ActionListener {
+
+	public void actionPerformed (ActionEvent e) {
+
+		String		cmd = e.getActionCommand ();
+
+		if (cmd == "Beenden")
+			System.exit (0);
+	}
+}

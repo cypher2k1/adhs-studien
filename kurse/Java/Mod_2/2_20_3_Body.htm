@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>&Uuml;bung_2_20_3</title>
+
+	<link rel="stylesheet" type="text/css" href="../Format/Format_Ubung.css">
+		<script src="../BrowserCheck.js" type="text/javascript"></script>
+	<script src="../Go_Seite.js" type="text/javascript"></script>
+	<script src="../Uebung/check.js" type="text/javascript"></script>
+	<script src="../Uebung/layer.js" type="text/javascript"></script>
+	<script src="../Uebung/LueckeElement.js" type="text/javascript"></script>
+	<script src="../Uebung/Lueckedhtml.js" type="text/javascript"></script>
+	<script src="../Uebung/Auswertung.js" type="text/javascript"></script>
+
+
+<script language="JavaScript">
+	<!--
+		hauptfrage = "Wie viele Bits k&ouml;nnen Werte vom Typ <span class='code'><b>int</b></span> umfassen?";
+
+		frage = new Array();
+		frage[0] = "Werte vom Typ <span class='code'>int</span> k&ouml;nnen <> Bits umfassen.";
+
+		text = new Array();
+		text[0] = "";
+
+		LueckeElement1 = new LueckeElement(0,'32',['32'],['32'],true,10,5,8,"code","center");
+		var hilfeLink = new Array();
+		hilfeLink[0] = new Array(2);
+		hilfeLink[0][0] = "Kapitel 2.1, Seite 5";
+		hilfeLink[0][1] = "../Mod_2/2_1_5.htm";
+
+		// Hoehe * Breite für IE Hoehe,Breite,N4 Hoehe,Breite,N6 Hoehe,Breite
+		setFensterLoesung(220,730,220,730,220,730);
+
+		if (meldung)
+		{
+			statusAufgabe = window.opener.parent.parent.frames[0].document.kurs.statusAufgabe.value;
+			userEingabeL = window.opener.userEingabe;
+		}
+		else
+		{
+			statusAufgabe = parent.parent.frames[0].document.kurs.statusAufgabe.value;
+			userEingabeL = userEingabe;
+		}
+
+		function Init()
+		{
+			setMusterLoesung();
+
+			if (meldung)
+			{
+				showOutput();
+				changeInOut(false);
+			}
+			else
+			{
+				parent.parent.savePage();
+				showInput();
+				changeOutIn();
+				loadLuecke();
+			}
+		}
+
+		function Seite(name)
+		{
+			if (meldung)
+			{
+				window.opener.parent.parent.frames[2].location.href=name;
+				window.close();
+			}
+			else parent.parent.frames[2].location.href=name;
+		}
+	//-->
+	</script>
+
+	<script src="../Uebung/Standarddhtml.js" type="text/javascript"></script>
+	<script src="../Uebung/Lueckedhtml.js" type="text/javascript"></script>
+	<script src="../Uebung/lernpfad.js" type="text/javascript"></script>
+	<script src="../Bildwechsel_A.js" type="text/javascript"></script>
+	<script src="../Uebung/PopUpFenster.js" type="text/javascript"></script>
+</head>
+
+<body onLoad="Init()" onUnload="javascript:if (ml != null) if (ml.closed == false) ml.close()">
+
+<!-- Tabelle mit Feedback + Aufgabenstellung + LernerEingabe + Navigationsleiste + Hilfelinks -->
+<div id="LernerInput" style="position:absolute; top:15px; visibility:visible;">
+</div>
+
+</body>
+</html>
+
+
+
+

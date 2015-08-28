@@ -1,0 +1,36 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap2/Bsp10While.java
+//
+//*************Ende Hinweis*****************************
+
+
+
+class Bsp10While {
+	
+	public static void main (String args[]) { 
+		
+		// ----------------------------------------------------
+		
+		System.out.println ("while-Schleife:");
+		
+		int		i = 1;
+		
+		//
+		// Die folgenden Anweisungen werden ausgeführt, solange
+		// der Wert von i kleiner oder gleich 10 ist.
+		//
+		while (i <= 10) {
+			
+			System.out.println (i);	
+			
+			//
+			// Am Ende der Anweisungen wird der Wert von i um
+			// eins erhöht. Sonst würde hier eine "Endlosschleife"
+			// entstehen.
+			//
+			i ++;
+		}
+	} 
+}

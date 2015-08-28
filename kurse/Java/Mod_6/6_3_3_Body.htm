@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_6_3_3</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+var Dat_Window;
+
+function Datei()
+{
+  if (Dat_Window!=null)
+          if (Dat_Window.closed==false)
+              Dat_Window.close()
+  Dat_Window= window.open("./Person.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=680,height=260")
+}
+
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+      <td width="550"><b>Das Datenmodell: Personen</b></td>
+      <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+      <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+    </tr>
+
+    <tr>
+      <td><p><b>Im Mittelpunkt der Universit&auml;t stehen Personen</b>. Sie werden der
+          Einfachheit halber nur durch ihren <b>Namen</b> und <b>Vornamen</b>
+          beschrieben.</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td><p>Dazu wird die Klasse f&uuml;r die Personen, wie die folgenden
+          Klassen auch, in einem neuen Paket abgelegt:</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+	    <td align="center">
+		    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+				<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+		      <tr>
+		        <td width="20">&nbsp;</td>
+		        <td id="code"><br><font id="kw">package</font> UniBeispiel;
+		                        <br>[...]
+		                        <br><font id="kw">public class</font> Person <font id="kw">implements</font> Serializable {
+		                        <br>&nbsp;&nbsp;&nbsp;<font id="kw">public</font> String&nbsp;&nbsp;m_name;
+		                        <br>&nbsp;&nbsp;&nbsp;<font id="kw">public</font> String&nbsp;&nbsp;m_vorname;
+		                        <br>[...]
+		                        <br>} <br><br></td>
+		        <td width="20">&nbsp;</td>
+		      </tr>
+		    </table>
+	</td>
+	</tr>
+	</table><br>
+	    </td>
+	    <td>&nbsp;</td>
+	    <td valign="top" align="left">
+                        <img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+                        <a href="javascript:Datei()"  onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+			onMouseOut="self.status='';return true" id="ex">Person.java</a>
+	    </td>
+    </tr>
+    <tr>
+	  <td>
+	    <table>
+	      <tr>
+	        <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="60" ></td>
+	        <td>Bitte beachten Sie, dass die Attribute <font class="code">m_name</font> und
+	            <font class="code">m_vorname</font> hier als <font class="code">public</font>
+	            deklariert werden. Eine echte Anwendung sollte diese Informationen kapseln
+	            und nach au&szlig;en nur Methoden zum Lesen und Bearbeiten der Eigenschaften
+	            anbieten. Vergleichen Sie dies mit den Eigenschaften von JavaBeans in <a href="javascript:goPage('../Mod_7/7_1_3.htm')" onMouseOver="self.status='zu Kapitel 7.1.3';return true;"
+        onMouseOut="self.status='';return true" id="hier">Kapitel 7.1</a>.</td>
+	      </tr>
+	    </table>
+	  </td>
+	  <td>&nbsp;</td>
+	  <td align="left" valign="top"><img src="../Medien/Hinweis.gif" width="36" height="36"
+	      alt="Hinweis: wichtige Hinweis(e) im Lehrtext"><br><font id="pikto">Hinweis</font></td>
+    </tr>
+    <tr>
+      <td><p><br>Die Klasse implementiert das Interface <font class="code">java.io.Serializable</font>.
+          Die Erl&auml;uterungen hierzu folgen nach der Vorstellung des Datenmodells.</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+</table>
+</body>
+</html>

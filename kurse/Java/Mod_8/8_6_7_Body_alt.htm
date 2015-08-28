@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>&Uuml;bung_8_6_7</title>
+
+	<link rel="stylesheet" type="text/css" href="../Format/Format_Ubung.css">
+
+	<script src="../Go_Seite.js" type="text/javascript"></script>
+	<script src="../Uebung/check.js" type="text/javascript"></script>
+	<script src="../Uebung/layer.js" type="text/javascript"></script>
+	<script src="../Uebung/LueckeElement.js" type="text/javascript"></script>
+	<script src="../Uebung/Lueckedhtml.js" type="text/javascript"></script>
+	<script src="../Uebung/Auswertung.js" type="text/javascript"></script>
+
+	<script language="JavaScript" type="text/javascript">
+	<!--
+		frage = new Array();
+		frage[0] = "Pluszeichen&nbsp;(<span class='code'>+</span>):&nbsp;&nbsp;&nbsp;<><br>" + "Minuszeichen&nbsp;(<span class='code'>-</span>):&nbsp;<>";
+
+
+
+		text = new Array();
+		text[0] = "";
+		text[1] = "";
+
+
+
+
+		// die letzten 3 Parameter: sizeIE, sizeN4, sizeN6
+
+		LueckeElement1 = new LueckeElement(0,'public',['public'],['public'],true,10,5,10,"code","center");
+		LueckeElement2 = new LueckeElement(1,'private',['private'],['private'],true,10,5,10,"code","center");
+
+
+		setMusterLoesung("8_6_7_Body.htm");
+		// Hoehe * Breite für IE Hoehe,Breite,N4 Hoehe,Breite,N6 Hoehe,Breite
+				setFensterLoesung(230,730,250,730,250,730);
+
+		if (document.all)
+				{
+					// 1. AufgabeLayer - 2. leisteLayer - 3. hilfeLayer
+					// 1. AufgabeLayer - 2. tabelleUserLayer/tabelleOutputLayer - 3. leisteLayer -
+					// 4. hilfeLayer - 5. hilfeLayer im Lösungsfenster
+
+					//IE Seite (Frage/Auswertbutton/Kurskontext)
+					setTopInput(30,159,190);
+
+					//IE Seite, ausgewertet und Loesungsfenster (Frage/Tabelle/Button/Kurskontext/Kurskontext-Losungsfenster)
+					setTopOutput(57,91,184,215,180);
+
+				}
+				else if (document.getElementById)
+				{
+					//N 6 Seite (Frage/Auswertbutton/Kurskontext)
+					setTopInput(30,162,190);
+
+					//N 6 Seite, ausgewertet und Loesungsfenster (Frage/Tabelle/Button/Kurskontext/Kurskontext-Losungsfenster)
+					setTopOutput(55,90,190,210,190);
+				}
+				else if (document.layers)
+				{
+					//N 4 Seite (Frage/Auswertbutton/Kurskontext)
+					setTopInput(27,165,195);
+
+					//N 4 Seite, ausgewertet und Loesungsfenster (Frage/Tabelle/Button/Kurskontext/Kurskontext-Losungsfenster)
+					setTopOutput(55,92,194,225,190);
+				}
+		if (meldung)
+		{
+			statusAufgabe = window.opener.parent.parent.frames[0].document.kurs.statusAufgabe.value;
+			userEingabeL = window.opener.userEingabe;
+		}
+		else
+		{
+			statusAufgabe = parent.parent.frames[0].document.kurs.statusAufgabe.value;
+			userEingabeL = userEingabe;
+		}
+
+		function Init()
+		{
+
+
+			if (meldung)
+			{
+				showOutput();
+				showAuswertung();
+				changeInOut(false);
+			}
+			else
+			{
+				parent.parent.savePage();
+				showInput();
+				changeOutIn();
+			}
+
+			loadInput();
+		}
+
+		function Seite(name)
+		{
+			if (meldung)
+			{
+				window.opener.parent.parent.frames[2].location.href=name;
+				window.close();
+			}
+			else parent.parent.frames[2].location.href=name;
+		}
+	//-->
+	</script>
+
+	<script src="../Uebung/lernpfad.js" type="text/javascript"></script>
+	<script src="../Bildwechsel_A.js" type="text/javascript"></script>
+	<script src="../Uebung/PopUpFenster.js" type="text/javascript"></script>
+</head>
+
+
+<body onLoad="Init()" onUnload="javascript:if (ml != null) if (ml.closed == false) ml.close()">
+
+<!-- Feedback für den Lerner -->
+<div id="AuswertungLayer" style="position:absolute; top:15px; visibility:hide;">
+</div>
+
+<!-- Aufgabestellung -->
+
+<div id="AufgabeLayer" style="position:absolute; top:15px; visibility:hidden; ">
+	<table summary="Aufgabenstellung-Layout" class="tabfrage" width="680" border="0"  cellspacing="0" cellpadding="8">
+	  	<tr>
+
+	     	<td class="tdfrage">
+	     	<table summary="Aufgabenstellung" class="tabfrage" border="0"  cellspacing="0" cellpadding="0">
+			<tr>
+			<td class="tdfrage">&nbsp;&nbsp;&nbsp;</td>
+			<td class="tdfrage">Welche Zugriffsrechte symbolisieren folgende Zeichen:</td>
+	     	<td class="tdfrage">&nbsp;&nbsp;</td>
+	     	</table>
+			</td>
+
+	  	</tr>
+</table>
+</div>
+
+<!-- Tabelle mit Fragen -->
+<div id="tabelleInputLayer" style="position:absolute; top:64px; visibility:hide;"></div>
+
+<!-- Tabelle mit Fragen + Lösung + Begründung -->
+<div id="tabelleOutputLayer" style="position:absolute; top:64px; visibility:hide;"></div>
+
+<!-- Tabelle mit Fragen + Lösung -->
+<div id="tabelleUserLayer" style="position:absolute; top:64px; visibility:hide;"></div>
+
+<!-- Navigation -->
+<div id="leisteLayer" style="position:absolute; top:260px; visibility:hide;">
+	<table summary="Leiste" width="680" cellpadding="2" cellspacing="0" border="0">
+		<tr>
+			<td id="auswerten" align="center" valign="bottom" height="36">
+		        <a href="JavaScript:Auswerten()" onMouseOver="Bildwechsel(Highlight4,1);self.status='Auswerten';return true" onMouseOut="Bildwechsel(Normal4,1);self.status='';return true"><img name=b1 src="../Medien/Auswerten.gif" alt="Auswerten" width="96" height="26" border="0" ></a><img src="../Medien/Spacer.gif" width="20" alt="spacer">
+		    	<a href="JavaScript:Loesung()" onMouseOver="Bildwechsel(Highlight5,2);self.status='Lösung';return true" onMouseOut="Bildwechsel(Normal5,2);self.status='';return true"><img name=b2 src="../Medien/Losung.gif" alt="L&ouml;sung" width="96" height="26" border="0"></a><img src="../Medien/Spacer.gif" width="20" alt="spacer">
+		    	<a href="JavaScript:Neu()" onMouseOver="Bildwechsel(Highlight6,3);self.status='Löschen';return true" onMouseOut="Bildwechsel(Normal6,3);self.status='';return true"><img name=b3 src="../Medien/Loschen.gif" alt="L&ouml;schen" width="96" height="26" border="0" ></a>
+		    </td>
+		</tr>
+	</table>
+</div>
+</form>
+
+<!-- Hilfe -->
+<div id="hilfeLayer" style="position:absolute; top:300px; left:28px; visibility:hide;">
+	<table summary="Hilfe" width="680" cellpadding="1" cellspacing="0" border="0">
+		<tr>
+			<td id="hilfe"><br>Den Kurskontext zu dieser Frage finden Sie in <a href="javascript:Seite('../Mod_8/8_4_5.htm')" onMouseOver="self.status='zu Kapitel 8.4';return true;"
+				onMouseOut="self.status='';return true" id="hier">Kapitel 8.4, Seite 5</a>.
+			</td>
+			<td align="right">
+				<script language="JavaScript" type="text/javascript">
+				<!--
+					if (meldung) document.write('<br>' +
+					'<span id="shut"><a href="javascript:window.close()" onMouseOver="Bildwechsel(Highlight1,4);return true" onMouseOut="Bildwechsel(Normal1,4);return true">' +
+    	  			'<img name=b4 src="../Medien/Fzu.gif" alt="Fenster schließen" border="0"></a></span>&nbsp;')
+				//-->
+				</script>
+			</td>
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>
+
+

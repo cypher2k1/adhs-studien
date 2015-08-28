@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_2_17_4</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script src="../Bildwechsel.js"></script>
+<script langauge="JavaScript">
+<!--
+
+var Dat_Window;
+function Datei()
+{
+  if (Dat_Window!=null)
+        if (Dat_Window.closed==false)
+	Dat_Window.close()
+  Dat_Window= window.open("./RechnerNeu.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,width=660,height=360")
+}
+
+var Bsp_Window;
+
+	 function Screen()
+	 {
+	   if (Bsp_Window!=null)
+		   if (Bsp_Window.closed==false)
+		       Bsp_Window.close()
+	   Bsp_Window= window.open("./Medien/2_17_4n.gif" , "Screen" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=500,height=220")
+	}
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+    <td width="550"><b>Enum - Datentypen</b></td>
+    <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+    <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+
+  <tr>
+      <td>
+  	   <table>
+  	    <tr>
+  	      <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="44" ></td>
+  	      <td>Um diese L&uuml;cken zu schlie&szlig;en, f&uuml;gte <i>SUN</i> der Sprache Java in der <b>Version 1.5</b> die <b>Aufz&auml;hlungs-Datentypen</b> <font class="codeb">enum</font> hinzu. Mit diesen neuen Datentypen werden derartige Aufz&auml;hlungen innerhalb einer Klasse nun wie folgt definiert:</td>
+  	    </tr>
+  	   </table>
+      </td>
+      <td>&nbsp;</td>
+      <td align="left" valign="top"><img src="../Medien/Hinweis.gif" width="36" height="36"
+        alt="Hinweis: wichtige Hinweis(e) im Lehrtext"><br><font id="pikto">Hinweis</font></td>
+  </tr>
+
+ <tr>
+         <td align="center"><br>
+     	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+     			<tr>
+     			<td class="gelb">
+     		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+     	      <tr>
+     	        <td width="10">&nbsp;</td>
+     	        <td id="code"><br><font id="kw">public class</font> RechnerNeu {
+   						<br>
+   						<br>&nbsp;&nbsp;&nbsp;&nbsp;<font id="kw">public enum</font> Aktion { ADDITION,
+   						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUBTRAKTION, MULTIPLIKATION, DIVISION }<br><br></td>
+     	        <td width="60">&nbsp;</td>
+     	      </tr>
+     	    </table>
+     			</td>
+     			</tr>
+     	</table><br><br>
+       </td>
+         <td>&nbsp;</td>
+         <td valign="top" align="left"><br>
+   	             <img src="../Medien/Beispiel.gif" width="36" height="36" alt="Hinweis: Beispiel(e)"><br>
+   	             <a href="javascript:Datei()" onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true"
+           onMouseOut="self.status='';return true" id="ex">RechnerNeu.java</a></td>
+    </tr>
+  <tr>
+    <td><p>Dabei bleibt es dem <b>Benutzer aber verborgen</b>, ob es sich bei den Werten <font class="code">ADDITION</font>, <font class="code">SUBTRAKTION</font>, <font class="code">MULTIPLIKATION</font> sowie <font class="code">DIVISION</font> um Zahlen handelt oder nicht. An die Methode zum Berechnen des Ergebnisses wird auch keine Zahl mehr &uuml;bergeben, sondern ein Wert vom tats&auml;chlichen Typ <font class="codeb">Aktion</font>.</p><br></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+          <td align="center">
+      	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+      			<tr>
+      			<td class="gelb">
+      		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+      	      <tr>
+      	        <td width="10">&nbsp;</td>
+      	        <td id="code"><br><font id="kw">public class</font> Rechner <font id="kw">implements</font> Aktion {
+    						<br>
+    						<br>&nbsp;&nbsp;&nbsp;&nbsp;<font id="kw">public static double</font> berechnen
+    						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <font id="kw">double</font> a, <font id="kw">double</font> b, Aktion aktion ){
+    						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="kw">double</font> result = 0.0;
+    						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="kw">if</font>( aktion == ADDITION ){
+  						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result = a + b;
+  						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+    						<br>[...]<br><br></td>
+      	        <td width="60">&nbsp;</td>
+      	      </tr>
+      	    </table>
+      			</td>
+      			</tr>
+      	</table><br><br>
+        </td>
+          <td>&nbsp;</td>
+          <td valign="top" align="left">
+    	             <img src="../Medien/Beispiel.gif" width="36" height="36" alt="Hinweis: Beispiel(e)"><br>
+    	             <a href="javascript:Datei()" onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true"
+            onMouseOut="self.status='';return true" id="ex">RechnerNeu.java</a></td>
+    </tr>
+<tr>
+    <td><p>Die eigentlichen Werte des Datentyps <font class="code">Aktion</font> k&ouml;nnen &uuml;ber die <a href="JavaScript:parent.parent.frames[1].CMDown('GET_Glossar','MODULECTRL','Punktnotation','')"
+        onMouseOver="self.status='zum Glossar';return true" onMouseOut="self.status='';return true"; id="glos"><b>Punktnotation</b></a> verwendet werden (im Beispiel oben: <font class="code">Aktion.ADDITION</font>), und der neue Funktionsaufruf sieht wie folgt aus:</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+            <td align="center">
+        	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+        			<tr>
+        			<td class="gelb">
+        		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+        	      <tr>
+        	        <td width="5">&nbsp;</td>
+        	        <td id="code"><br>System.out.println( berechnen( 5.0, 2.5, Aktion.ADDITION));<br><br></td>
+        	        <td width="5">&nbsp;</td>
+        	      </tr>
+        	    </table>
+        			</td>
+        			</tr>
+        	</table><br>
+          </td>
+          <td>&nbsp;</td>
+             <td valign="top" align="left">
+			    	             <img src="../Medien/Beispiel.gif" width="36" height="36" alt="Hinweis: Beispiel(e)"><br>
+			    	             <a href="javascript:Datei()" onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true" onMouseOut="self.status='';return true" id="ex">RechnerNeu.java</a></td>
+    </tr>
+
+  <tr>
+  	       <td><p>Und so sieht es dann aus:</p></td>
+  	       <td>&nbsp;</td>
+  	       <td>&nbsp;</td>
+  	  </tr>
+  	  <tr>
+  	  	    <td><div style="margin-left:20px">
+  	  		<table border="0" cellspacing="0" cellpadding="0">
+  	  	          <tr>
+  	  			<td><a href="javascript:Screen()"
+  	  	      		onMouseOver="Bildwechsel(So2,'b1');self.status='So sieht es aus.';return true" onMouseOut="Bildwechsel(So1,'b1');self.status='';return true">
+  	  	      		<img name=b1 src="../Medien/So.gif" border="0" alt="So sieht es aus."></a></td>
+  	  	    		<td width="10">&nbsp;</td>
+  	  	    		<td ><a href="javascript:Screen()" onMouseOver="self.status='So sieht es aus.';return true"
+  	  	    		onMouseOut="self.status='';return true" id="info">So sieht es aus.</a></td>
+  	  	      	  </tr>
+  	  	     	</table></div>
+  	  	    </td>
+  	  	    <td>&nbsp;</td>
+  	  	    <td>&nbsp;</td>
+	  	</tr>
+
+<tr>
+    <td><br>Die deutlichsten <b>Unterschiede</b> zu der ersten Version des Programms (<font class="code">Rechner.java</font>) sind:</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+          <td>
+            <table BORDER="0" >
+               <tr>
+                <td width="20">&nbsp;</td>
+                <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+                <td>Der neue Rechner implementiert <b>kein zweckentfremdetes Interface</b> mehr.</td>
+              </tr>
+              <tr>
+    		  <td width="20">&nbsp;</td>
+    		  <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+    		  <td>Das <b>Programm ist nun typ-sicher</b>, das hei&szlig;t, es kann kein Parameter als dritter Wert an die Methode <font class="code">berechnen()</font> &uuml;bergeben werden, der keine Aktion ist. Der Compiler w&uuml;rde also solch einen Fehler wie im ersten Beispiel sofort entdecken.</td>
+              </tr>
+             </table>
+
+         </td>
+         <td>&nbsp;</td>
+       <td>&nbsp;</td>
+</tr>
+</table>
+<br><br><br>
+</body>
+</html>

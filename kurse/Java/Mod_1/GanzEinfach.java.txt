@@ -1,0 +1,15 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap1/GanzEinfach.java
+//
+//*************Ende Hinweis*****************************
+
+
+public class GanzEinfach {
+
+	public static void main (String args[]) {
+
+		System.out.println ("Dies ist ganz einfach!");
+	}
+}

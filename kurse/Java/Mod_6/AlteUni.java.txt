@@ -1,0 +1,36 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap6/AlteUni.java
+//
+//*************Ende Hinweis*****************************
+
+import UniBeispiel.*;
+
+import java.io.*;
+import java.util.*;
+
+
+class AlteUni {
+
+	public static void	main (String [] args) {
+
+		Uni		u = null;
+
+		try {
+
+			FileInputStream		fs = new FileInputStream ("unidata.ser");
+			ObjectInputStream	os = new ObjectInputStream	(fs);
+
+			u = (Uni) os.readObject ();
+			os.close ();
+
+		} catch (IOException e) {}
+			catch (ClassNotFoundException e) {}
+
+
+		if (u != null)
+			u.alles_anzeigen ();
+	}
+}
+

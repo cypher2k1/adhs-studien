@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>&Uuml;bung_2_20_12</title>
+
+	<link rel="stylesheet" type="text/css" href="../Format/Format_Ubung.css">
+	<script src="../BrowserCheck.js" type="text/javascript"></script>
+	<script src="../Uebung/check.js" type="text/javascript"></script>
+	<script src="../Uebung/layer.js" type="text/javascript"></script>
+	<script src="../Uebung/TextareaElement.js" type="text/javascript"></script>
+	<script src="../Uebung/Auswertung.js" type="text/javascript"></script>
+
+	<script language="JavaScript">
+	<!--
+		hauptfrage = 'Formulieren Sie die <font class="code"><b>for</b></font>-Schleife:'
+		                 + '<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class="code"><b>for (i=1; i&lt;=100; i ++) { /* ... */ }</b></font>'
+                 		+ '<br>als <font class="code"><b>while</b></font>-Schleife.';
+
+		frage = new Array();
+		frage[0] = "";
+
+		text = new Array();
+		text[0] = "";
+
+		m = 'i = 1;' + endl + 'while (i <= 100) {' + endl + tab +'/* ... */' + endl + tab + 'i ++;' + endl + '}';
+
+		w = 'i=1;while(i<=100){/*...*/i++;}';
+		a = 'i = 1 ; while ( i < = 100 ) { /* ... */ i ++ ; }';
+
+		w1 = 'i=0;while(i<100){i++;/*...*/}';
+   		a1 = 'i = 0 ; while ( i < 100 ) { i ++ ; /* ... */ }';
+
+		TextareaElement1 = new TextareaElement(0,m,[w,w1],[a,a1],true,5,30,5,20,5,30);
+		position = "oben";
+
+		var hilfeLink = new Array();
+		hilfeLink[0] = new Array(2);
+		hilfeLink[0][0] = "Kapitel 2.8, Seite 3";
+		hilfeLink[0][1] = "../Mod_2/2_8_3.htm";
+
+        // Hoehe * Breite für IE Hoehe,Breite,N4 Hoehe,Breite,N6 Hoehe,Breite
+		setFensterLoesung(330,730,350,730,350,730);
+
+		if (meldung)
+		{
+			statusAufgabe = window.opener.parent.parent.frames[0].document.kurs.statusAufgabe.value;
+			userEingabeL = window.opener.userEingabe;
+		}
+		else
+		{
+			statusAufgabe = parent.parent.frames[0].document.kurs.statusAufgabe.value;
+			userEingabeL = userEingabe;
+		}
+
+		function Init()
+		{
+			setMusterLoesung();
+
+			if (meldung)
+			{
+				showOutput();
+				changeInOut(false);
+			}
+			else
+			{
+				parent.parent.savePage();
+				showInput();
+				changeOutIn();
+				loadLuecke();
+			}
+		}
+
+		function Seite(name)
+		{
+			if (meldung)
+			{
+				window.opener.parent.parent.frames[2].location.href=name;
+				window.close();
+			}
+			else parent.parent.frames[2].location.href=name;
+		}
+	//-->
+	</script>
+
+	<script src="../Uebung/Standarddhtml.js" type="text/javascript"></script>
+	<script src="../Uebung/Textareadhtml.js" type="text/javascript"></script>
+	<script src="../Uebung/lernpfad.js" type="text/javascript"></script>
+	<script src="../Bildwechsel_A.js" type="text/javascript"></script>
+	<script src="../Uebung/PopUpFenster.js" type="text/javascript"></script>
+</head>
+
+<body onLoad="Init()" onUnload="javascript:if (ml != null) if (ml.closed == false) ml.close()">
+
+<!-- Tabelle mit Feedback + Aufgabenstellung + LernerEingabe + Navigationsleiste + Hilfelinks -->
+<div id="LernerInput" style="position:absolute; top:15px; visibility:visible;">
+</div>
+
+</body>
+</html>

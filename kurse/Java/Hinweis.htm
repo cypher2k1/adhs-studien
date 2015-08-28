@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<title>Hinweise zur Kursbenutzung</title>
+
+	<link rel="stylesheet" type="text/css" href="Format/Format.css">
+
+	<script src="BrowserCheck.js" type="text/javascript"></script>
+	<script type="text/javascript" language="JavaScript">
+	<!--
+		Normal3 = new Image();
+  		Normal3.src = "Stat-Gifs/Nzu.gif";
+  		Highlight3 = new Image();
+  		Highlight3.src = "Stat-Gifs/Nzu_Mo.gif";
+
+  		Normal4 = new Image();
+  		Normal4.src = "Stat-Gifs/Nprint.gif";
+  		Highlight4 = new Image();
+  		Highlight4.src = "Stat-Gifs/Nprint_Mo.gif";
+
+
+		function goPage(Ziel)
+		{
+    		opener.parent.parent.frames[2].document.location=Ziel
+    		self.close()
+		}
+
+
+		function Bildwechsel(Bildobjekt,PName)
+  		{
+   			eval("window.document."+PName+".src = Bildobjekt.src");
+  		}
+
+
+		function CookieLesen2(Name)
+		{
+	    	var Suche = Name + "="
+
+	    	if (document.cookie.length > 0)
+	    	{
+	        	Anfang = document.cookie.indexOf(Suche)
+
+	        	if (Anfang != -1)
+	        	{
+	            	Anfang += Suche.length
+	            	Ende = document.cookie.indexOf(";",Anfang)
+
+	            	if (Ende == -1) Ende = document.cookie.length
+
+	            	return unescape(document.cookie.substring(Anfang, Ende))
+	        	}
+	        	else return ""
+	    	}
+	    	else return ""
+		}
+
+
+  		function zu()
+  		{
+  			if ((tmp == "") && (OP))
+  			{
+  			}
+  			else set();
+
+  			window.close();
+  		}
+
+
+		function set()
+		{
+			wert = document.forms[0].elements[0].checked;
+			setState(wert);
+		}
+
+
+  		function setState(wert)
+		{
+			var Heute = new Date()
+			var Verfallsdatum = new Date()
+   			Verfallsdatum.setTime(Heute.getTime() + 1000*60*60*24*365)
+			document.cookie = "Hinweis" + "=" +escape(wert) + ((Verfallsdatum == null) ? "" : ("; expires=" + Verfallsdatum.toGMTString()))
+		}
+
+
+		function getInformation()
+		{
+			// Servicefunktionen
+			text = "<tr><td valign='top'><img src='Medien/Liste_blau.gif' width='10' height='10' alt=''></td><td valign='top'><span class='hinweismeld'><b>Servicefunktionen</b><br>Die in diesem Kurs angebotenen  Servicefunktionen Notizblatt, Lesezeichen und Kursbearbeitungsstatus speichern die von Ihnen eingegeben Daten in <b>Cookies</b> auf Ihrem lokalen Rechner ab. Wenn Sie diese Cookies l&ouml;schen, stehen Ihnen diese Daten verst&auml;ndlicherweise nicht mehr zur Verf&uuml;gung.</span></td><td width='12'>&nbsp;</td><tr>";
+
+
+
+			// Bildschirmauflösung
+			optWidth = 1024;
+			optHeight = 768;
+			screenWidth = screen.width;
+			screenHeight = screen.height;
+
+			if ((screenWidth < optWidth) || (screenHeight < optHeight))
+			{
+				text += "<tr><td valign='top'><img src='Medien/Liste_blau.gif' width='10' height='10' alt=''></td><td valign='top'><span class='hinweismeld'><b>Bildschirmaufl&ouml;sung</b><br>Empfohlene Aufl&ouml;sung: 1024x768 Pixel bis 1280x1024 Pixel. Mit der Bildschirmaufl&ouml;sung Ihres Monitors von " + screenWidth + "x" + screenHeight + " werden die Screenseiten stark beschnitten. Bitte w&auml;hlen Sie nach M&ouml;glichkeit die empfohlene Aufl&ouml;sung.</span></td><td width='12'>&nbsp;</td><tr>";
+
+			}
+
+			if ((screenWidth > 1280) || (screenHeight > 1024))
+			{
+				text += "<tr><td valign='top'><img src='Medien/Liste_blau.gif' width='10' height='10' alt=''></td><td valign='top'><span class='hinweismeld'><b>Bildschirmaufl&ouml;sung</b><br>Empfohlene Aufl&ouml;sung: 1024x768 Pixel bis 1280x1024 Pixel. Mit der Bildschirmaufl&ouml;sung Ihres Monitors von " + screenWidth + "x" + screenHeight + " Pixel werden die Inhalte der Screenseiten stark verkleinert dargestellt. Bitte w&auml;hlen Sie nach M&ouml;glichkeit die empfohlene Aufl&ouml;sung.</span></td><td width='12'>&nbsp;</td><tr>";
+
+			}
+
+
+
+			// Cookies
+			tmp = CookieLesen2("Test")
+
+			if (tmp == "")
+			{
+				text += "<tr><td valign='top'><img src='Medien/Liste_blau.gif' width='10' height='10' alt=''></td><td valign='top'><span class='hinweismeld'><b>Cookies werden nicht zugelassen</b><br>Ihr Browser l&auml;sst aktuell keine Cookies zu. Um den vollen Funktionsumfang des Kursprogramms nutzen zu k&ouml;nnen, sollten Sie in Ihrem Browser Cookies aktivieren.</span></td><td width='12'>&nbsp;</td><tr>";
+			}
+
+			// LINUX, UNIX
+			plattform = navigator.platform.toUpperCase();
+
+
+
+			// Java
+			if(!navigator.javaEnabled())
+			{
+				text += "<tr><td valign='top'><img src='Medien/Liste_blau.gif' width='10' height='10' alt=''></td><td valign='top'><span class='hinweismeld'><b>Java ist nicht aktiviert</b><br>F&uuml;r die Volltextsuche und f&uuml;r die Ausf&uuml;hrung einiger Kurs-Beispiele muss Java aktiviert sein. Sollte es trotz Aktivierung zu Problemen kommen, installieren Sie bitte das JDK von der CD-ROM.</span></td><td width='12'>&nbsp;</td><tr>";
+
+			}
+
+			return text;
+		}
+
+
+		function setWert()
+		{
+				if ((tmp == "") && (OP))
+				{
+				}
+				else
+				{
+					hinweis = CookieLesen2("Hinweis");
+
+					if (hinweis == "true") document.forms[0].elements[0].checked = 1;
+					else document.forms[0].elements[0].checked = 0;
+				}
+		}
+	//-->
+	</script>
+</head>
+
+<body class="nl" onLoad="JavaScript:this.focus();setWert()" >
+
+<table summary="Hinweis-Titel" border="0" cellspacing="0" cellpadding="2" width="99%" class="kfarbe">
+  <tr>
+    <td><span class="titel">Hinweise zur Kursbenutzung</span></td>
+    <td align="right" class="ticon"><img src="Medien/Ticon.gif" width="54" height="17"></td>
+  </tr>
+</table>
+
+
+<table summary="Hinweis-Tabelle" width="99%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td class="bg" height="190" valign="top"><br>
+
+    	<div style='margin-left:10pt'>
+		<table summary="Hinweis-Liste" width ="96%">
+
+        	<script type="text/javascript" language="JavaScript">
+		    <!--
+		    	document.write(getInformation());
+		    //-->
+		    </script>
+
+        </table>
+        </div>
+	</td>
+</tr>
+<tr>
+	<td class="bg">
+		<script language="JavaScript">
+		<!--
+			if ((tmp == "") && (OP)) document.write('&nbsp;');
+			else
+			{
+				text = '<br>';
+				text += '<form name="hinweise">';
+				text += '<table><tr><td valign="top">&nbsp;&nbsp;<input type="checkbox" name="aus" value="" onclick="set()">&nbsp;</td><td>Diesen Hinweis beim n&auml;chsten Start nicht mehr anzeigen.</td></tr></table>';
+				text += '</form>';
+				document.write(text);
+			}
+		//-->
+		</script>
+	</td>
+</tr>
+</table>
+
+<div style="margin-top:0px">
+<table class="kfarbe" summary="Fenster-Zu-Button" width="99%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+ 	<td align="right"><div style="margin-left:60pt;margin-top:3px">
+		<a href="javascript:zu()"
+			onMouseOver="Bildwechsel(Highlight3,'b3');self.status='Fenster schlie&szlig;en';return true"
+		  	onMouseOut="Bildwechsel(Normal3,'b3');self.status='';return true">
+			<img name=b3 src="Stat-Gifs/Nzu.gif" alt="Fenster schließen" border="0"></a>&nbsp;&nbsp;</div>
+	</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

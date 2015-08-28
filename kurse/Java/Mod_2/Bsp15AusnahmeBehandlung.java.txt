@@ -1,0 +1,74 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap2/Bsp15AusnahmeBehandlung.java
+//
+//*************Ende Hinweis*****************************
+
+
+//
+// So sieht die Definition einer Exception aus.
+// Weitere Attribute können natürlich eingefügt
+// werden, die die Ausnahmesituation näher
+// beschreiben. Die Methode super () ruft den
+// Konstruktor der übergeordneten Klasse auf.
+//
+class MeineException extends Exception {
+
+	public MeineException () { super (); }
+	public MeineException (String s) { super (s); }
+}
+
+public class Bsp15AusnahmeBehandlung {
+
+	public static void main (String args[]) {
+
+//
+// Nun folgen eine Reihe von Anweisungen, in
+// denen eine Ausnahmesituation auftreten kann.
+// Diese werden demzufolge in einen try-Block
+// eingeschlossen.
+//
+		try {
+
+			System.out.println ("Achtung, gleich geht was schief!");
+
+			meineMethode ();
+			System.out.println ("Dieser Text wird nie ausgedruckt.");
+
+		}
+
+//
+// Da beim Aufrufen der Methode (in der zweiten
+// der drei obigen Anweisungen) eine Ausnahme
+// auftrat, werden die Anweisungen in dem catch-
+// Block ausgeführt.
+//
+		catch (MeineException e) {
+
+			System.out.println (e.getMessage ());
+		}
+
+		finally {
+
+//
+// Egal, oben ein Fehler aufgetreten ist oder nicht,
+// wird dieser finally Block ausgeführt.
+//
+			System.out.println ("Dieser Text wird wieder ausgedruckt.");
+		}
+
+		System.out.println ("Hier geht das Programm weiter.");
+	}
+
+
+//
+// Diese Mehtode kann (und wird(!!) eine Exception
+// auslösen. Dies muss entsprechend deklariert werden.
+//
+	static void meineMethode () throws MeineException {
+
+		/* if (...) Oops - hier geht was schief */
+		throw new MeineException ("Hier geht was schief");
+	}
+}

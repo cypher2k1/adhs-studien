@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_7_2_4</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+
+var Dat_Window;
+function Datei()
+{
+  if (Dat_Window!=null)
+        if (Dat_Window.closed==false)
+            Dat_Window.close()
+  Dat_Window= window.open("./IntegerTextField1.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,width=660,height=360")
+}
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+      <td width="550"><b>Implementierung eines Integer-Textfeldes (2)</b></td>
+      <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+      <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+    </tr>
+    
+    <tr>
+      <td><p>Der n&auml;chste Schritt ist ebenfalls einfach: <b>In Abh&auml;ngigkeit 
+          dieses Werts wird entweder nichts getan</b> und der Event wird normal 
+          ausgef&uuml;hrt, wenn es sich um eine Ziffer oder um das L&ouml;schen 
+          eines Zeichens handelt. Oder der Event wird <b>hier auf der Stelle 
+          &quot;konsumiert&quot;</b>, sodass er in anderen Methoden nicht mehr 
+          verarbeitet werden kann. Der Tastendruck wird sozusagen 
+          &quot;runtergeschluckt&quot; und nicht weiter ausgewertet.</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+	  <td align="center">
+	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+			<tr>
+			<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+	      <tr>
+	        <td width="20">&nbsp;</td>
+	        <td id="code"><br><font id="kw">public void</font> processKeyEvent (KeyEvent event) {
+	                        <br><br>&nbsp;&nbsp;<font id="kw">char</font> c = event.getKeyChar ();
+	                        <br><br>&nbsp;&nbsp;<font id="kw">if</font> ((c &gt;= '0' &amp;&amp; c &lt;= '9') ||
+	                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c == KeyEvent.VK_DELETE) ||
+	                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c == KeyEvent.VK_BACK_SPACE)) {
+	                        <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="kom">// ... tue nichts, d.h.		
+	                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// der Event wird normal verarbeitet</font>	
+	                        <br><br>&nbsp;&nbsp;} <font id="kw">else</font> {
+	                        <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="kom">// l&ouml;sche den Event, ohne Verarbeitung</font>
+	                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event.consume ();
+	                        <br>&nbsp;&nbsp;}
+	                        <br>} <br><br></td>
+	        <td width="20">&nbsp;</td>
+	      </tr>
+	    </table>
+			</td>
+			</tr>
+	</table>
+	  </td>
+	  <td>&nbsp;</td>
+	  <td valign="top" align="left">
+	      <img src="../Medien/Beispiel.gif" width="36" height="36" alt="Hinweis: Beispiel(e)"><br>
+	      <a href="javascript:Datei()" onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true" 
+	      onMouseOut="self.status='';return true" id="ex">IntegerTextField1.java </a>
+	      
+	  </td>
+    </tr>
+    
+  
+</table>
+<br><br><br>
+</body>
+</html>

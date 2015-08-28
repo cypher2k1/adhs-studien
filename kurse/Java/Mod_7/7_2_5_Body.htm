@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_7_2_5</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+
+var Dat_Window;
+function Datei()
+{
+  if (Dat_Window!=null)
+        if (Dat_Window.closed==false)
+            Dat_Window.close()
+  Dat_Window= window.open("./IntegerTextField1.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,width=660,height=360")
+}
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+      <td width="550"><b>Die Eigenschaften &quot;unserer&quot; JavaBean</b></td>
+      <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+      <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+    </tr>
+
+    <tr>
+      <td><p>Die JavaBean, die wir hier programmieren, wird von der Klasse
+          <font class="code">TextField</font> abgeleitet, die wir in
+          <a href="javascript:goPage('../Mod_3/3_7_3.htm')" onMouseOver="self.status='zu Kapitel 3.7';return true;"
+           onMouseOut="self.status='';return true" id="hier">Kapitel 3.7</a> bereits kennen
+          gelernt haben. Au&szlig;erdem haben wir Ihnen in
+          <a href="javascript:goPage('../Mod_7/7_1_4.htm')" onMouseOver="self.status='zu Kapitel 7.1';return true;"
+          onMouseOut="self.status='';return true" id="hier">Kapitel 7.1</a> gezeigt, dass eine
+          JavaBean bestimmte Eigenschaften hat, wenn es entsprechende
+          <font class="code">get()</font>- und <font class="code">set ()</font>- Methoden
+          gibt (auch <i>getter</i>- und <i>setter</i>- Methoden genannt). Daraus folgt,
+          dass diese JavaBean <b>schon jetzt eine Eigenschaft <i>Text</i> hat</b>,
+          denn mit <font class="code">getText ()</font> und <nobr><font class="code">setText ()</font></nobr>
+          k&ouml;nnen Sie den Text des Feldes auslesen bzw. ver&auml;ndern.</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td><p>Allerdings sollte die JavaBean f&uuml;r ein Integerzahlen-Textfeld <b>etwas
+          komfortabler sein</b>, etwa durch eine neue Eigenschaft
+          <font class="code">IntegerValue</font>. Nach der nun bekannten Theorie
+          muss die JavaBean <b>also eine Methode namens</b> <font class="code">getIntegerValue</font>
+          besitzen, welche die aktuelle Zahl in dem Textfeld zur&uuml;ckliefert, <b>und
+          eine Methode</b> <font class="code">setIntegerValue</font>, die eine Zahl
+          als Text in das Feld eintr&auml;gt. </p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><p>Die erste Methode lautet:</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+	  <td align="center">
+	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+			<tr>
+			<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+	      <tr>
+	        <td width="20">&nbsp;</td>
+	        <td id="code"><br><font id="kw">public int</font> getIntegerValue () {
+	                        <br><br>&nbsp;&nbsp;&nbsp;<font id="kw">int</font> result = 0;
+	                        <br><br>&nbsp;&nbsp;&nbsp;<font id="kw">try</font> {
+	                        <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result = Integer.parseInt (<font id="kw">this</font>.getText ());
+	                        <br>&nbsp;&nbsp;&nbsp;}
+	                        <br>&nbsp;&nbsp;&nbsp;<font id="kw">catch</font> (Exception e) {}
+	                        <br><br>&nbsp;&nbsp;&nbsp;<font id="kw">return</font> result;
+	                        <br>} <br><br></td>
+	        <td width="20">&nbsp;</td>
+	      </tr>
+	    </table>
+			</td>
+			</tr>
+	</table><br><br>
+	  </td>
+	  <td>&nbsp;</td>
+	  <td valign="top" align="left">
+	      <img src="../Medien/Beispiel.gif" width="36" height="36" alt="Hinweis: Beispiel(e)"><br>
+	      <a href="javascript:Datei()" onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true"
+	      onMouseOut="self.status='';return true" id="ex">IntegerTextField1.java </a>
+
+	  </td>
+    </tr>
+
+</table>
+<br><br><br>
+</body>
+</html>

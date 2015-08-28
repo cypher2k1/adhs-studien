@@ -1,0 +1,69 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap2/Anwendung4.java
+//
+//*************Ende Hinweis*****************************
+
+
+class Rechteck {
+
+	protected int		x = 0;
+	protected int		y = 0;
+	
+	//
+	// Konstruktoren
+	//
+	public Rechteck () {/* tut nichts */}
+	public Rechteck (int d1, int d2) {
+	
+		x = d1;
+		y = d2;
+	}
+	
+	//
+	// Flaecheninhalt
+	//
+	public int Flaecheninhalt () {return x * y;}
+}
+
+
+class Quadrat extends Rechteck {
+
+	//
+	// Konstruktoren
+	//
+	public Quadrat () {/* tut nichts */}
+	public Quadrat (int d) {
+	
+		x = d;
+		y = d;
+	}
+}
+
+
+//
+// Die folgende "Anwendung" erzeugt erneut zwei Instanzen
+// der Klasse Rechteck und der Klasse Quadrat.
+//
+public class Anwendung4 {
+
+	public static void main (String args []) {
+
+		Rechteck	r = new Rechteck ();
+		
+		System.out.println ("Erstes Rechteck: " + r.Flaecheninhalt ());
+		
+		r = new Rechteck (5, 10);
+
+		System.out.println ("Zweites Rechteck: " + r.Flaecheninhalt ());
+		
+		Quadrat 	q = new Quadrat ();
+
+		System.out.println ("Erstes Quadrat: " + q.Flaecheninhalt ());
+		
+		q = new Quadrat (5);
+
+		System.out.println ("Zweites Quadrat: " + q.Flaecheninhalt ());
+	}
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_4_5_2</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+var Dat_Window;
+function Datei()
+{
+  if (Dat_Window!=null)
+        if (Dat_Window.closed==false)
+	Dat_Window.close()
+  Dat_Window= window.open("./ScrollPaneGUI.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,width=660,height=360")
+}
+
+
+ //-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+    <td width="550"><b>JPanels</b></td>
+    <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+    <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+
+  <tr>
+    <td><p>In diesem Kapitel soll es darum gehen, in den erzeugten Fenstern Daten, Texte oder Bilder anzuzeigen.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td><p>Anders als bei vergleichbaren AWT-Klassen, sollten in einem Swing-Fenster die Elemente
+        <b>nicht direkt</b> eingetragen werden. Stattdessen wird zuerst <b>ein Panel als
+        Container</b> erzeugt, <b>mit einem Layout</b> versehen und <b>in das Fenster
+        eingetragen</b>. In diesem neuen Container befinden sich die Elemente wie Buttons etc..
+	<b>Das JPanel ist das Swing-Pendant zu Panel</b>.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td align="center">
+	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+			<tr>
+			<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+	      <tr>
+	        <td width="20">&nbsp;</td>
+	        <td id="code"><br>JPanel topPanel = <font id="kw">new</font> JPanel ();
+	                        <br>topPanel.setLayout (<font id="kw">new</font> BorderLayout ());
+	                        <br>getContentPane().add (topPanel); <br><br></td>
+	        <td width="20">&nbsp;</td>
+	      </tr>
+	    </table>
+			</td>
+			</tr>
+	</table>
+    </td>
+    <td>&nbsp;</td>
+    <td valign="top" align="left"><img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+                <a href="javascript:Datei()"  onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+		onMouseOut="self.status='';return true" id="ex">ScrollPaneGUI.java</a>
+
+    </td>
+  </tr>
+  <tr>
+    <td><br><p>Erinnern Sie sich, als wir in <a href="javascript:goPage('../Mod_3/3_7_2.htm')" onMouseOver="self.status='zu Kapitel 3.7';return true;"
+        onMouseOut="self.status='';return true" id="hier">Kapitel 3.7</a> &uuml;ber Formulare in <a href="JavaScript:parent.parent.frames[1].CMDown('GET_Glossar','MODULECTRL','Applets','')"
+        onMouseOver="self.status='zum Glossar';return true" onMouseOut="self.status='';return true"; id="glos">Applets</a> gesprochen haben? Auf der Basis des <a href="JavaScript:parent.parent.frames[1].CMDown('GET_Glossar','MODULECTRL','AWT','')"
+        onMouseOver="self.status='zum Glossar';return true" onMouseOut="self.status='';return true"; id="glos">AWT</a>
+	implementierten wir die Elemente mit der <font class="code">add ()</font>-Methode direkt in das
+	Panel.
+	Hier, in der Swing-API, wird stattdessen die <font class="code">getContentPane ()</font>-Methode verwendet. Diese liefert das Objekt
+        zur&uuml;ck, in das die Elemente eingetragen werden. In unserem Beispiel ist es der Container, der die anzuzeigenden Elemente
+	beinhaltet.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+</table>
+<br><br><br>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_2_16_7</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+    <td width="550"><b>Mehrfachvererbung in Java - Interfaces</b></td>
+    <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+    <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+
+  <tr>
+    <td><p>Bisher hatte jede Klasse <b>immer nur eine Oberklasse</b>, von der sie Eigenschaften erbte. In vielen
+	F&auml;llen m&ouml;chte man aber, dass eine Klasse die Eigenschaft von <b>mehreren anderen Klassen</b> erbt.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td><p>Zum Beispiel k&ouml;nnte man eine abstrakte Klasse entwickeln, um Objekte zu beschreiben,
+        die auf dem Bildschirm angezeigt werden. Diese haben u.a. eine Position und eine Farbe. In
+        einem Zeichenprogramm werden Klassen verwaltet, die <b>sowohl die
+        Eigenschaften von Formen als auch die Eigenschaften von Bildschirmobjekten</b> haben.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p>In Java ist dies nur in speziellen F&auml;llen mit Hilfe von <b>Schnittstellen</b> (engl.:
+        <a href="JavaScript:parent.parent.frames[1].CMDown('GET_Glossar','MODULECTRL','interfaces','')"
+        onMouseOver="self.status='zum Glossar';return true" onMouseOut="self.status='';return true"; id="glos">
+        <i><b>interfaces</b></i></a>) m&ouml;glich. Analog zu Klassen, sind sie ein weiterer Java-Datentyp. Sie
+        werden durch das Schl&uuml;sselwort <font class="code">interface</font> eingeleitet. Zum
+        Ableiten einer Klasse wird nicht das Schl&uuml;sselwort <font class="code">extends</font>,
+	sondern <font class="code">implements</font> benutzt.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p>Das Charakteristische von Interfaces ist, dass <b>alle Methoden
+        prinzipiell abstrakt</b> sein m&uuml;ssen. Ein Interface enth&auml;lt also <b>lediglich Attribute und Methodendeklarationen
+	ohne Implementierungen</b> (d.h. ohne Anweisungen). So l&auml;sst sich die Klasse <font class="code">form</font> auch
+        als <font class="code">interface</font> schreiben, da sie nur abstrakte Methoden enth&auml;lt:</p><br></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center">
+	    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+			<tr>
+			<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+	      <tr>
+	        <td width="20">&nbsp;</td>
+	        <td id="code"><br>
+				<font id="kom">//
+				<br>// Bei form handelt es sich jetzt um ein Interface,
+	                        <br>// welches festlegt, dass es ein Verhalten &quot;umfang&quot;
+	                        <br>// und &quot;inhalt&quot; gibt - aber nicht, wie dieses
+	                        <br>// Verhalten aussieht.
+				<br>//</font>
+	                        <br><font id="kw">interface</font> form {<br>
+	                        <br>&nbsp;&nbsp;&nbsp;<font id="kw">abstract&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</font>  umfang();
+	                        <br>&nbsp;&nbsp;&nbsp;<font id="kw">abstract&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</font> inhalt();
+	                        <br>}</td>
+	        <td width="20">&nbsp;</td>
+	      </tr>
+	      <tr>
+	        <td>&nbsp;</td>
+	        <td id="code">&nbsp;</td>
+	        <td>&nbsp;</td>
+	      </tr>
+	    </table>
+			</td>
+			</tr>
+	</table><br><br>
+    </td>
+    <td>&nbsp;</td>
+    <td valign="top" align="left"><img src="../Medien/Beispiel.gif" width="36"
+          height="36" alt="Hinweis: Beispiel(e)"><br><font id="pikto">Beispiel</font></td>
+  </tr>
+
+  <tr>
+      <td><p>Ein weiteres Beispiel f&uuml;r Interfaces finden Sie in <a href="javascript:goPage('2_17_2.htm')" onMouseOver="self.status='zu Kapitel 2.17';return true;"
+               onMouseOut="self.status='';return true" id="hier">Kapitel 2.17</a>.</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+  </tr>
+
+
+</table>
+<br><br><br>
+</body>
+</html>

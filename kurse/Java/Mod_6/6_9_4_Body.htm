@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_6_9_4</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+var Dat_Window;
+
+function Datei()
+{
+  if (Dat_Window!=null)
+          if (Dat_Window.closed==false)
+              Dat_Window.close()
+  Dat_Window= window.open("./UniXML.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=680,height=260")
+}
+
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+      <td width="550"><b>Lesen und Parsen eines XML-Dokuments</b></td>
+      <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+      <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+    </tr>
+
+    <tr>
+      <td><p>Das <b>Lesen und Parsen eines XML-Dokuments</b> geschieht in zwei Schritten:</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td>
+	    <table BORDER="0" >
+	      <tr>
+	        <td width="20">&nbsp;</td>
+	        <td valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+	        <td><b>Erzeugen einer Eingabequelle</b>, in unserem Fall die Datei
+	            <font class="code">uni.xml</font></td>
+	      </tr>
+	      <tr>
+	        <td width="20">&nbsp;</td>
+	        <td width="20" valign="baseline"><img src="../Medien/Liste_Norm.gif" width="14" height="14"></td>
+	        <td><b>Einlesen und Strukturierung der Datei</b>. Hier kann auch bestimmt
+	            werden, ob das Dokument anhand einer gegebenen DTD &uuml;berpr&uuml;ft werden soll.</td>
+	      </tr>
+
+	    </table>
+      </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+ <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+	    <td align="center">
+		    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+				<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+		      <tr>
+		        <td width="20">&nbsp;</td>
+		        <td id="code"><br>XMLReader parser;<br>
+		                        <br>parser  = XMLReaderFactory.createXMLReader
+		                        <br><div style="margin-left:40pt">(<font id="orange">&quot;org.apache.xerces.parsers.SAXParser&quot;</font>);</div>
+		                        <br>parser.parse (<font id="orange">&quot;uni.xml&quot;</font>);
+		                        <br><br></td>
+		        <td width="20">&nbsp;</td>
+		      </tr>
+		    </table>
+	</td>
+	</tr>
+	</table><br>
+	    </td>
+	    <td>&nbsp;</td>
+	    <td valign="top" align="left">
+                 <img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+                 <a href="javascript:Datei()"  onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+			onMouseOut="self.status='';return true" id="ex">UniXML.java</a>
+	    </td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="44" ></td>
+          <td>Diese zwei Schritte variieren in Abh&auml;ngigkeit des verwendeten Parsers.
+              Der Rest ist jedoch f&uuml;r alle Parser gleich, die das <b>DOM</b> des W3C oder <b>SAX</b>
+              unterst&uuml;tzen, da es sich um ein Standard-Interface handelt.</td>
+        </tr>
+      </table>
+    </td>
+    <td>&nbsp;</td>
+    <td align="left" valign="top"><img src="../Medien/Hinweis.gif" width="36" height="36"
+        alt="Hinweis: wichtige Hinweis(e) im Lehrtext"><br><font id="pikto">Hinweis</font></td>
+  </tr>
+
+
+</table>
+</body>
+</html>

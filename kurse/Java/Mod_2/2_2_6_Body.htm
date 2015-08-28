@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_2_2_6</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script src="../Bildwechsel.js"></script>
+<script langauge="JavaScript">
+<!--
+var Dat_Window;
+
+function Datei()
+{
+  if (Dat_Window!=null)
+          if (Dat_Window.closed==false)
+              Dat_Window.close()
+  Dat_Window= window.open("./Bsp07Arrays.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,width=730,height=360")
+}
+
+var Aus_Window;
+
+function Ausgabe()
+{
+  if (Aus_Window!=null)
+          if (Aus_Window.closed==false)
+              Aus_Window.close()
+  Aus_Window= window.open("./Applets/Bsp07Applet.html" , "Ausgabe" ,  "scrollbars=no,resizable=yes,location=no,width=300,height=300")
+}
+
+
+var Bsp_Window;
+
+function Info()
+{
+  if (Bsp_Window!=null)
+          if (Bsp_Window.closed==false)
+              Bsp_Window.close()
+  Bsp_Window= window.open("./2_2_6_Info.htm" , "Info" ,  "scrollbars=yes,resizable=yes,location=no,width=580,height=380")
+}
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+    <td width="550"><b>Array - Beispiele</b></td>
+    <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+    <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+
+  <tr>
+    <td><p>Und nun einige Beispiele f&uuml;r die Verwendung von Arrays. </p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+<!--
+  <tr>
+    <td align="center"><br>
+        <table class="tdctab" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="20">&nbsp;</td>
+                    <td class="cod"><br>
+                        <font id="kw">int</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lottozahlen [] = <font id="kw">new int</font> [6];<br>
+                    </td>
+                    <td width="10">&nbsp;</td>
+                </tr>
+
+                <tr>
+		           <td>&nbsp;</td>
+                   <td class="cod"><br>
+                        lottozahlen [0] = 45;<br>
+			            lottozahlen [1] = 12;<br>
+                        lottozahlen [2] = 7;<br>
+			            lottozahlen [3] = 8;<br>
+			            lottozahlen [4] = 23;<br>
+			            lottozahlen [5] = 9;<br>
+                   </td>
+		           <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                   <td>&nbsp;</td>
+                   <td class="cod"><br>
+                       	System.out.println (<font id="orange">&quot;Anzahl der Lottozahlen: &quot; </font>+<br>
+			            <div style="margin-left:220pt"> lottozahlen.length);</div>
+			            System.out.println (<font id="orange">&quot;Erste Zahl ist: &quot;</font> + lottozahlen [0]);<br><br>
+                   </td>
+		           <td>&nbsp;</td>
+                </tr>
+
+		<tr>
+		   <td>&nbsp;</td>
+                   <td class="cod"><br>
+                        String&nbsp;&nbsp;&nbsp;&nbsp;ampelphasen [] = { <font id="orange">&quot;rot&quot;</font>, <font id="orange">&quot;gelb&quot;</font>, <font id="orange">&quot;gr&uuml;n&quot;</font> };<br><br>
+
+			System.out.println (<font id="orange">&quot;Erste Ampelphase ist &quot;</font> + ampelphasen [0]);<br><br>
+                   </td>
+		    <td>&nbsp;</td>
+                </tr>
+
+
+		<tr>
+		   <td>&nbsp;</td>
+                   <td class="cod"><br>
+                        char&nbsp;tictactoe [][] = { {<font id="orange">' '</font>,<font id="orange">' '</font>,<font id="orange">' '</font>},<br>
+			<div style="margin-left:126pt">&nbsp;&nbsp;{<font id="orange">' '</font>,<font id="orange">' '</font>,<font id="orange">' '</font>},<br>
+						  &nbsp;&nbsp;{<font id="orange">' '</font>,<font id="orange">' '</font>,<font id="orange">' '</font>} };</div><br>
+
+
+			tictactoe [1] [1] = <font id="orange">'O'</font>;<br>
+			tictactoe [2] [0] = <font id="orange">'X'</font>;<br>
+			tictactoe [0] [2] = <font id="orange">'O'</font>;<br><br>
+                   </td>
+		    <td>&nbsp;</td>
+                </tr>
+       </table>
+    </td>
+
+    <td>&nbsp;</td>
+    <td valign="top" align="left" >
+     	<img src="../Medien/Beispiel.gif" width="36" height="36" alt="Hinweis: Beispiel(e)"><br>
+          <a href="javascript:Datei()" onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Bsp07Arrays.java</a>
+	     <br><br>
+	     <table border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+		     <td><a href="javascript:Info()" onMouseOver="Bildwechsel(Highlight2,'b2');self.status='Text-Info anzeigen';return true"
+			 onMouseOut="Bildwechsel(Normal2,'b2');self.status='';return true">
+      			<img name=b2 src="../Medien/PfeilB.gif" width="13" height="23" border="0" alt="Text-Info anzeigen"></a>
+		     </td>
+		     <td width="4">&nbsp;</td>
+      		     <td valign="top"><a href="javascript:Info()"
+      			onMouseOver="self.status='Text-Info anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Text-Info</a>
+		     </td>
+      		  </tr>
+              </table>
+	      <div style="margin-top:246pt">
+	      <table border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                         <td><a href="javascript:Ausgabe()"
+                        onMouseOver="Bildwechsel(Highlight2,'b1');self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true" onMouseOut="Bildwechsel(Normal2,'b1');self.status='';return true">
+                        <img name=b1 src="../Medien/PfeilB.gif" width="13" height="23" border="0" alt="Programmausf&uuml;hrung (Applet) anzeigen"></a></td>
+                        <td width="4">&nbsp;</td>
+                        <td ><a href="javascript:Ausgabe()"
+                        onMouseOver="self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Programm-<br>ausf&uuml;hrung</a></td>
+                      </tr>
+              </table></div>
+
+    </td>
+ </tr>
+//-->
+
+
+  <tr>
+   <td align="center">
+        <!-- URL's used in the movie-->  <!-- text used in the movie--> <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+ WIDTH=545 HEIGHT=476>
+ <PARAM NAME=movie VALUE="Medien/2_2_6.swf"> <PARAM NAME=play VALUE=false> <PARAM NAME=loop VALUE=false> <PARAM NAME=menu VALUE=false> <PARAM NAME=quality VALUE=high> <PARAM NAME=salign VALUE=LT> <PARAM NAME=bgcolor VALUE=#FFFFFF>  <EMBED src="Medien/2_2_6.swf" play=false loop=false menu=false quality=high salign=LT bgcolor=#FFFFFF  WIDTH=545 HEIGHT=476 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
+</OBJECT>
+    </td>
+
+    <td>&nbsp;</td>
+    <td valign="top" align="left" >
+        <img src="../Medien/Ani_Icon.gif" width="36" height="36" alt="Hinweis: animiertes Beispiel"><br>
+
+	<a href="javascript:Datei()"
+      	onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Bsp07Arrays.java</a>
+	     <br><br>
+	     <table border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+		     <td><a href="javascript:Info()" onMouseOver="Bildwechsel(Highlight2,'b2');self.status='Text-Info anzeigen';return true"
+			 onMouseOut="Bildwechsel(Normal2,'b2');self.status='';return true">
+      			<img name=b2 src="../Medien/PfeilB.gif" width="13" height="23" border="0" alt="Text-Info anzeigen"></a>
+		     </td>
+		     <td width="4">&nbsp;</td>
+      		     <td valign="top"><a href="javascript:Info()"
+      			onMouseOver="self.status='Text-Info anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Text-Info</a>
+		     </td>
+      		  </tr>
+              </table>
+	      <div style="margin-top:246pt">
+	      <table border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                         <td><a href="javascript:Ausgabe()"
+                        onMouseOver="Bildwechsel(Highlight2,'b1');self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true" onMouseOut="Bildwechsel(Normal2,'b1');self.status='';return true">
+                        <img name=b1 src="../Medien/PfeilB.gif" width="13" height="23" border="0" alt="Programmausf&uuml;hrung (Applet) anzeigen"></a></td>
+                        <td width="4">&nbsp;</td>
+                        <td ><a href="javascript:Ausgabe()"
+                        onMouseOver="self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Programm-<br>ausf&uuml;hrung</a></td>
+                      </tr>
+              </table></div>
+
+    </td>
+ </tr>
+
+</table>
+</body>
+</html>

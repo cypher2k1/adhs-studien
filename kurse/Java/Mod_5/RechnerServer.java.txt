@@ -1,0 +1,30 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap5/RechnerServer.java
+//
+//*************Ende Hinweis*****************************
+
+import java.rmi.*;
+import java.rmi.server.*;
+
+public class RechnerServer {
+    public static void main (String args[]) {
+
+		if (System.getSecurityManager () == null)
+			System.setSecurityManager (new RMISecurityManager ());
+
+		try {
+
+			RechnerImpl obj = new RechnerImpl ();
+			Naming.rebind("RechnerServer", obj);
+
+			System.out.println ("Server ist online!");
+
+		} catch (Exception e) {
+
+			System.out.println (e.getMessage ());
+			e.printStackTrace ();
+		}
+    }
+}

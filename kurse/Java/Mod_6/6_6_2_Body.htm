@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_6_6_2</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script langauge="JavaScript">
+<!--
+var Dat_Window;
+
+function Datei()
+{
+  if (Dat_Window!=null)
+          if (Dat_Window.closed==false)
+              Dat_Window.close()
+  Dat_Window= window.open("./UniDB.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,dependent=yes,width=730,height=260")
+}
+
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+      <td width="550"><b>Die Verbindung aufbauen</b></td>
+      <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+      <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+    </tr>
+
+    <tr>
+      <td><p>Nach dem Anlegen der Datenbank wird die <b>JDBC</b>-Anwendung erstellt.
+          Der erste Schritt ist der Aufbau einer Verbindung zur Datenbank:</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+   
+    <tr>
+	    <td align="center">
+		    <table summary="Tabellen-Rahmen" class="out" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+				<td class="gelb">
+		<table summary="Quellcode" border="0" cellspacing="2" cellpadding="1">
+		      <tr>
+		        <td width="20">&nbsp;</td>
+		        <td id="code"><br>Connection c = null;
+		                        <br><br><font id="kw">try</font> {
+		                        <br>&nbsp;&nbsp;Class.forName (<font id="orange">&quot;sun.jdbc.odbc.JdbcOdbcDriver&quot;</font>);
+		                        <br>&nbsp;&nbsp;c = DriverManager.getConnection (<font id="orange">&quot;jdbc:odbc:UNI_DB_ODBC&quot;</font>);
+		                        <br>[...]
+		                        <br><br></td>
+		        <td width="20">&nbsp;</td>
+		      </tr>
+		    </table>
+	</td>
+	</tr>
+	</table><br>
+	    </td>
+	    <td>&nbsp;</td>
+	    <td valign="top" align="left">
+                <img src="../Medien/Praxis.gif" width="36" height="36" alt="Hinweis: Praxisbeispiel"><br>
+                <a href="javascript:Datei()"  onMouseOver="self.status='Praxisbeispiel: Quellcode anzeigen';return true"
+			onMouseOut="self.status='';return true" id="ex">UniDB.java</a>
+	    </td>
+    </tr>
+    <tr>
+	  <td>
+	    <table>
+	      <tr>
+	        <td align="left" valign="middle"><img src="../Medien/Marker2.gif" width="8" height="92" ></td>
+	        <td>Zun&auml;chst wird die Klasse f&uuml;r die <b>JDBC-OBDC-Bridge</b> &uuml;ber
+	            die <font class="code">Class.forName (&quot;...&quot;)</font>-Anweisung
+	            geladen; danach wird die spezifische <b>ODBC-Datenquelle</b> ausgew&auml;hlt
+	            (hier: <font class="code">UNI_DB_ODBC</font>). Die Anweisungen zum
+	            Verbindungsaufbau unterscheiden sich in den Parametern, die den Methoden
+	            <font class="code">forName()</font> und <font class="code">getConnection()</font>
+	            &uuml;bergeben werden. <b>Sie sind f&uuml;r jeden JDBC-Treiber verschieden</b>.
+	            Die n&ouml;tigen Werte entnehmen Sie <b>im Zweifelsfall der Dokumentation</b>
+	            Ihrer Datenbank.</td>
+	      </tr>
+	    </table>
+	  </td>
+	  <td>&nbsp;</td>
+	  <td align="left" valign="top"><img src="../Medien/Hinweis.gif" width="36" height="36"
+	      alt="Hinweis: wichtige Hinweis(e) im Lehrtext"><br><font id="pikto">Hinweis</font></td>
+    </tr>
+
+</table>
+</body>
+</html>

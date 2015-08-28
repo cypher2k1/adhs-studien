@@ -1,0 +1,58 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap2/Anwendung1.java
+//
+//*************Ende Hinweis*****************************
+
+//
+// In den folgenden Zeilen wird eine Klasse "Haustier"
+// definiert. Die Instanzen hier haben alle einen Namen als String
+//
+class Haustier {
+
+	String		name;
+}
+
+class Hund extends Haustier {
+
+	String		name;
+
+	void		bellen (int i) {
+	
+		int		j;
+		
+		for (j=1; j<=i; j++) {
+		
+			System.out.println ("Wau, wau!");
+			System.out.println("\n");
+		}
+	}
+}
+
+//
+// Die folgende "Anwendung" erzeugt lediglich zwei Instanzen
+// der Klasse Hund und vergibt Namen: mein Hund heißt "Bello",
+// Dein Hund heißt "Waldi".
+//
+public class Anwendung1 {
+
+	public static void main (String args []) {
+
+		Hund		mein_hund = new Hund ();
+		
+		mein_hund.name = "Bello";
+		
+		Hund		dein_hund = new Hund ();
+		
+		dein_hund.name = "Waldi";
+		
+		dein_hund.bellen (3);
+		
+		
+		System.out.println (mein_hund.name);
+		System.out.println (dein_hund.name);
+		System.out.println ("fertig.");
+		
+	}
+}

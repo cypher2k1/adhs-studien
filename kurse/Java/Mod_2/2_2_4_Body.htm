@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seite_2_2_4</title>
+<link rel="stylesheet" type="text/css" href="../Format/Format.css">
+<script type="text/javascript" src="../Go_Seite.js"></script>
+<script src="../Bildwechsel.js"></script>
+<script langauge="JavaScript">
+<!--
+var Dat_Window;
+
+function Datei()
+{
+  if (Dat_Window!=null)
+          if (Dat_Window.closed==false)
+              Dat_Window.close()
+  Dat_Window= window.open("./Bsp04StringBuffer.java.txt" , "Datei" ,  "scrollbars=yes,resizable=yes,location=no,width=680,height=360")
+}
+
+var Aus_Window;
+
+function Ausgabe()
+{
+  if (Aus_Window!=null)
+          if (Aus_Window.closed==false)
+              Aus_Window.close()
+  Aus_Window= window.open("./Applets/Bsp04Applet.html" , "Ausgabe" ,  "scrollbars=no,resizable=yes,location=no,width=300,height=300")
+}
+
+var Bsp_Window;
+
+function Info()
+{
+  if (Bsp_Window!=null)
+          if (Bsp_Window.closed==false)
+              Bsp_Window.close()
+  Bsp_Window= window.open("./2_2_4_Info.htm" , "Info" ,  "scrollbars=yes,resizable=yes,location=no,width=490,height=380")
+}
+//-->
+</script>
+</head>
+
+<body id="seite" onload="parent.parent.savePage()">
+<table summary="Seiteninhalt" border="0" cellspacing="2" cellpadding="2" width="724">
+  <tr>
+    <td width="550"><b>StringBuffer</b></td>
+    <td width="36"><img src="../Medien/Spacer.gif" width="36" height="1"></td>
+    <td width="128"><img src="../Medien/Spacer.gif" width="128" height="1"></td>
+  </tr>
+
+  <tr>
+    <td><p>Strings lassen sich in Java im Grunde <b>nicht manipulieren</b>. <b>Immer wird ein neuer String erzeugt, statt den
+	alten zu ver&auml;ndern</b>. Der neue String setzt sich beispielsweise aus dem alten String plus etwas Neuem zusammen.
+	Oder er entsteht durch das Weglassen eines Teilstrings. Der alte String wird durch Java <b>automatisch &quot;entsorgt&quot;</b>.
+	F&uuml;r die meisten Anwendungen reicht dies vollkommen aus.<br>Das automatische L&ouml;schen der Strings &uuml;bernimmt die <i>Garbage Collection</i>.
+	Mehr Infos dazu gibt es in <a href="javascript:goPage('2_14_1.htm')" onMouseOver="self.status='zu Kapitel 2.14';return true;"
+    onMouseOut="self.status='';return true" id="hier">Kapitel 2.14</a>.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+   <tr>
+    <td><p>F&uuml;r alle anderen F&auml;lle gibt es in Java die <b>StringBuffer</b>. Diese k&ouml;nnen w&auml;hrend eines
+	Programms erweitert oder gek&uuml;rzt werden. Es stehen Methoden zur Verf&uuml;gung, mit denen die einzelnen Zeichen des <font class="code">StringBuffers</font>
+	modifiziert werden k&ouml;nnen. Jeder <b>StringBuffer</b> muss aber in einen <b>String konvertiert</b> werden, damit
+	er auch so verwendet werden kann.</p></td>
+    <td>&nbsp;</td>
+    <td align="left" valign="top"><img src="../Medien/Definition.gif" width="36"
+      height="36" alt="Hinweis: Definition(en) im Lehrtext"><br><font id="pikto">Definition</font></td>
+  </tr>
+
+ <tr>
+    <td><p>Hier ein Beispiel f&uuml;r den Umgang mit <font class="code">StringBuffer</font>.</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+ </tr>
+
+
+ <!--
+
+  <tr>
+     <td align="center">
+         <table class="tdctab" border="0" cellpadding="0" cellspacing="0">
+                 <tr>
+                     <td width="20">&nbsp;</td>
+                     <td class="cod"><br>
+                         StringBuffer&nbsp;&nbsp;sb = <font id="kw">new</font> StringBuffer(<font id="orange">&quot;def&quot;</font>);<br><br>
+                         sb.setCharAt(0, <font id="orange">'a'</font>);<br>
+                         sb.setCharAt(1, <font id="orange">'b'</font>);<br>
+                         sb.setCharAt(2, <font id="orange">'c'</font>);<br><br>
+                         String&nbsp;&nbsp;&nbsp;&nbsp;s4 = sb.toString ();<br><br>
+                         System.out.println (<font id="orange">&quot;Zusammengebaut wurde: &quot; </font>+ s4);<br><br>
+                     </td>
+                     <td width="10">&nbsp;</td>
+                 </tr>
+          </table>
+     </td>
+
+     <td>&nbsp;</td>
+     <td valign="top" align="left" >
+        <img src="../Medien/Beispiel.gif" width="36" height="36" alt="Hinweis: Beipsiel(e)"><br>
+
+	<a href="javascript:Datei()"
+      	onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Bsp04StringBuffer.java</a>
+
+	    <br><br>
+	    <table border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+		     <td><a href="javascript:Info()" onMouseOver="Bildwechsel(Highlight2,'b2');self.status='Text-Info anzeigen';return true"
+			 onMouseOut="Bildwechsel(Normal2,'b2');self.status='';return true">
+      			<img name=b2 src="../Medien/PfeilB.gif" width="13" height="23" border="0" alt="Text-Info anzeigen"></a>
+		     </td>
+		     <td width="4">&nbsp;</td>
+      		     <td valign="top"><a href="javascript:Info()"
+      			onMouseOver="self.status='Text-Info anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Text-Info</a>
+		     </td>
+      		  </tr>
+              </table>
+
+	      <div style="margin-top:30pt">
+
+              <table border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                         <td><a href="javascript:Ausgabe()"
+                        onMouseOver="Bildwechsel(Highlight2,'b1');self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true" onMouseOut="Bildwechsel(Normal2,'b1');self.status='';return true">
+                        <img name=b1 src="../Medien/PfeilB.gif" width="13" height="23" border="0" alt="Programmausf&uuml;hrung (Applet) anzeigen"></a></td>
+                        <td width="4">&nbsp;</td>
+                        <td ><a href="javascript:Ausgabe()"
+                        onMouseOver="self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Programm-<br>ausf&uuml;hrung</a></td>
+                      </tr>
+              </table></div>
+    </td>
+    </tr>
+
+//-->
+
+
+
+ <tr>
+    <td align="center">
+   	<!-- URL's used in the movie-->  <!-- text used in the movie--> <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+ WIDTH=470 HEIGHT=250>
+ <PARAM NAME=movie VALUE="Medien/2_2_4.swf"> <PARAM NAME=play VALUE=false> <PARAM NAME=loop VALUE=false> <PARAM NAME=menu VALUE=false> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#FFFFFF>  <EMBED src="Medien/2_2_4.swf" play=false loop=false menu=false quality=high bgcolor=#FFFFFF  WIDTH=470 HEIGHT=250 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
+</OBJECT></td>
+    <td>&nbsp;</td>
+    <td valign="top" align="left" ><div style="margin-top:14pt">
+        <img src="../Medien/Ani_Icon.gif" width="36" height="36" alt="Hinweis: animiertes Beispiel"><br>
+
+	<a href="javascript:Datei()"
+      	onMouseOver="self.status='Beispielprogramm: Quellcode anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Bsp04StringBuffer.java</a></div>
+
+	    <br><br>
+	    <table border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+		     <td><a href="javascript:Info()" onMouseOver="Bildwechsel(Highlight2,'b2');self.status='Text-Info anzeigen';return true"
+			 onMouseOut="Bildwechsel(Normal2,'b2');self.status='';return true">
+      			<img name=b2 src="../Medien/PfeilB.gif" width="13" height="23" border="0" alt="Text-Info anzeigen"></a>
+		     </td>
+		     <td width="4">&nbsp;</td>
+      		     <td valign="top"><a href="javascript:Info()"
+      			onMouseOver="self.status='Text-Info anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Text-Info</a>
+		     </td>
+      		  </tr>
+              </table>
+
+	      <div style="margin-top:50pt">
+
+              <table border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                         <td><a href="javascript:Ausgabe()"
+                        onMouseOver="Bildwechsel(Highlight2,'b1');self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true" onMouseOut="Bildwechsel(Normal2,'b1');self.status='';return true">
+                        <img name=b1 src="../Medien/PfeilB.gif" width="13" height="23" border="0" alt="Programmausf&uuml;hrung (Applet) anzeigen"></a></td>
+                        <td width="4">&nbsp;</td>
+                        <td ><a href="javascript:Ausgabe()"
+                        onMouseOver="self.status='Programmausf&uuml;hrung (Applet) anzeigen';return true" onMouseOut="self.status='';return true" id="ex">Programm-<br>ausf&uuml;hrung</a></td>
+                      </tr>
+              </table></div>
+    </td>
+   </tr>
+
+
+</table>
+</body>
+</html>

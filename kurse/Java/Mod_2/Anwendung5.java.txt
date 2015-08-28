@@ -1,0 +1,71 @@
+//*************Hinweis************************************
+//
+// Die Originaldatei finden Sie auf der CD-ROM unter
+// work/Kap2/Anwendung5.java
+//
+//*************Ende Hinweis*****************************
+
+
+class form {
+
+	int		umfang () {return 0;}
+	int		inhalt () {return 0;}
+}
+
+
+class quadrat extends form {
+
+	int		kantenlaenge;
+	
+	int		umfang () {return 4 * kantenlaenge;}
+	int		inhalt () {return kantenlaenge * kantenlaenge;}
+}
+
+
+class kreis extends form {
+
+	int		radius;
+	
+	int		umfang () {return (int) (2 * 3.14 * radius);}
+	int		inhalt () {return (int) (3.14 * (radius * radius));}
+}
+
+
+
+
+
+public class Anwendung5 {
+
+	public static void main (String args []) {
+
+		form []		meineFormen = new form [5];
+		
+		meineFormen [0] = new quadrat ();
+		((quadrat) meineFormen [0]).kantenlaenge = 1;
+		
+		meineFormen [1] = new quadrat ();
+		((quadrat) meineFormen [1]).kantenlaenge = 2;
+
+		meineFormen [2] = new quadrat ();
+		((quadrat) meineFormen [2]).kantenlaenge = 3;
+
+		meineFormen [3] = new quadrat ();
+		((quadrat) meineFormen [3]).kantenlaenge = 4;
+
+		meineFormen [4] = new quadrat ();
+		((quadrat) meineFormen [4]).kantenlaenge = 5;
+		
+		System.out.println ("Gesamtinhalt = " + gesamtinhalt (meineFormen));
+	}
+	
+	static int		gesamtinhalt (form [] f) {
+	
+		int		result = 0;
+		int		i;
+	
+		for (i=0; i<f.length; i ++)
+			result += f [i].inhalt ();
+		
+		return result;
+	}
+}

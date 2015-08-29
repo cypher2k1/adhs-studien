@@ -12,8 +12,8 @@ include('admin/cms/funktionen.inc.php');
 <head>
 	<base href="<?php echo ROOT_ABS; ?>">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/ui-lightness/jquery-ui.css">
-	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	<script src="plugins/jquery-ui/external/jquery/jquery.js"></script>
+	<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
 <?php
 //-------------
 $navi = select("adhs_kat", "*", "", "", "id");
@@ -133,22 +133,14 @@ echo'
 						  tsst&ouml;rung&nbsp;(ADHS)</p>
 			</div>
 			<div id="social-icons">
-			  <ul>
-			  
+<!--			  <ul>
+				<li><a href="http://feed2.w3.org/check.cgi?url=http%3A//feeds.feedburner.com/<?php /*echo $meta_tags['rss_feed']; */?>" target="_blank" alt="Valid RSS 2 Feed" style="background:url('<?php /*echo $img.'icons/valid-rss.png'; */?>') top left no-repeat transparent;"></a></li>
 	  
-
-	  
-	  
-	  
-	  
-				<li><a href="http://feed2.w3.org/check.cgi?url=http%3A//feeds.feedburner.com/<?php echo $meta_tags['rss_feed']; ?>" target="_blank" alt="Valid RSS 2 Feed" style="background:url('<?php echo $img.'icons/valid-rss.png'; ?>') top left no-repeat transparent;"></a></li>
-	  
-				<li><a onclick="window.open('https://www.startssl.com/validation.ssl?referrer=www.startssl.com','','status=no,toolbar=no,menubar=no,titlebar=no,height=630,width=610');" title="SSL" alt="Die Daten dieser Website werden verschlüsselt &uumlbertragen" style="background:url('<?php echo $img.'icons/ssl2.png'; ?>') top left no-repeat transparent; cursor: hand; cursor: pointer;" target="_blank"></a></li>
+				<li><a onclick="window.open('https://www.startssl.com/validation.ssl?referrer=www.startssl.com','','status=no,toolbar=no,menubar=no,titlebar=no,height=630,width=610');" title="SSL" alt="Die Daten dieser Website werden verschlüsselt &uumlbertragen" style="background:url('<?php /*echo $img.'icons/ssl2.png'; */?>') top left no-repeat transparent; cursor: hand; cursor: pointer;" target="_blank"></a></li>
 					  
-				<li><a href="https://www.healthonnet.org/HONcode/German/?HONConduct628852" onclick="window.open(this.href); return false;" title="Diese Web Seite ist von der Health On the Net Stiftung akkreditiert: Klicken Sie, um dies zu &uuml;berpr&uuml;fen" alt="Diese Web Seite ist von der Health On the Net Stiftung akkreditiert: Klicken Sie, um dies zu &uuml;berpr&uuml;fen" style="background:url('<?php echo $img.'icons/hon2.png'; ?>') top left no-repeat transparent;" target="_blank"></a></li>
-
+				<li><a href="https://www.healthonnet.org/HONcode/German/?HONConduct628852" onclick="window.open(this.href); return false;" title="Diese Web Seite ist von der Health On the Net Stiftung akkreditiert: Klicken Sie, um dies zu &uuml;berpr&uuml;fen" alt="Diese Web Seite ist von der Health On the Net Stiftung akkreditiert: Klicken Sie, um dies zu &uuml;berpr&uuml;fen" style="background:url('<?php /*echo $img.'icons/hon2.png'; */?>') top left no-repeat transparent;" target="_blank"></a></li>
 				</ul>
-			</div>
+-->			</div>
 		</div>
 		<div id="intro" class="intro">
 			<h2 style="color: #fff; margin: 0;">
@@ -162,7 +154,7 @@ echo'
 
 	<nav id="menu-wrap">
 		<?php
-		# sprachmenü
+        $hidden_sites = array( '6', '27', '28', '29', '30', '33', '31' );
 		echo'
 		<ul id="menu">';
 		foreach($navi as $nav) {
@@ -176,14 +168,21 @@ echo'
 			$link_title = $nav["link_title"];
 			$meta_nav = $nav["meta_nav"];
 			$hidden = $nav["hidden"];
-			if($ukat == NULL && $meta_nav == "0" && $hidden == "0") {
+			if( $ukat == NULL &&
+                $meta_nav == "0" &&
+                $hidden == "0" &&
+                !in_array($id, $hidden_sites) )
+            {
 				echo '<li><a href="'.ROOT_ABS.$link_title.'.html">'.$titel.'</a>';
 				$sec_kats = select("adhs_kat", "*", "ukat", $id, "");
 				$u_count = count($sec_kats); # unterkategorien vorhanden?
 				if ($u_count > 0) {
 					echo '<ul>';
 					foreach($sec_kats as $sec_kat) { # unterkategorien ausgeben
-						if($sec_kat["meta_nav"] == "0" && $sec_kat["hidden"] == "0") {
+						if($sec_kat["meta_nav"] == "0" &&
+                            $sec_kat["hidden"] == "0" &&
+                            !in_array($sec_kat["id"], $hidden_sites) )
+                        {
 							#falls vorhanden den englischen titel benutzen
 							if($seitensprache == '1') {
 								if($sec_kat["titel_en"] != '') $titel = $sec_kat["titel_en"]; else $titel = $sec_kat["titel"];

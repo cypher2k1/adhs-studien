@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - adhs_studien_in@localhost" uuid="a5312ff6-c729-4ccd-9618-ea291830ab5c">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>adhs_studien_in.*</schema-pattern>
+      <default-schemas>adhs_studien_in.*</default-schemas>
+    </data-source>
+    <data-source name="MySQL - adhs_studien_in@94.242.195.72" uuid="c5575e69-ade3-4644-904b-65bf4456249e">
+      <secret-storage>master_key</secret-storage>
+      <user-name>adhs_studien_in</user-name>
+      <schema-pattern>adhs_studien_in.*</schema-pattern>
+      <default-schemas>adhs_studien_in.*</default-schemas>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Thomas Stuppy">
+    <meta name="publisher" content="Thomas Stuppy">
+    <meta name="copyright" content="Thomas Stuppy">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="../admin/plugins/jquery-mobile/jquery.mobile-1.4.2.min.css" />
+    <script src="../admin/plugins/jquery-2.1.1.min.js"></script>
+    <script src="../admin/plugins/jquery-mobile/jquery.mobile-1.4.2.min.js"></script>
+    <style>
+        /* Start with core styles outside of a media query that apply to mobile and up */
+        /* Global typography and design elements, stacked containers */
+        body {
+            font-family: Helvetica, Verdana, sans-serif;
+        }
+        h1 {
+            color: #000000;
+        }
+        a:link {
+            color:purple;
+        }
+
+        /* Stack the two content containers */
+        .main,
+        .sidebar {
+            display:block;
+            width:100%;
+        }
+
+        /* First breakpoint at 576px */
+        /* Inherits mobile styles, but floats containers to make columns */
+        @media all and (min-width: 36em) {
+            .main {
+                float: left;
+                width:60%;
+            }
+            .sidebar {
+                float: left;
+                width:40%;
+            }
+        }
+
+        /* Second breakpoint at 800px */
+        /* Adjusts column proportions, tweaks base H1 */
+        @media all and (min-width: 50em) {
+            .main {
+                width:70%;
+            }
+            .sidebar {
+                width:30%;
+            }
+
+            /* You can also tweak any other styles in a breakpoint */
+            h1 {
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div data-role="page" id="index">
+
+    <div data-role="header">
+        <a href="#kontakt" class="ui-btn-left ui-btn ui-btn-a ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-comment">Kontakt</a>
+        <h1>Portfolio - &Uuml;bersicht</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+
+        <div data-role="panel" id="kontakt" data-display="overlay">
+            <form class="ui-mini">
+                <ul data-role="listview" data-inset="true">
+                    <li class="ui-field-contain">
+                        <label for="name2">Text Input:</label>
+                        <input type="text" name="name2" id="name2" value="" data-clear-btn="true">
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="textarea2">Textarea:</label>
+                        <textarea cols="40" rows="8" name="textarea2" id="textarea2" class="ui-mini"></textarea>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="flip2">Flip switch:</label>
+                        <select name="flip2" id="flip2" data-role="slider" class="ui-mini">
+                            <option value="off">Off</option>
+                            <option value="on">On</option>
+                        </select>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="slider2">Slider:</label>
+                        <input type="range" name="slider2" id="slider2" value="0" min="0" max="100" data-highlight="true" class="ui-mini">
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="select-choice-1" class="select">Choose shipping method:</label>
+                        <select name="select-choice-1" id="select-choice-1" class="ui-mini">
+                            <option value="standard">Standard: 7 day</option>
+                            <option value="rush">Rush: 3 days</option>
+                            <option value="express">Express: next day</option>
+                            <option value="overnight">Overnight</option>
+                        </select>
+                    </li>
+                    <li class="ui-body ui-body-b">
+                        <fieldset class="ui-grid-a ui-mini">
+                            <div class="ui-block-a"><button type="submit" class="ui-btn ui-corner-all ui-btn-a">Cancel</button></div>
+                            <div class="ui-block-b"><button type="submit" class="ui-btn ui-corner-all ui-btn-a">Submit</button></div>
+                        </fieldset>
+                    </li>
+                </ul>
+            </form>
+        </div><!-- /panel -->
+
+        <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+            <div data-role="collapsible">
+                <h2>Lebenslauf</h2>
+                <ul data-role="listview" data-theme="a" data-divider-theme="a" data-inset-theme="a" data-inset="true">
+                    <li><a href="#lebenslauf" data-dialog="true" data-rel="dialog" data-transition="slideup">Lebenslauf</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </div>
+            <div data-role="collapsible">
+                <h2>Dokumente</h2>
+                <ul data-role="listview" data-theme="a" data-divider-theme="a" data-inset="true">
+                    <li data-role="list-divider">Zeugnisse</li>
+                        <li><a href="docs/az_azb_1.pdf" title="Praktikumszeugnis 1">Praktikumszeugnis 1</a></li>
+                        <li><a href="docs/az_azb_2.pdf" title="Praktikumszeugnis 2">Praktikumszeugnis 2</a></li>
+                        <li><a href="docs/pruefungszeugnis_kfb-ihk.pdf" title="Pr&uuml;fungszeugnis Kaufmann f. B&uuml;rokommunikation">Pr&uuml;fungszeugnis Kaufmann f. B&uuml;rokommunikation</a></li>
+                        <li><a href="docs/ibs_webdesigner-ihk.pdf" title="Webdesigner IHK">Webdesigner IHK</a></li>
+
+                    <li data-role="list-divider">Zertifikate</li>
+                        <li><a href="docs/ecdl.pdf" title="ECDL European Computer Driving License">ECDL European Computer Driving License</a></li>
+                        <li><a href="docs/vhs_bu_bildbearbeitung.pdf" title="BU Digitale Bilderfassung u. Bildbearbeitung">BU Digitale Bilderfassung u. Bildbearbeitung</a></li>
+                    <li data-role="list-divider">Sonstiges</li>
+                        <li><a href="docs/lebenslauf.pdf" title="Lebenslauf als PDF-Datei">Lebenslauf</a></li>
+                        <li><a href="docs/gewerbe.pdf" title="Gewerbeanmeldung">Gewerbeanmeldung</a></li>
+                    <li>
+                        <a href="docs/docs.zip" title="Alle Unterlagen als ZIP-Archiv">
+                            <h1>Alle Unterlagen</h1>
+                            <p class="ui-li-aside">( zip, 4,75 mb )</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div data-role="collapsible">
+                <h2>Referenzen</h2>
+                <ul data-role="listview" data-split-icon="action" data-split-theme="a" data-overlay-theme="a" data-inset="true" class="ui-content">
+                    <li>
+                        <a href="img/screens/warndt.png" data-dialog="true" data-rel="dialog" data-transition="slideup">
+                            <img src="img/screens/warndt.png" class="ui-content">
+                            <h3>Warndt.eu</h3>
+                            <p>Dieses Regionalportal wird  auf Initiative des  Regionalverbandes Saarbr&uuml;cken und des saarl&auml;ndischen Umweltministeriums seit Sommer 2006 gemeinsam mit den lothringischen und saarl&auml;ndischen Kommunen aufgebaut. Im Herbst 2006 habe ich die Wartung der Website &uuml;bernommen und sie seit dem um diverse Inhalte und Funktionen erweitert.</p>
+                        </a>
+
+                        <a href="http://www.warndt.eu/" data-transition="slideup">Website aufrufen?</a>
+                    </li>
+
+                    <li>
+                        <a href="img/screens/hvw.png">
+                            <img src="img/screens/hvw.png" class="ui-content">
+                            <h3>Heimatverein Warndt</h3>
+                            <p>Das Design beinhaltet die Markenzeichen der Region: den Wald und die Industriekultur. Die Website verf&uuml;gt &uuml;ber ein kleines CMS, eine Bestellfunktion und ein Formular mit dem man direkt online dem Verein beitreten kann.</p>
+                        </a>
+                        <a href="http://www.heimatkundlicher-verein-warndt.eu/" target="_blank" data-rel="dialog" data-transition="slideup">Website aufrufen?</a>
+                    </li>
+
+                    <li>
+                        <a href="img/screens/lag.png">
+                            <img src="img/screens/lag.png" class="ui-content">
+                            <h3>LAG Warndt</h3>
+                            <p>Lokale Aktionsgruppen (LAGs) entscheiden selbst&auml;ndig &uuml;ber die beste  Kombination von LEADER-F&ouml;rdermitteln. Die Auswahl der LAGs im Saarland  erfolgte in einem Wettbewerbsverfahren. Das von der LAG Warndt vorgelegte regionale  Entwicklungskonzept  wurde  mit dem 2. Platz belohnt. Die Website wurde von mir komplett in Typo3 umgesetzt.</p>
+                        </a>
+                        <a href="http://www.warndt.eu/index.php?id=1050&amp;L=0" target="_blank" data-rel="dialog" data-transition="slideup">Website aufrufen?</a>
+                    </li>
+
+                    <li>
+                        <a href="img/screens/odc.png">
+                            <img src="img/screens/odc.png" class="ui-content">
+                            <h3>Orden des Chaos</h3>
+                            <p>Die Website des OdC steht hier als Vertreter einer Reihe von Freizeit- und  Hobbyprojekten. Als CMS wird hier das ilchClan-Skript genutzt.</p>
+                        </a>
+                        <a href="http://www.ordendeschaos.de/ilch/" target="_blank" data-rel="dialog" data-transition="slideup">Website aufrufen?</a>
+                    </li>
+
+                    <li>
+                        <a href="img/screens/freizeit.jpg">
+                            <img src="img/screens/freizeit.jpg" class="ui-content">
+                            <h3>Internetbasierter Freizeitf&uuml;hrer Eurodistrict SaarMoselle</h3>
+                            <p>Der Freizeitf&uuml;hrer SaarMoselle versammelt alle relevanten Tourismus-Informationen an einem Punkt. Neben den &uuml;blichen Standort-Informationen bietet er so unter anderem auch Wanderwege oder Veranstaltungen an. Im Auftrag des Regionalverbandes Saarbr&uuml;cken und in enger kooperation mit der RPC GmbH liegt der Arbeitsschwerpunkt hier im Suchen und Einbinden von Datenquellen und ggf. im Entwickeln geeigneter Schnittstellen f&uuml;r den Transfer.</p>
+                        </a>
+                        <a href="http://www.saarmoselle.org/page324-freizeitfuhrer.html#top" target="_blank" data-rel="dialog" data-transition="slideup">Website aufrufen?</a>
+                    </li>
+
+                    <li>
+                        <a href="img/screens/psfk.png">
+                            <img src="img/screens/psfk.png" class="ui-content">
+                            <h3>PSFK Saar e.V.</h3>
+                            <p>Diese Website war das Abschlussprojekt w&auml;hrend meiner Fortbildung zum Webdesigner bei der IBS Saarbr&uuml;cken. Meine Aufgaben waren hierbei in erster Linie die Entwicklung des CMS, die technische Dokumentation und Mitwirkung am Design. Das zusammen wurde mit 95 % bewertet.  </p>
+                        </a>
+                        <a href="../psfk-io/index.html" data-rel="dialog" data-transition="slideup">Website aufrufen?</a>
+                    </li>
+
+                    <!--<li>
+                        <a href="">
+                            <img src="">
+                            <h3>AD(H)S Studien</h3>
+                            <p></p>
+                        </a>
+                        <a href="" target="_blank" data-rel="dialog" data-transition="slideup">Website aufrufen?</a>
+                    </li>-->
+
+                </ul>
+            </div>
+        </div>
+
+    </div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+        <h4>&copy; Thomas Stuppy, 2014</h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+
+<!-- Start of second page ---------------------------------------------------------->
+<div data-role="page" id="lebenslauf">
+
+    <div data-role="header">
+        <h1>Lebenslauf</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+
+    <table data-role="table" id="lebenslauf-table" data-mode="" class="ui-body-d ui-shadow ui-responsive ui-mini" >
+        <tfoot>
+        <tr>
+            <td colspan="2"><a href="#index">Zur&uuml;ck</a></td>
+        </tr>
+        </tfoot>
+    <tbody>
+    <tr>
+        <th colspan="2">Pers&ouml;nliche Angaben</th>
+    </tr>
+    <tr>
+        <td colspan="2">Thomas Stuppy</td>
+    </tr>
+    <tr>
+        <td colspan="2">Irgenh&ouml;he 28</td>
+    </tr>
+    <tr>
+        <td colspan="2">66119 Saarbr&uuml;cken</td>
+    </tr>
+    <tr>
+        <td colspan="2">geb. am 22.11.81 in Dudweiler</td>
+    </tr>
+    <tr>
+        <td colspan="2">verheiratet</td>
+    </tr>
+    <tr>
+        <th colspan="2">Schulbildung</th>
+    </tr>
+    <tr>
+        <td>08/1988&nbsp;&ndash;&nbsp;06/1992</td>
+        <td>Grundschule in Bildstock (Saar)</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>08/1992&nbsp;&ndash;&nbsp;06/1997</td>
+        <td>Sekundarschule in Namborn/Oberthal (Saar)</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>08/1997&nbsp;&ndash;&nbsp;06/1999</td>
+        <td>Handelsschule in St. Wendel (Saar)</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <th colspan="2">Qualifizierung</th>
+    </tr>
+    <tr>
+        <td>08/1999&nbsp;&ndash;&nbsp;04/2000</td>
+        <td>Praktikum als Industriekaufmann bei der Firma Ebersp&auml;cher in Neunkirchen (Saar)</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>03/2001&nbsp;&ndash;&nbsp;03/2002</td>
+        <td>Ausbildungszentrum Burbach gGmbH in Saarbr&uuml;cken, Sofortprogramm &quot;Qualifizierung f&uuml;r die Zukunft&quot;</td>
+        <td>
+            <a href="docs/az_azb_1.pdf" class="ui-btn ui-icon-eye ui-btn-icon-notext ui-corner-all">No text</a>
+        </td>
+    </tr>
+    <tr>
+        <td>04/2002&nbsp;&ndash;&nbsp;08/2002</td>
+        <td>Praktikum als B&uuml;rokaufmann bei der AZB gGmbH in Sulzbach (Saar)</td>
+        <td>
+            <a href="docs/az_azb_2.pdf" class="ui-btn ui-icon-eye ui-btn-icon-notext ui-corner-all">No text</a>
+        </td>
+    </tr>
+    <tr>
+        <td>09/2006&nbsp;&ndash;&nbsp;04/2007</td>
+        <td>Praktikum beim Regionalverband Saarbr&uuml;cken als Webdesigner</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>Seit 10/2009</td>
+        <td>Student an der FU Hagen im Fach Psychologie</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <th colspan="2">Berufsausbildung</th>
+    </tr>
+    <tr>
+        <td>08/2002&nbsp;&ndash;&nbsp;07/2005</td>
+        <td>Ausbildung zum Kaufmann f&uuml;r B&uuml;rokommunikation bei der BFW-GBJ mbH in Saarbr&uuml;cken mit Praktikum beim Saarl&auml;ndischen Rundfunk, Bereich Rundfunkgeb&uuml;hren</td>
+        <td>
+            <a href="docs/pruefungszeugnis_kfb-ihk.pdf" class="ui-btn ui-icon-eye ui-btn-icon-notext ui-corner-all">No text</a>
+        </td>
+    </tr>
+    <tr>
+        <td>09/2005&nbsp;&ndash;&nbsp;03/2006</td>
+        <td>Fortbildung zum Webdesigner bei der IBS in Saarbr&uuml;cken</td>
+        <td>
+            <a href="docs/ibs_webdesigner-ihk.pdf" class="ui-btn ui-icon-eye ui-btn-icon-notext ui-corner-all">No text</a>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="2">Sonstige T&auml;tigkeiten</th>
+    </tr>
+    <tr>
+        <td>04/2000&nbsp;&ndash;&nbsp;07/2000</td>
+        <td>Aushilfst&auml;tigkeit bei der Fa. German Parcel in Neunkirchen (Saar)</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>08/2000&nbsp;&ndash;&nbsp;02/2001</td>
+        <td>ausbildungsplatzsuchend</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>03/2006&nbsp;&ndash;&nbsp;08/2006</td>
+        <td>arbeitssuchend</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <th colspan="2">Berufspraxis</th>
+    </tr>
+    <tr>
+        <td>Seit 05/2007</td>
+        <td>Selbstst&auml;ndige T&auml;tigkeit als Webdesigner</td>
+        <td>
+            <a href="docs/gewerbe.pdf" class="ui-btn ui-icon-eye ui-btn-icon-notext ui-corner-all">No text</a>
+        </td>
+    </tr>
+    </tbody>
+
+    </table>
+
+    </div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+        <h4>&copy; Thomas Stuppy, 2014</h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>

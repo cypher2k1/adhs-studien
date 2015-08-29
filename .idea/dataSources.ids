@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - adhs_studien_in@localhost" uuid="a5312ff6-c729-4ccd-9618-ea291830ab5c">
+    <database-info product="MySQL" version="5.6.16" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="adhs_studien_in"/>
+    <table name="adhs_cont" schema="" catalog="adhs_studien_in" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="lit_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="doi" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12"/>
+      <column name="kat" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="kat2" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="kat3" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="typ" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="titel" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="titel_en" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="text" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="text_en" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="quelle" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="autor" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="link" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1" remarks="bGluayBvZGVyIG5hbWUgZGVyIHBkZg=="/>
+      <column name="icon" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="MC1wZGYsIDEtbGluaywgMi1rZWluZXM="/>
+      <column name="jahr" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="sprache" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA==" remarks="MD1kZSwgMT1lbg=="/>
+      <column name="keywords" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="keywords_en" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="hidden" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="MSA9IHZlcnN0ZWNrdA=="/>
+      <column name="pubdate" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="lastmod" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzIwMTItMDYtMDcgMjA6NDM6MjEn"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="doi" unique="false" columns="doi"/>
+      <index name="kat" unique="false" columns="kat"/>
+      <index name="kat2" unique="false" columns="kat2,kat3"/>
+      <index name="kat_2" unique="false" columns="kat"/>
+      <index name="lit_id" unique="false" columns="lit_id"/>
+      <index name="text" unique="false" columns="text"/>
+    </table>
+    <table name="adhs_kat" schema="" catalog="adhs_studien_in" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="ukat" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="dW50ZXJrYXRlZ29yaWUgdm9uIHB1bmt0IHg="/>
+      <column name="titel" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="titel_en" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="link_title" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="meta_keys" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="meta_keys_en" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="meta_desc" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="meta_desc_en" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="include" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12" remarks="UEhQIERhdGVpIGVpbmbDvGdlbg=="/>
+      <column name="meta_nav" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="QW56ZWlnZSBpbiBkZXIgTWV0YS1OYXZpZ2F0aW9u"/>
+      <column name="hidden" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="accesskey" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="accesskey" unique="false" columns="accesskey"/>
+      <index name="meta_desc" unique="false" columns="meta_desc"/>
+      <index name="meta_keys" unique="false" columns="meta_keys"/>
+    </table>
+    <table name="adhs_lit" schema="" catalog="adhs_studien_in" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="TGF1Zm51bW1lcg==" autoIncrement="true"/>
+      <column name="autor" sqlType="VARCHAR" precision="280" scale="0" nullable="true" jdbcType="12"/>
+      <column name="titel" sqlType="VARCHAR" precision="350" scale="0" nullable="true" jdbcType="12"/>
+      <column name="jahr" sqlType="VARCHAR" precision="4" scale="0" nullable="true" jdbcType="12" remarks="SmFociBlcm1pdHRlbHQ="/>
+      <column name="typ" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="RG9rdW1lbnRlbnR5cA=="/>
+      <column name="quelle" sqlType="VARCHAR" precision="93" scale="0" nullable="true" jdbcType="12" remarks="WmVpdHNjaHJpZnQvWmVpdHVuZw=="/>
+      <column name="isbn" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <column name="doi" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12"/>
+      <column name="pubmed_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="pmcid" sqlType="VARCHAR" precision="11" scale="0" nullable="false" jdbcType="12"/>
+      <column name="band" sqlType="VARCHAR" precision="3" scale="0" nullable="true" jdbcType="12"/>
+      <column name="nr" sqlType="VARCHAR" precision="5" scale="0" nullable="true" jdbcType="12"/>
+      <column name="seiten" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12" remarks="U2VpdGVuIHZvbuKAk2Jpcw=="/>
+      <column name="pdf" sqlType="VARCHAR" precision="360" scale="0" nullable="true" jdbcType="12" remarks="U3RhbmRvcnRlIChlbGVrdHJvbmlzY2gp"/>
+      <column name="title_full" sqlType="VARCHAR" precision="60" scale="0" nullable="false" jdbcType="12"/>
+      <column name="title_abbrev" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="status" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="issn_electronic" sqlType="VARCHAR" precision="9" scale="0" nullable="false" jdbcType="12"/>
+      <column name="issn_print" sqlType="VARCHAR" precision="9" scale="0" nullable="false" jdbcType="12"/>
+      <column name="lang" sqlType="VARCHAR" precision="2" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="pdf" unique="false" columns="pdf"/>
+      <index name="pmcid" unique="false" columns="pmcid"/>
+    </table>
+    <table name="publisher" schema="" catalog="adhs_studien_in" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="name_long" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="zeitschriften_ibfk_1" table="zeitschriften" schema="" catalog="adhs_studien_in" columns="publisher_id"/>
+    </table>
+    <table name="zeitschriften" schema="" catalog="adhs_studien_in" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="120" scale="0" nullable="false" jdbcType="12"/>
+      <column name="publisher_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="name_short" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="zeitschriften_ibfk_1" columns="publisher_id" ref-table="publisher" ref-schema="" ref-catalog="adhs_studien_in" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="unique_name_short" unique="true" columns="name_short"/>
+    </table>
+  </data-source>
+  <data-source name="MySQL - adhs_studien_in@94.242.195.72" uuid="c5575e69-ade3-4644-904b-65bf4456249e">
+    <database-info product="MySQL" version="5.6.16" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="adhs_studien_in"/>
+    <table name="adhs_cont" schema="" catalog="adhs_studien_in" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="lit_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="doi" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12"/>
+      <column name="kat" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="kat2" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="kat3" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="typ" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="titel" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="titel_en" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="text" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="text_en" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="quelle" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="autor" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="link" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1" remarks="bGluayBvZGVyIG5hbWUgZGVyIHBkZg=="/>
+      <column name="icon" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="MC1wZGYsIDEtbGluaywgMi1rZWluZXM="/>
+      <column name="jahr" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="sprache" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA==" remarks="MD1kZSwgMT1lbg=="/>
+      <column name="keywords" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="keywords_en" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="hidden" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="MSA9IHZlcnN0ZWNrdA=="/>
+      <column name="pubdate" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="lastmod" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzIwMTItMDYtMDcgMjA6NDM6MjEn"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="doi" unique="false" columns="doi"/>
+      <index name="kat" unique="false" columns="kat"/>
+      <index name="kat2" unique="false" columns="kat2,kat3"/>
+      <index name="kat_2" unique="false" columns="kat"/>
+      <index name="lit_id" unique="false" columns="lit_id"/>
+      <index name="text" unique="false" columns="text"/>
+    </table>
+    <table name="adhs_kat" schema="" catalog="adhs_studien_in" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="ukat" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="dW50ZXJrYXRlZ29yaWUgdm9uIHB1bmt0IHg="/>
+      <column name="titel" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="titel_en" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="link_title" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="meta_keys" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="meta_keys_en" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="meta_desc" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="meta_desc_en" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="include" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12" remarks="UEhQIERhdGVpIGVpbmbDvGdlbg=="/>
+      <column name="meta_nav" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" remarks="QW56ZWlnZSBpbiBkZXIgTWV0YS1OYXZpZ2F0aW9u"/>
+      <column name="hidden" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="accesskey" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="accesskey" unique="false" columns="accesskey"/>
+      <index name="meta_desc" unique="false" columns="meta_desc"/>
+      <index name="meta_keys" unique="false" columns="meta_keys"/>
+    </table>
+    <table name="adhs_lit" schema="" catalog="adhs_studien_in" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="TGF1Zm51bW1lcg==" autoIncrement="true"/>
+      <column name="autor" sqlType="VARCHAR" precision="280" scale="0" nullable="true" jdbcType="12"/>
+      <column name="titel" sqlType="VARCHAR" precision="350" scale="0" nullable="true" jdbcType="12"/>
+      <column name="jahr" sqlType="VARCHAR" precision="4" scale="0" nullable="true" jdbcType="12" remarks="SmFociBlcm1pdHRlbHQ="/>
+      <column name="typ" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="RG9rdW1lbnRlbnR5cA=="/>
+      <column name="quelle" sqlType="VARCHAR" precision="93" scale="0" nullable="true" jdbcType="12" remarks="WmVpdHNjaHJpZnQvWmVpdHVuZw=="/>
+      <column name="isbn" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <column name="doi" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12"/>
+      <column name="pubmed_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="pmcid" sqlType="VARCHAR" precision="11" scale="0" nullable="false" jdbcType="12"/>
+      <column name="band" sqlType="VARCHAR" precision="3" scale="0" nullable="true" jdbcType="12"/>
+      <column name="nr" sqlType="VARCHAR" precision="5" scale="0" nullable="true" jdbcType="12"/>
+      <column name="seiten" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12" remarks="U2VpdGVuIHZvbuKAk2Jpcw=="/>
+      <column name="pdf" sqlType="VARCHAR" precision="360" scale="0" nullable="true" jdbcType="12" remarks="U3RhbmRvcnRlIChlbGVrdHJvbmlzY2gp"/>
+      <column name="title_full" sqlType="VARCHAR" precision="60" scale="0" nullable="false" jdbcType="12"/>
+      <column name="title_abbrev" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="status" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="issn_electronic" sqlType="VARCHAR" precision="9" scale="0" nullable="false" jdbcType="12"/>
+      <column name="issn_print" sqlType="VARCHAR" precision="9" scale="0" nullable="false" jdbcType="12"/>
+      <column name="lang" sqlType="VARCHAR" precision="2" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="pdf" unique="false" columns="pdf"/>
+      <index name="pmcid" unique="false" columns="pmcid"/>
+    </table>
+  </data-source>
+</component>

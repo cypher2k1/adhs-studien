@@ -234,7 +234,7 @@ function meta_tags($kat, $cont, $lit, $seitensprache = 0) {
 	} else {
 		echo '
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="alternate" title="RSS-Feed" href="http://feeds.feedburner.com/'.$rss_feed.'">
+	<link rel="alternate" title="RSS-Feed" href="https://feeds.feedburner.com/'.$rss_feed.'">
 	<link rel="schema.DC" href="http://purl.org/dc/terms/">
 	<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
 	<meta name="DC.subject" lang="'.$meta_tags['meta_language'].'" content="'.$meta_tags['meta_keys'].'">

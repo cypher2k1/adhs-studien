@@ -2,11 +2,10 @@
 <project version="4">
   <component name="PublishConfigData" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="Patrick" persistUploadOnCheckin="false">
     <serverData>
-      <paths name="Patrick">
+      <paths name="ADHS-Studien">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
-            <mapping local="" />
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
